@@ -1,0 +1,13 @@
+/* CSS Document */
+.rtl .component-inner{
+	direction:ltr;
+}
+.rtl .component-inner *{
+	direction:rtl;
+}
+.rtl #facebox{
+	direction:ltr;
+}
+.rtl #facebox .content{
+	direction:rtl;
+}

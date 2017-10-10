@@ -1,0 +1,931 @@
+/**
+ * Menu CSS base 
+ *
+ *********************************************
+ YT Menu css rule.
+ - Border (ul,li):
+ 	ul background = border color.
+ 	ul padding: (right + bottom) = border-width 	
+ 	li margin: (left + top)
+ 	li margin-top = li's spacing
+ 	li.first margin-top = border-width
+ 	li margin-left = border-width
+ - background
+ 	li background: scroll top right
+ 	li a background: scroll top left
+ 	li a margin-right 
+ */
+
+/* root ul element */
+html{
+	* overflow-x: hidden; /* IE7+ fix */
+}
+ul.navi {
+	margin: 0 auto 0;
+	padding: 0;
+	display: block;
+	zoom: 1;
+	list-style: none;
+	position: relative;
+	height: 44px;
+}
+
+/* child ul elements */
+ul.navi ul {
+	margin: 5px 0 0;
+	padding: 0;
+	list-style: none;
+	padding: 0px 5px 5px 0px;
+	background-color: #fff;
+	background-repeat: repeat;
+	border-color: #555;
+	border-width: 0px;
+	border-style: solid;
+	min-width: 180px; 
+	width: 180px;
+	box-shadow: 0 0 3px #a8a8a8;
+	border-radius: 3px;
+}
+
+/* all li */
+ul.navi li {
+	background:none;
+	padding: 0 0;
+}
+
+ul.navi ul li {
+	margin: 0px 0px 0px 5px;
+	border-top:1px solid #eaebec;
+}
+ul.navi ul li.first {
+	margin: 5px 0px 0px 5px;
+	border:none;
+}
+
+/* all links and div.separator */
+ul.navi a:active,
+ul.navi a:focus {
+	outline-style: none;
+}
+
+ul.navi div.separator,
+ul.navi a {
+	cursor: pointer;
+	text-decoration: none;
+	
+	display: block;
+}
+
+/* all span class */
+ul.navi span.menu-icon {
+	padding: 0 0 0 30px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+
+ul.navi span.menu-icon.bef {
+	padding: 0 0 0 30px;
+}
+
+ul.navi span.menu-icon.aft {
+	padding: 0 30px 0 0;
+}
+
+ul.navi span.menu-title {
+	display: block;
+	*display: inline-block;
+	padding: 6px 0;
+	line-height: 100%;
+}
+
+ul.navi span.menu-desc {
+	display: block;
+	line-height: 100%;
+	font-size: 77.7%;
+	text-transform: none;
+	padding: 0 0 6px 0;
+	color: #CCC;
+}
+ul.navi .level1:hover span.menu-desc,
+ul.navi .level1.hover span.menu-desc,
+ul.navi .level1.active span.menu-desc {
+	color: #333;
+}
+/* level 1 */
+ul.navi li.level1 {
+	background:url(../../../../images/line-ver.png) no-repeat left center;
+	padding: 0 10px 0 12px;
+	margin: 0 0;
+	float: left;
+	position: relative;
+}
+
+ul.navi li.level1.first {
+	background:none;
+	padding: 0 10px;
+}
+
+ul.navi li.level1.last {
+	
+}
+
+ul.navi li.level1.active {
+
+}
+
+ul.navi li.level1.slider {
+	background: #666;
+	position: absolute;
+	overflow: hidden;
+}
+
+/* level 1 links */
+ul.navi div.level1.separator,
+ul.navi a.level1 {
+	font-size:13px;
+	color:#333;
+	text-transform:uppercase;
+	font-weight:normal;
+	padding: 0 0;
+	margin: 0 0;
+	border-radius:3px;
+}
+
+ul.navi div.separator.level1.first,
+ul.navi a.level1.first {
+	
+}
+
+ul.navi div.separator.level1.last,
+ul.navi a.level1.last {
+	
+}
+
+ul.navi li.level1.active div.separator.level1,
+ul.navi li.level1.active a.level1 {
+	background:#174577;
+	color:#FFF;
+}
+ul.navi li.level1.active div.separator.level1:after,
+ul.navi li.level1.active a.level1:after{
+	content: "";
+	width:11px;height: 11px;
+	position: absolute;left: 50%;bottom: -11px;z-index: 10;
+	margin-left: -6px;
+	background: url("../images/iconmenu-active.png") no-repeat 0 0;
+}
+ul.navi li.level1.havechild div.level1.separator,
+ul.navi li.level1.havechild a.level1 {
+	padding:0 10px 0 0;
+}
+
+
+/* level 1 SPANs */
+ul.navi div.separator.level1 span.menu-icon,
+ul.navi a.level1 span.menu-icon {
+	
+}
+ul.navi div.separator.level1 span.menu-title,
+ul.navi a.level1 span.menu-title {
+	padding: 6px 12px;
+}
+ul.navi .havechild div.separator.level1 span.menu-title,
+ul.navi .havechild a.level1 span.menu-title {
+	background:url(../../../../images/ico-haschild.png) no-repeat right 14px;
+}
+ul.navi div.separator.level1 span.menu-title,
+ul.navi a.level1 span.menu-title {
+	line-height: 18px;
+}
+
+ul.navi div.separator.level1.showdesc span.menu-title,
+ul.navi a.level1.showdesc span.menu-title {
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+ul.navi div.separator.level1 span.menu-desc,
+ul.navi a.level1 span.menu-desc {
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+/* level 2 */
+ul.navi ul.level2:before{
+	content: "";
+	width:100%;height: 5px;
+	position: absolute;top:-5px;
+}
+ul.navi ul.level2 {position: absolute;left: -999em;z-index: 10;}
+ul.navi li.level2 {padding: 0;}
+ul.navi li.level2.active {}
+
+/* level 2 links */
+ul.navi div.separator.level2,
+ul.navi a.level2 {
+	margin: 0;
+	padding: 0px 10px;
+	color: #666;
+	background: none;
+	text-transform: none;
+}
+
+ul.navi div.separator.level2.first,
+ul.navi a.level2.first {
+	
+}
+
+ul.navi div.separator.level2.last,
+ul.navi a.level2.last {
+	
+}
+
+ul.navi li.level2.active div.separator.level2,
+ul.navi li.level2.active a.level2 {
+	color: #000;
+}
+
+/* level 2 SPANs */
+ul.navi div.separator.level2 span.menu-icon,
+ul.navi a.level2 span.menu-icon {
+	
+}
+
+ul.navi div.separator.level2 span.menu-title,
+ul.navi a.level2 span.menu-title {
+	padding: 10px 0;
+	line-height: 12px;
+}
+
+ul.navi div.separator.level2.showdesc span.menu-title,
+ul.navi a.level2.showdesc span.menu-title {
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+
+ul.navi div.separator.level2 span.menu-desc,
+ul.navi a.level2 span.menu-desc {
+	padding-top: 3px;
+	padding-bottom: 4px;
+	line-height: 9px;
+}
+
+/* level 3+ */
+ul.navi ul.level3,
+ul.navi ul.level4,
+ul.navi ul.level5,
+ul.navi ul.level6,
+ul.navi ul.level7,
+ul.navi ul.level8,
+ul.navi ul.level9 {
+	position: absolute;
+	left: -999em;
+	top: 10%;
+	margin:  0;
+}
+
+ul.navi li.level3,
+ul.navi li.level4,
+ul.navi li.level5,
+ul.navi li.level6,
+ul.navi li.level7,
+ul.navi li.level8,
+ul.navi li.level9 {
+	
+}
+
+ul.navi li.level3.first,
+ul.navi li.level4.first,
+ul.navi li.level5.first,
+ul.navi li.level6.first,
+ul.navi li.level7.first,
+ul.navi li.level8.first,
+ul.navi li.level9.first {
+}
+
+ul.navi li.level3.last,
+ul.navi li.level4.last,
+ul.navi li.level5.last,
+ul.navi li.level6.last,
+ul.navi li.level7.last,
+ul.navi li.level8.last,
+ul.navi li.level9.last {
+}
+
+ul.navi li.level3.active,
+ul.navi li.level4.active,
+ul.navi li.level5.active,
+ul.navi li.level6.active,
+ul.navi li.level7.active,
+ul.navi li.level8.active,
+ul.navi li.level9.active {
+	
+}
+
+/* level 3+ links */
+ul.navi div.separator.level3,
+ul.navi div.separator.level4,
+ul.navi div.separator.level5,
+ul.navi div.separator.level6,
+ul.navi div.separator.level7,
+ul.navi div.separator.level8,
+ul.navi div.separator.level9,
+ul.navi a.level3,
+ul.navi a.level4,
+ul.navi a.level5,
+ul.navi a.level6,
+ul.navi a.level7,
+ul.navi a.level8,
+ul.navi a.level9 {
+	margin: 0;
+	padding: 0 10px;
+	color: #666;
+	background: none;
+	text-transform: none;
+}
+
+ul.navi div.separator.level3.first,
+ul.navi div.separator.level4.first,
+ul.navi div.separator.level5.first,
+ul.navi div.separator.level6.first,
+ul.navi div.separator.level7.first,
+ul.navi div.separator.level8.first,
+ul.navi div.separator.level9.first,
+ul.navi a.level3.first,
+ul.navi a.level4.first,
+ul.navi a.level5.first,
+ul.navi a.level6.first,
+ul.navi a.level7.first,
+ul.navi a.level8.first,
+ul.navi a.level9.first {
+	
+}
+
+ul.navi div.separator.level3.last,
+ul.navi div.separator.level4.last,
+ul.navi div.separator.level5.last,
+ul.navi div.separator.level6.last,
+ul.navi div.separator.level7.last,
+ul.navi div.separator.level8.last,
+ul.navi div.separator.level9.last,
+ul.navi a.level3.last,
+ul.navi a.level4.last,
+ul.navi a.level5.last,
+ul.navi a.level6.last,
+ul.navi a.level7.last,
+ul.navi a.level8.last,
+ul.navi a.level9.last {
+	
+}
+
+ul.navi div.separator.level3.active,
+ul.navi div.separator.level4.active,
+ul.navi div.separator.level5.active,
+ul.navi div.separator.level6.active,
+ul.navi div.separator.level7.active,
+ul.navi div.separator.level8.active,
+ul.navi div.separator.level9.active,
+ul.navi a.level3.active,
+ul.navi a.level4.active,
+ul.navi a.level5.active,
+ul.navi a.level6.active,
+ul.navi a.level7.active,
+ul.navi a.level8.active,
+ul.navi a.level9.active {
+	color: #000;
+}
+
+/* level 3+ SPANs */
+ul.navi div.separator.level3 span.menu-icon,
+ul.navi div.separator.level4 span.menu-icon,
+ul.navi div.separator.level5 span.menu-icon,
+ul.navi div.separator.level6 span.menu-icon,
+ul.navi div.separator.level7 span.menu-icon,
+ul.navi div.separator.level8 span.menu-icon,
+ul.navi div.separator.level9 span.menu-icon,
+ul.navi a.level3 span.menu-icon,
+ul.navi a.level4 span.menu-icon,
+ul.navi a.level5 span.menu-icon,
+ul.navi a.level6 span.menu-icon,
+ul.navi a.level7 span.menu-icon,
+ul.navi a.level8 span.menu-icon,
+ul.navi a.level9 span.menu-icon {
+	
+}
+
+ul.navi div.separator.level3 span.menu-title,
+ul.navi div.separator.level4 span.menu-title,
+ul.navi div.separator.level5 span.menu-title,
+ul.navi div.separator.level6 span.menu-title,
+ul.navi div.separator.level7 span.menu-title,
+ul.navi div.separator.level8 span.menu-title,
+ul.navi div.separator.level9 span.menu-title,
+ul.navi a.level3 span.menu-title,
+ul.navi a.level4 span.menu-title,
+ul.navi a.level5 span.menu-title,
+ul.navi a.level6 span.menu-title,
+ul.navi a.level7 span.menu-title,
+ul.navi a.level8 span.menu-title,
+ul.navi a.level9 span.menu-title {
+	padding: 10px 0;
+	line-height: 12px;
+}
+
+ul.navi div.separator.level3.showdesc span.menu-title,
+ul.navi div.separator.level4.showdesc span.menu-title,
+ul.navi div.separator.level5.showdesc span.menu-title,
+ul.navi div.separator.level6.showdesc span.menu-title,
+ul.navi div.separator.level7.showdesc span.menu-title,
+ul.navi div.separator.level8.showdesc span.menu-title,
+ul.navi div.separator.level9.showdesc span.menu-title,
+ul.navi a.level3.showdesc span.menu-title,
+ul.navi a.level4.showdesc span.menu-title,
+ul.navi a.level5.showdesc span.menu-title,
+ul.navi a.level6.showdesc span.menu-title,
+ul.navi a.level7.showdesc span.menu-title,
+ul.navi a.level8.showdesc span.menu-title,
+ul.navi a.level9.showdesc span.menu-title {
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+
+ul.navi div.separator.level3 span.menu-desc,
+ul.navi div.separator.level4 span.menu-desc,
+ul.navi div.separator.level5 span.menu-desc,
+ul.navi div.separator.level6 span.menu-desc,
+ul.navi div.separator.level7 span.menu-desc,
+ul.navi div.separator.level8 span.menu-desc,
+ul.navi div.separator.level9 span.menu-desc,
+ul.navi a.level3 span.menu-desc,
+ul.navi a.level4 span.menu-desc,
+ul.navi a.level5 span.menu-desc,
+ul.navi a.level6 span.menu-desc,
+ul.navi a.level7 span.menu-desc,
+ul.navi a.level8 span.menu-desc,
+ul.navi a.level9 span.menu-desc {
+	padding: 3px 0 4px 0;
+	line-height: 9px;
+}
+
+/*****************************
+ * ALL 
+ *****************************/
+ul.navi li.level2 div.separator.havechild,
+ul.navi li.level2 a.havechild {
+	background-image: url(../images/havechild.png);
+	background-position: 98% -42px;
+	background-repeat: no-repeat;
+}
+ul.navi li.level2:hover a.havechild{
+	background-position: 98% 9px;
+}
+/*******************************
+ * With RTL language
+ *******************************
+ 
+ * root ul element */
+ul.navirtl {
+	display: block;
+    height: 44px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* child ul elements */
+ul.navirtl ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding: 0px 5px 5px 0px;
+	background-color: #F2F2F2;
+	background-repeat: repeat;
+	border-color: #555;
+	border-width: 0px;
+	border-style: solid;
+	min-width: 180px;
+	*width: 180px;
+}
+
+/* all li */
+ul.navirtl li {
+	background:none;
+	padding: 0 0;
+}
+
+ul.navirtl ul li {
+	margin: 0px 0px 0px 5px;
+	border-bottom:1px solid #777;
+}
+ul.navirtl ul li.first {
+	margin: 5px 0px 0px 5px;
+}
+ul.navirtl ul li.last {
+	border:none;
+}
+/* all links and div.separator */
+ul.navirtl a:active,
+ul.navirtl a:focus {
+	outline-style: none;
+}
+
+ul.navirtl div.separator,
+ul.navirtl a {
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+}
+
+/* all span class */
+ul.navirtl span.menu-icon {
+	padding: 0 30px 0 0;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+ul.navirtl span.menu-icon.bef {
+	padding: 0 30px 0 0;
+}
+
+ul.navirtl span.menu-icon.aft {
+	padding: 0 0 0 30px;
+}
+
+ul.navirtl span.menu-title {
+	display: block;
+	*display: inline-block;
+	padding: 6px 0;
+	line-height: 100%;
+}
+
+ul.navirtl span.menu-desc {
+	display: block;
+	line-height: 100%;
+	font-size: 77.7%;
+	text-transform: none;
+	padding: 0 0 6px 0;
+	color: #CCC;
+}
+ul.navirtl .level1:hover span.menu-desc,
+ul.navirtl .level1.hover span.menu-desc,
+ul.navirtl .level1.active span.menu-desc {
+	color: #333;
+}
+/* level 1 */
+ul.navirtl li.level1 {
+	padding: 0;
+	margin: 0 0 0 3px;
+	float: right;
+	position: relative; /* nooo */
+}
+
+ul.navirtl li.level1.first {
+	
+}
+
+ul.navirtl li.level1.last {
+	
+}
+
+ul.navirtl li.level1.active {
+}
+
+ul.navirtl li.level1.slider {
+	background: #666;
+	position: absolute;
+	z-index: -1;
+}
+
+ul.navirtl div.level1.separator,
+ul.navirtl a.level1 {
+	padding: 0 20px;
+	margin: 0 0;
+	color: #fff;
+	font-weight: bold;
+}
+
+ul.navirtl div.separator.level1.first,
+ul.navirtl a.level1.first {
+	
+}
+
+ul.navirtl div.separator.level1.last,
+ul.navirtl a.level1.last {
+	
+}
+
+ul.navirtl li.level1.active div.separator.level1,
+ul.navirtl li.level1.active a.level1 {
+	background: #F2F2F2;
+	color:#000;
+}
+
+ul.navirtl li.level1.slider div.separator.level1,
+ul.navirtl li.level1.slider a.level1 {
+	color: #0D9FC4;
+}
+
+/* level 1 SPANs */
+ul.navirtl div.separator.level1 span.menu-icon,
+ul.navirtl a.level1 span.menu-icon {
+	
+}
+
+ul.navirtl div.separator.level1 span.menu-title,
+ul.navirtl a.level1 span.menu-title {
+	padding: 16px 0;
+	line-height: 12px;
+}
+
+ul.navirtl div.separator.level1.showdesc span.menu-title,
+ul.navirtl a.level1.showdesc span.menu-title {
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+ul.navirtl div.separator.level1 span.menu-desc,
+ul.navirtl a.level1 span.menu-desc {
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+/* level 2*/
+ul.navirtl ul.level2 {
+	position: absolute;
+	top: -999em;
+}
+
+ul.navirtl li.level2 {
+	padding: 0;
+	background: #222;
+}
+
+ul.navirtl li.level2.first {
+	
+}
+
+ul.navirtl li.level2.last {
+	
+}
+
+ul.navirtl li.level2.active {
+	
+}
+
+ul.navirtl div.separator.level2,
+ul.navirtl a.level2 {
+	margin: 0;
+	padding: 0px 10px;
+	color: #666;
+	background: none;
+	text-transform: none;
+}
+
+ul.navirtl div.separator.level2.first,
+ul.navirtl a.level2.first {
+	
+}
+
+ul.navirtl div.separator.level2.last,
+ul.navirtl a.level2.last {
+	
+}
+
+ul.navirtl li.level2.active div.separator.level2,
+ul.navirtl li.level2.active a.level2 {
+	color: #fff;
+}
+
+/* level 2 SPANs */
+ul.navirtl div.separator.level2 span.menu-icon,
+ul.navirtl a.level2 span.menu-icon {
+	
+}
+
+ul.navirtl div.separator.level2 span.menu-title,
+ul.navirtl a.level2 span.menu-title {
+	padding: 10px 0;
+	line-height: 12px;
+}
+
+ul.navirtl div.separator.level2.showdesc span.menu-title,
+ul.navirtl a.level2.showdesc span.menu-title {
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+
+ul.navirtl div.separator.level2 span.menu-desc,
+ul.navirtl a.level2 span.menu-desc {
+	padding-top: 3px;
+	padding-bottom: 4px;
+	line-height: 9px;
+}
+
+/* level 3+ */
+ul.navirtl ul.level3,
+ul.navirtl ul.level4,
+ul.navirtl ul.level5,
+ul.navirtl ul.level6,
+ul.navirtl ul.level7,
+ul.navirtl ul.level8,
+ul.navirtl ul.level9 {
+	position: absolute;
+	top: -999em;
+	/* top: 20%; */
+}
+
+ul.navirtl li.level3,
+ul.navirtl li.level4,
+ul.navirtl li.level5,
+ul.navirtl li.level6,
+ul.navirtl li.level7,
+ul.navirtl li.level8,
+ul.navirtl li.level9 {
+	background: #222;
+}
+
+ul.navirtl li.level3.first,
+ul.navirtl li.level4.first,
+ul.navirtl li.level5.first,
+ul.navirtl li.level6.first,
+ul.navirtl li.level7.first,
+ul.navirtl li.level8.first,
+ul.navirtl li.level9.first {
+}
+
+ul.navirtl li.level3.last,
+ul.navirtl li.level4.last,
+ul.navirtl li.level5.last,
+ul.navirtl li.level6.last,
+ul.navirtl li.level7.last,
+ul.navirtl li.level8.last,
+ul.navirtl li.level9.last {
+}
+
+ul.navirtl li.level3.active,
+ul.navirtl li.level4.active,
+ul.navirtl li.level5.active,
+ul.navirtl li.level6.active,
+ul.navirtl li.level7.active,
+ul.navirtl li.level8.active,
+ul.navirtl li.level9.active {
+	background: #444;
+}
+
+/* level 3+ links */
+ul.navirtl div.separator.level3,
+ul.navirtl div.separator.level4,
+ul.navirtl div.separator.level5,
+ul.navirtl div.separator.level6,
+ul.navirtl div.separator.level7,
+ul.navirtl div.separator.level8,
+ul.navirtl div.separator.level9,
+ul.navirtl a.level3,
+ul.navirtl a.level4,
+ul.navirtl a.level5,
+ul.navirtl a.level6,
+ul.navirtl a.level7,
+ul.navirtl a.level8,
+ul.navirtl a.level9 {
+	margin: 0;
+	padding: 0 10px;
+	color: #666;
+	background: none;
+	text-transform: none;
+}
+
+ul.navirtl div.separator.level3.first,
+ul.navirtl div.separator.level4.first,
+ul.navirtl div.separator.level5.first,
+ul.navirtl div.separator.level6.first,
+ul.navirtl div.separator.level7.first,
+ul.navirtl div.separator.level8.first,
+ul.navirtl div.separator.level9.first,
+ul.navirtl a.level3.first,
+ul.navirtl a.level4.first,
+ul.navirtl a.level5.first,
+ul.navirtl a.level6.first,
+ul.navirtl a.level7.first,
+ul.navirtl a.level8.first,
+ul.navirtl a.level9.first {
+	
+}
+
+ul.navirtl div.separator.level3.last,
+ul.navirtl div.separator.level4.last,
+ul.navirtl div.separator.level5.last,
+ul.navirtl div.separator.level6.last,
+ul.navirtl div.separator.level7.last,
+ul.navirtl div.separator.level8.last,
+ul.navirtl div.separator.level9.last,
+ul.navirtl a.level3.last,
+ul.navirtl a.level4.last,
+ul.navirtl a.level5.last,
+ul.navirtl a.level6.last,
+ul.navirtl a.level7.last,
+ul.navirtl a.level8.last,
+ul.navirtl a.level9.last {
+	
+}
+
+ul.navirtl div.separator.level3.active,
+ul.navirtl div.separator.level4.active,
+ul.navirtl div.separator.level5.active,
+ul.navirtl div.separator.level6.active,
+ul.navirtl div.separator.level7.active,
+ul.navirtl div.separator.level8.active,
+ul.navirtl div.separator.level9.active,
+ul.navirtl a.level3.active,
+ul.navirtl a.level4.active,
+ul.navirtl a.level5.active,
+ul.navirtl a.level6.active,
+ul.navirtl a.level7.active,
+ul.navirtl a.level8.active,
+ul.navirtl a.level9.active {
+	color: #fff;
+}
+
+/* level 3+ SPANs */
+ul.navirtl div.separator.level3 span.menu-icon,
+ul.navirtl div.separator.level4 span.menu-icon,
+ul.navirtl div.separator.level5 span.menu-icon,
+ul.navirtl div.separator.level6 span.menu-icon,
+ul.navirtl div.separator.level7 span.menu-icon,
+ul.navirtl div.separator.level8 span.menu-icon,
+ul.navirtl div.separator.level9 span.menu-icon,
+ul.navirtl a.level3 span.menu-icon,
+ul.navirtl a.level4 span.menu-icon,
+ul.navirtl a.level5 span.menu-icon,
+ul.navirtl a.level6 span.menu-icon,
+ul.navirtl a.level7 span.menu-icon,
+ul.navirtl a.level8 span.menu-icon,
+ul.navirtl a.level9 span.menu-icon {
+	
+}
+
+ul.navirtl div.separator.level3 span.menu-title,
+ul.navirtl div.separator.level4 span.menu-title,
+ul.navirtl div.separator.level5 span.menu-title,
+ul.navirtl div.separator.level6 span.menu-title,
+ul.navirtl div.separator.level7 span.menu-title,
+ul.navirtl div.separator.level8 span.menu-title,
+ul.navirtl div.separator.level9 span.menu-title,
+ul.navirtl a.level3 span.menu-title,
+ul.navirtl a.level4 span.menu-title,
+ul.navirtl a.level5 span.menu-title,
+ul.navirtl a.level6 span.menu-title,
+ul.navirtl a.level7 span.menu-title,
+ul.navirtl a.level8 span.menu-title,
+ul.navirtl a.level9 span.menu-title {
+	padding: 10px 0;
+	line-height: 12px;
+}
+
+ul.navirtl div.separator.level3.showdesc span.menu-title,
+ul.navirtl div.separator.level4.showdesc span.menu-title,
+ul.navirtl div.separator.level5.showdesc span.menu-title,
+ul.navirtl div.separator.level6.showdesc span.menu-title,
+ul.navirtl div.separator.level7.showdesc span.menu-title,
+ul.navirtl div.separator.level8.showdesc span.menu-title,
+ul.navirtl div.separator.level9.showdesc span.menu-title,
+ul.navirtl a.level3.showdesc span.menu-title,
+ul.navirtl a.level4.showdesc span.menu-title,
+ul.navirtl a.level5.showdesc span.menu-title,
+ul.navirtl a.level6.showdesc span.menu-title,
+ul.navirtl a.level7.showdesc span.menu-title,
+ul.navirtl a.level8.showdesc span.menu-title,
+ul.navirtl a.level9.showdesc span.menu-title {
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+
+ul.navirtl div.separator.level3 span.menu-desc,
+ul.navirtl div.separator.level4 span.menu-desc,
+ul.navirtl div.separator.level5 span.menu-desc,
+ul.navirtl div.separator.level6 span.menu-desc,
+ul.navirtl div.separator.level7 span.menu-desc,
+ul.navirtl div.separator.level8 span.menu-desc,
+ul.navirtl div.separator.level9 span.menu-desc,
+ul.navirtl a.level3 span.menu-desc,
+ul.navirtl a.level4 span.menu-desc,
+ul.navirtl a.level5 span.menu-desc,
+ul.navirtl a.level6 span.menu-desc,
+ul.navirtl a.level7 span.menu-desc,
+ul.navirtl a.level8 span.menu-desc,
+ul.navirtl a.level9 span.menu-desc {
+	padding: 3px 0 4px 0;
+	line-height: 9px;
+}
+
+/*****************************
+ * ALL 
+ *****************************/
+ul.navirtl li.level2 div.separator.havechild,
+ul.navirtl li.level2 a.havechild {
+	background-image: url(../images/arrow_rtl.png);
+	background-position: 10% center;
+	background-repeat: no-repeat;
+}

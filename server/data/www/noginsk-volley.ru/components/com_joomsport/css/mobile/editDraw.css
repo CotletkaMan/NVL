@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+.editDraw {
+	font-size: 12px;
+	color: #3a3f48;
+}
+.editDraw h1 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #757a83;
+}
+.editDraw .table>thead>tr>th, .editDraw .table>tbody>tr>th, .editDraw .table>tfoot>tr>th, .editDraw .table>thead>tr>td, .editDraw .table>tbody>tr>td, .table>tfoot>tr>td {
+	vertical-align: middle;
+}
+.editDraw .table-responsive {
+	padding: 20px;
+	width: 100%;
+	overflow: scroll;
+}
+.editDraw .table, .table>thead>tr>th {
+	border: none;
+}
+.editDraw .table tr td {
+	width: 180px;
+	border: none;
+	line-height: 30px;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+	vertical-align: middle;
+}
+.editDraw .table td .team {
+	width: 200px;
+	color: #666;
+}
+.editDraw .table td .team .form-control {
+	width: 180px;
+	height: 34px;
+	padding: 5px;
+	font-size: 12px;
+}
+.editDraw .table td.middle {
+	vertical-align: middle;
+	z-index: 0;
+}
+.editDraw .table .go2 {
+	width: 20px;
+	min-height: 20px;
+	float: right;
+	margin-right: 10px;
+	background: url(../img/edit.png) center center no-repeat;
+	vertical-align: middle;
+}
+.editDraw .table tr td input[type="text"] {
+	width: 50%;
+	height: 25px;
+}
+.editDraw .table tr td input[type="checkbox"] {
+	margin-left: 50%;
+	margin-top: 30%;
+}
+.editDraw .table .ml9 {
+	margin-left: 9px;
+}
+/*128*/
+.editDraw .table tr td .border128 {
+	width: 200px;
+	height: 128px;
+	border: 1px solid #ccc;
+	border-left: 0px;
+	position: absolute;
+	top: -45px;
+	left: 0px;
+}
+.editDraw .table tr td .border128 .go2 {
+	height: 128px;
+}
+.editDraw .table tr td .border128 input[type="checkbox"] {
+	margin-top: 54px;
+}
+/*190*/
+.editDraw .table tr td .border190 {
+	width: 210px;
+	height: 190px;
+	border: 1px solid #ccc;
+	border-left: 0px;
+	position: absolute;
+	top: -80px;
+	left: 0;
+}
+.editDraw .table tr td .border190 .go2 {
+	height: 190px;
+}
+.editDraw .table tr td .border190 input[type="checkbox"] {
+	margin-top: 89px;
+}
+/*390*/
+.editDraw .table tr td .border390 {
+	width: 210px;
+	height: 390px;
+	border: 1px solid #ccc;
+	border-left: 0px;
+	position: absolute;
+	top: -180px;
+	left: 0;
+}
+.editDraw .table tr td .border390 .go2 {
+	height: 390px;
+}
+.editDraw .table tr td .border390 input[type="checkbox"] {
+	margin-top: 187px;
+}
+
+/*780*/
+.editDraw .table tr td .border780 {
+	width: 210px;
+	height: 780px;
+	border: 1px solid #ccc;
+	border-left: 0px;
+	position: absolute;
+	top: -375px;
+	left: 0;
+}
+.editDraw .table tr td .border780 .go2 {
+	height: 780px;
+}
+.editDraw .table tr td .border780 input[type="checkbox"] {
+	margin-top: 385px;
+}
+
+/*1560*/
+.editDraw .table tr td .border1560 {
+	width: 210px;
+	height: 1560px;
+	border: 1px solid #ccc;
+	border-left: 0px;
+	position: absolute;
+	top: -770px;
+	left: 0;
+}
+.editDraw .table tr td .border1560 .go2 {
+	height: 1560px;
+}
+.editDraw .table tr td .border1560 input[type="checkbox"] {
+	margin-top: 780px;
+}

@@ -1,0 +1,41 @@
+
+body.sj_joomla3 a:hover{color: #0095fe;}
+.module_menu h3.title,
+.module h3.title{background-color: #28ab00;}
+ul.navi li.level1.active div.separator.level1,
+ul.navi li.level1.active a.level1,
+ul.navi li.level1.active:hover div.separator.level1,
+ul.navi li.level1.active:hover a.level1 {background: #28ab00;}
+	ul.navi li.level1.active div.separator.level1:after,
+	ul.navi li.level1.active a.level1:after{background-image: url(../../images/green/iconmenu-active.png);}
+	ul.navi li.level2:hover div.separator.level2,
+	ul.navi li.level2:hover a.level2 {color:#28ab00;}
+	ul.navi li.level3:hover div.separator.level3,
+	ul.navi li.level4:hover div.separator.level4,
+	ul.navi li.level5:hover div.separator.level5,
+	ul.navi li.level6:hover div.separator.level6,
+	ul.navi li.level7:hover div.separator.level7,
+	ul.navi li.level8:hover div.separator.level8,
+	ul.navi li.level9:hover div.separator.level9,
+	ul.navi li.level3:hover a.level3,
+	ul.navi li.level4:hover a.level4,
+	ul.navi li.level5:hover a.level5,
+	ul.navi li.level6:hover a.level6,
+	ul.navi li.level7:hover a.level7,
+	ul.navi li.level8:hover a.level8,
+	ul.navi li.level9:hover a.level9 {
+		color: #28ab00;
+	}
+.module_menu ul.menu li.active > a,
+.module_menu ul.menu li.active > .separator,
+	.module_menu ul.menu li > a:hover,
+	.module_menu ul.menu li > .separator:hover{background-image: url(../../images/green/list-menu.png);color: #C43737;}
+	
+#yt_spotlight div.module:hover a.readmore{background-color: #28ab00;border-color: #259c00;}
+body.sj_joomla3 a.readmore:hover{background-color: #28ab00;border-color: #259c00;}
+
+div.article-info{color: #999;}
+#yt_spotlight2{border-top-color: #0d3600;}
+div.bsn-wrap.default div.post:hover h2 > a{color: #28ab00;}
+div.bsn-wrap.theme1 div.item a.more{background-color: #28ab00;}
+div.bsn-wrap.default div.post a.more-view:before{background-color: #28ab00;}

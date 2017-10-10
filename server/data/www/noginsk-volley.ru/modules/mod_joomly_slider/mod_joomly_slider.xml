@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.1"
+	client="site"
+	method="upgrade">
+	<name>Joomly Slider</name>
+	<author>Eugene Rumyantsev</author>
+	<creationDate>May 2016</creationDate>
+	<copyright>Copyright (C) 2016 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@joomly.ru</authorEmail>
+	<authorUrl>http://joomly.ru</authorUrl>
+	<version>1.06</version>
+	<description>Joomly Slider</description>
+	<files>
+	<filename module="mod_joomly_slider">mod_joomly_slider.php</filename>
+	<folder>admin</folder>
+	<folder>tmpl</folder>
+	<folder>js</folder>
+	<folder>css</folder>
+	<folder>languages</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_joomly_slider.xml</filename>		
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_joomly_slider.ini</language>
+		<language tag="en-GB">languages/en-GB.mod_joomly_slider.sys.ini</language>
+		<language tag="ru-RU">languages/ru-RU.mod_joomly_slider.ini</language>
+		<language tag="ru-RU">languages/ru-RU.mod_joomly_slider.sys.ini</language>
+	</languages>
+	
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_YANDEX_MAP" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="note" type="note" class="alert alert-success" description="MOD_JOOMLY_SLIDER_MAIN_DESC" />	
+			</fieldset>
+			<fieldset name="options-manager" label="MOD_JOOMLY_SLIDER_SLIDER_OPTIONS" addfieldpath="/modules/mod_joomly_slider/admin/option">	
+				<field  type="options" name="option"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

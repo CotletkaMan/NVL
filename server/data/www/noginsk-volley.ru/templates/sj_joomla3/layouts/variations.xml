@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout type="main-left-right">	
+	<head>
+	</head>
+	<groups>
+		<group class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4">left</group>
+		<group class="span2d4" data-normal="span12" data-tablet="span12" data-stablet="span12">right</group>
+		<group class="span7d2" data-normal="span9" data-tablet="span9" data-stablet="span8">main</group>
+		<group class="span9d6" data-normal="span9" data-tablet="span9" data-stablet="span8">main-bottom</group>
+	</groups>
+	<blocks>			
+		<header html5tag="header" order="2" id="yt_header" autosize="0">
+			<positions>
+				<position class="span6" type="feature">@logo</position>
+				<position class="span3 offset3" data-wide="span3 offset3" data-mobile="span3 offset3" style="none" type="modules">position-0</position>
+				<position class="span8 offset4" data-stablet="span10 offset2" type="feature">@menu</position>
+			</positions>
+		</header>
+		<slideshow html5tag="section" order="4" id="yt_slideshow">
+			<positions>
+				<position class="span12" style="xhtml" type="modules">slide_show</position>
+			</positions>
+		</slideshow>
+		<spotlight html5tag="section" order="5" id="yt_spotlight">
+			<positions>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4" style="ytmod" type="modules">position-a</position>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4" style="ytmod" type="modules">position-b</position>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4" style="ytmod" type="modules">position-c</position>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span6" style="ytmod" type="modules">position-d</position>
+				<position class="span2d4" data-normal="hidden" data-tablet="hidden" data-stablet="span6" style="ytmod" type="modules">position-e</position>
+			</positions>
+		</spotlight>
+		<content html5tag="section" order="6" id="content" showDivTop="0" showDivBottom="0">
+			<positions>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4" group="left" style="ytmod" type="modules">position-6</position>
+				<position class="span7d2" data-normal="span9" data-tablet="span9" data-stablet="span8" group="main" type="message"></position>
+				
+				<position class="span7d2" data-normal="span9" data-tablet="span9" data-stablet="span8" group="main" type="component">component</position>
+				<position class="span2d4" data-normal="span12" data-tablet="span12" data-stablet="span12" group="right" style="ytmod" type="modules">position-7</position>
+				<position class="span4d8" data-normal="span9" data-tablet="span9" data-stablet="span8" group="main-bottom" style="ytmod" type="modules">position-4</position>
+				<position class="span4d8" data-normal="span9" data-tablet="span9" data-stablet="span8" group="main-bottom" style="ytmod" type="modules">position-5</position>
+				
+			</positions>
+		</content>
+		<spotlight2 html5tag="section" order="7" id="yt_spotlight2">
+			<positions>
+				<position class="span2d4" data-normal="hidden" data-tablet="hidden" data-stablet="span6" style="ytmod2" type="modules">position-10</position>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span6" style="ytmod2" type="modules">position-11</position>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4" style="ytmod2" type="modules">position-12</position>
+				<position class="span2d4" data-normal="span3" data-tablet="span3" data-stablet="span4" style="ytmod2" type="modules">position-13</position>
+				<position class="span2d4 position-last" data-normal="span3 position-last" data-tablet="span3 position-last" data-stablet="span4 position-last" style="ytmod2" type="modules">position-14</position>			
+			</positions>
+		</spotlight2>		
+		<footer html5tag="footer" order="10" id="yt_footer">
+			<positions>
+				<position class="span12" type="feature">@copyright</position>				
+			</positions>
+		</footer>										
+	</blocks>
+</layout>		

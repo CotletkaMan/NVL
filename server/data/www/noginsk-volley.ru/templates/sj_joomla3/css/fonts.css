@@ -1,0 +1,16 @@
+/******************************************
+***          YT Framework: CSS          ***
+*******************************************/
+
+/*   General style    */
+
+@font-face {
+  font-family: 'fontello';
+  src:  url("../asset/fonts/fontello.eot");
+  src:  url("../asset/fonts/fontello.eot?#iefix") format('embedded-opentype'),
+        url("../asset/fonts/fontello.woff") format('woff'),
+        url("../asset/fonts/fontello.ttf") format('truetype'),
+        url("../asset/fonts/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

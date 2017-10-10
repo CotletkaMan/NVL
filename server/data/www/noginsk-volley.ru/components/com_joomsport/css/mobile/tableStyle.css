@@ -1,0 +1,2587 @@
+@charset "utf-8";
+/* CSS Document */
+#joomsport-container a {
+	color: #369;
+}
+#joomsport-container a:hover, a.active {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .wrapper {
+	width: 100%;
+	margin: 20px auto;
+}
+#joomsport-container .container {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 0px;
+	margin: 0px auto;
+	padding: 2px;
+}
+#joomsport-container .page-content {
+	width: 100%;
+	float: left;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+#joomsport-container .navbar-default {
+	margin-bottom: 0;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #e7e7e7;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: #ededed; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNmY2ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ededed 0%, #f6f6f6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed), color-stop(100%, #f6f6f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ededed 0%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ededed 0%, #f6f6f6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ededed 0%, #f6f6f6 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#f6f6f6', GradientType=0 ); /* IE6-8 */
+        margin: 0px !important; 
+}
+#joomsport-container .navbar-brand {
+	width: 131px;
+	height: 38px;
+	padding: 0;
+	margin-top: 5px;
+}
+#joomsport-container .navbar-nav {
+	margin-top: 8px;
+}
+#joomsport-container .navbar-nav .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .navbar-nav .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .navbar-nav .btn i {
+	width: 16px;
+	margin-left: 5px;
+	display: inline-block;
+}
+#joomsport-container .navbar-nav .btn i.tableS {
+	height: 16px;
+	background: url(../img/table_ico.png) top left no-repeat;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+#joomsport-container .navbar-nav .btn:hover i.tableS {
+	background: url(../img/table_ico_active.png) top left no-repeat;
+}
+#joomsport-container .navbar-nav .btn i.date {
+	height: 16px;
+	background: url(../img/calendar_ico.png) center left no-repeat;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+#joomsport-container .navbar-nav .btn:hover i.date {
+	background: url(../img/calendar_ico_hover.png) center left no-repeat;
+}
+#joomsport-container .navSingle {
+	margin: 7px 0;
+}
+#joomsport-container .navHeadFull {
+	width: 100%;
+	margin: 0px auto;
+	padding-right: 15px;
+}
+#joomsport-container .history {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 8px 15px;
+}
+#joomsport-container .breadcrumb {
+	background: none;
+	margin: 0px;
+	padding: 0;
+}
+#joomsport-container .breadcrumb li a {
+	color: #369;
+}
+#joomsport-container .breadcrumb i {
+	margin-right: 5px;
+	color: #315087;
+}
+#joomsport-container .breadcrumb li a:hover {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .breadcrumb li a:hover i {
+	color: #B03030;
+}
+#joomsport-container .main {
+	padding: 5px;
+}
+#joomsport-container .table-responsive {
+	padding-left: 0;
+	padding-right: 0;
+}
+#joomsport-container .nav-tabs {
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+#joomsport-container .nav-tabs i {
+	margin-right: 10px;
+}
+#joomsport-container .nav-tabs>li {
+	margin-bottom: -1px;
+}
+#joomsport-container .nav-tabs>li>a {
+	color: #369;
+	background: #efefef;
+	border: 1px solid #efefef;
+	border-bottom-color: #ddd !important;
+	padding: 10px;
+        border-radius: 4px 4px 0 0 !important;
+}
+#joomsport-container .nav-tabs>li>a:hover {
+	color: #B03030;
+	border: 1px solid #ddd;
+}
+#joomsport-container .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+	font-weight: 700;
+	color: #3a3f48;
+	background: #fff;
+        border-radius: 4px 4px 0 0 !important;
+}
+#joomsport-container .nav-tabs>li.active>a:hover {
+	color: #B03030;
+}
+#joomsport-container .nav-tabs>li>a>i {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-right: 10px;
+}
+#joomsport-container .nav-tabs>li:first-child {
+	margin-left: 10px;
+}
+#joomsport-container .heading {
+	float: left;
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 20px;
+}
+#joomsport-container .heading h1 {
+	font-size: 18px;
+	color: #757a83;
+	margin: 10px 0;
+}
+#joomsport-container .selection {
+	font-size: 12px;
+}
+#joomsport-container .selection .selected {
+	width: 75%;
+	color: #999;
+	text-align: right;
+	padding: 6px 12px;
+}
+#joomsport-container .data {
+	width: 24%;
+	float: right;
+	margin-left: 1%;
+}
+#joomsport-container .data .form-control {
+	font-size: 12px;
+}
+#joomsport-container .data .form-control optgroup label {
+	font-weight: 700;
+}
+/*pagination*/
+#joomsport-container .pagination {
+	margin-top: 0;
+}
+#joomsport-container .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+	background-color: #369;
+	border-color: #369;
+}
+#joomsport-container .pagination>li>a, .pagination>li>span {
+	color: #369;
+}
+#joomsport-container .display .form-control {
+	width: auto;
+	margin-left: 5px;
+	padding: 3px;
+}
+#joomsport-container .display label {
+	line-height: 30px;
+	text-align: right;
+}
+#joomsport-container .pt10 {
+	padding-top: 10px;
+}
+#joomsport-container .mr10 {
+	margin-right: 10px;
+}
+#joomsport-container .ml10 {
+	margin-left: 10px;
+}
+#joomsport-container .mr20 {
+	margin-right: 20px;
+}
+#joomsport-container .ml20 {
+	margin-left: 20px;
+}
+#joomsport-container .mb20 {
+	margin-bottom: 20px;
+}
+#joomsport-container .mt20 {
+	margin-top: 20px;
+}
+@-moz-document url-prefix() {
+#joomsport-container fieldset {
+display: table-cell;
+}
+}
+/*seasoncalendar*/
+#joomsport-container .seasoncalendar {
+	font-size: 12px;
+}
+#joomsport-container .seasoncalendar h1 {
+	font-size: 18px;
+	color: #757a83;
+}
+#joomsport-container .seasoncalendar .heading .print {
+	margin-top: 10px;
+	font-weight: 600;
+}
+#joomsport-container .seasoncalendar .heading .print:hover {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .seasoncalendar .heading .print i {
+	margin-right: 5px;
+}
+#joomsport-container .seasoncalendar .form-control {
+	font-size: 12px;
+}
+#joomsport-container .seasoncalendar .nav-tabs>li>a>i {
+	width: 15px;
+	height: 15px;
+	float: left;
+}
+#joomsport-container .seasoncalendar .nav-tabs>li>a>i.tableS {
+	background: url(../img/table_ico.png) top left no-repeat;
+}
+#joomsport-container .seasoncalendar .nav-tabs>li.active>a>i.tableS, .seasoncalendar .nav-tabs>li:hover>a>i.tableS {
+	background: url(../img/table_ico_active.png) top left no-repeat;
+}
+#joomsport-container .seasoncalendar .table th a {
+	color: #369;
+	font-size: 12px;
+}
+#joomsport-container .seasoncalendar .table th a:hover {
+	color: #5bc0de;
+	text-decoration: none;
+}
+#joomsport-container .seasoncalendar .table>tbody>tr.active {
+	background: #efefef;
+}
+#joomsport-container .seasoncalendar .table .img-thumbnail {
+	padding: 0;
+}
+#joomsport-container .seasoncalendar .table>tbody>tr>td .btn {
+	font-size: 12px;
+}
+#joomsport-container .seasoncalendar .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	float: left;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .seasoncalendar .tooltip-inner {
+	max-width: 200px;
+	padding: 10px 8px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	border: 1px solid #adadad;
+	border-radius: 4px;
+}
+#joomsport-container .seasoncalendar .tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #adadad
+}
+#joomsport-container .seasoncalendar .score {
+	width: 80px;
+	display: inline-block;
+	position: relative;
+	height: 50px;
+}
+#joomsport-container .seasoncalendar .ET {
+	margin-left: 10px;
+	font-weight: 600;
+	line-height: 35px;
+}
+#joomsport-container .seasoncalendar .label {
+	margin-left: 11px;
+	background: #fff;
+	color: #333;
+	margin-top: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#joomsport-container .seasoncalendar .searchBar {
+	padding: 0;
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 20px;
+}
+#joomsport-container .seasoncalendar .searchBar .btn {
+	font-size: 12px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	display: block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .seasoncalendar .searchBar .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .searchBar .form-control {
+	display: inline;
+	margin-left: 1%;
+}
+#joomsport-container .searchBar .form-group label {
+	line-height: 32px;
+}
+#joomsport-container .searchBar .srcTeam .form-control {
+	width: 40%;
+}
+#joomsport-container .searchBar .srcDay .form-control {
+	width: 50%;
+}
+#joomsport-container .searchBar .srcDate .form-control {
+	width: 45%;
+}
+/*clubLayout*/
+#joomsport-container .clubLayout {
+	font-size: 12px;
+}
+#joomsport-container .clubLayout .nav-tabs>li>a>i.photos {
+	background: url(../img/photos_ico.png) top left no-repeat;
+}
+#joomsport-container .clubLayout .nav-tabs>li.active>a>i.photos, .clubLayout .nav-tabs>li:hover>a>i.photos {
+	background: url(../img/photos_ico_active.png) top left no-repeat;
+}
+#joomsport-container .clubLayout .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .clubLayout .nav-tabs>li.active>a>i.flag, .clubLayout .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .clubLayout #club .img-thumbnail {
+	float: left;
+	background: #eee;
+	padding: 10px;
+	margin: 0 20px 5px 0;
+}
+#joomsport-container .clubLayout .txt-cnt {
+	font-size: 12px;
+	line-height: 18px;
+	color: #696767;
+}
+#joomsport-container .clubLayout #gallery {
+	padding: 0;
+}
+#joomsport-container .clubLayout #gallery ul {
+	padding: 0;
+}
+#joomsport-container .clubLayout #gallery li {
+	display: inline-block;
+	margin: 15px 0;
+}
+/*playerLayout*/
+#joomsport-container .playerLayout {
+	font-size: 12px;
+}
+#joomsport-container .playerLayout .breadcrumb {
+	border-bottom: none;
+}
+#joomsport-container .playerLayout .socialMedia {
+	padding: 10px;
+	border-bottom: 1px solid #e7e7e7;
+}
+#joomsport-container .playerLayout .socialMediaCont {
+	text-align: right;
+}
+#joomsport-container .playerLayout .socialMedia .breadcrumb {
+	background: none;
+	margin-bottom: 0;
+}
+#joomsport-container .playerLayout .nav-tabs>li>a>i {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 10px;
+}
+#joomsport-container .playerLayout .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li.active>a>i.flag, .playerLayout .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li.active>a>i.chart, .playerLayout .nav-tabs>li:hover>a>i.chart {
+	background: url(../img/chart_ico_active.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li>a>i.chart {
+	background: url(../img/chart_ico.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li>a>i.users {
+	background: url(../img/users_ico.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li.active>a>i.users, .playerLayout .nav-tabs>li:hover>a>i.users {
+	background: url(../img/users_ico_active.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li>a>i.photos {
+	background: url(../img/photos_ico.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .nav-tabs>li.active>a>i.photos, .playerLayout .nav-tabs>li:hover>a>i.photos {
+	background: url(../img/photos_ico_active.png) top left no-repeat;
+}
+#joomsport-container .playerLayout .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .playerLayout .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .playerLayout .btn i {
+	width: 16px;
+	margin-right: 5px;
+	display: inline-block;
+}
+#joomsport-container .playerLayout #team .img-thumbnail {
+	float: left;
+	background: #fff;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#joomsport-container .playerLayout .txt-cnt {
+	font-size: 12px;
+	color: #696767;
+	line-height: 18px;
+}
+#joomsport-container .playerLayout .table th a {
+	color: #369;
+}
+#joomsport-container .playerLayout .table th a:hover {
+	color: #5bc0de;
+	text-decoration: none;
+}
+#joomsport-container .playerLayout .table>tbody>tr>th, .seasoncalendar .table>thead>tr>td, .playerLayout .table>tbody>tr>td, .playerLayout .table>thead:first-child>tr:first-child>th {
+	vertical-align: middle;
+}
+#joomsport-container .playerLayout #statistic .table>tbody>tr>td:first-child {
+	width: 30%;
+}
+#joomsport-container .playerLayout .table .img-thumbnail {
+	margin-right: 5px;
+}
+#joomsport-container .playerLayout .table td .btn i {
+	margin-right: 5px;
+}
+#joomsport-container .playerLayout .tooltip-inner {
+	max-width: 200px;
+	padding: 10px 8px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	border: 1px solid #adadad;
+	border-radius: 4px;
+}
+#joomsport-container .playerLayout .tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #adadad
+}
+#joomsport-container .playerLayout .place {
+	line-height: 30px;
+}
+#joomsport-container .playerLayout .place, .playerLayout .photoPlayer {
+	width: 100%;
+	float: left;
+}
+#joomsport-container .playerLayout .place .pull-right {
+	text-align: right;
+}
+#joomsport-container .playerLayout #gallery {
+	padding: 0;
+}
+#joomsport-container .playerLayout #gallery ul {
+	padding: 0;
+}
+#joomsport-container .playerLayout #gallery li {
+	display: inline-block;
+	margin: 15px 0;
+}
+/*playerList*/
+#joomsport-container .playerList {
+	font-size: 12px;
+}
+#joomsport-container .playerList .table th a {
+	color: #369;
+	font-size: 12px;
+}
+#joomsport-container .playerList .table th a:hover {
+	color: #3a3f48;
+	text-decoration: none;
+}
+#joomsport-container .playerList .table>tbody>tr>th, .playerList .table>thead>tr>td, .playerList .table>tbody>tr>td, .playerList .table>thead:first-child>tr:first-child>th {
+	text-align: center;
+	vertical-align: text-top;
+}
+#joomsport-container .playerList .table>tbody>tr>td.left, .playerList .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+#joomsport-container .playerList .table .img-thumbnail {
+	padding: 1px;
+	margin-right: 8px;
+}
+/*seasonList*/
+#joomsport-container .seasonList {
+	font-size: 12px;
+}
+#joomsport-container .seasonList h1 {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: #757a83;
+}
+#joomsport-container .seasonList .form-control {
+	font-size: 12px;
+}
+#joomsport-container .seasonList .table tr td a {
+	color: #369;
+}
+#joomsport-container .seasonList .table tr td a:hover {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .seasonList .table>tbody>tr>th, .seasonList .table>thead>tr>td, .seasonList .table>tbody>tr>td, .seasonList .table>thead:first-child>tr:first-child>th {
+	text-align: center;
+	vertical-align: text-top;
+	line-height: 31px;
+}
+#joomsport-container .seasonList .table>tbody>tr>td.left, .seasonList .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+#joomsport-container .seasonList .btn {
+	font-size: 12px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	display: block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .seasonList .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .seasonList .btn-default i.arrow-right {
+	width: 12px;
+	height: 10px;
+	display: inline-block;
+	background: url(../img/right_arrow_ico.png) center left no-repeat;
+	margin-right: 5px;
+}
+#joomsport-container .seasonList .btn-default:hover i.arrow-right {
+	background: url(../img/right_arrow_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .seasonList .table .fa-times {
+	color: #999
+}
+#joomsport-container .seasonList .table .fa-check {
+	color: #449d44
+}
+#joomsport-container .seasonList .table>tbody>tr.active {
+	background: #efefef;
+}
+/*seasonTable*/
+#joomsport-container .seasonTable {
+	font-size: 12px;
+	color: #3a3f48;
+}
+#joomsport-container .seasonTable .socialMedia {
+	padding: 10px;
+	border-bottom: 1px solid #e7e7e7;
+}
+#joomsport-container .seasonTable .socialMediaCont {
+	text-align: right;
+}
+#joomsport-container .seasonTable .socialMedia .breadcrumb {
+	background: none;
+	margin-bottom: 0;
+}
+#joomsport-container .seasonTable h1 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #757a83;
+}
+#joomsport-container .seasonTable .itemHeading .print {
+	margin-top: 25px;
+	font-weight: 600;
+}
+#joomsport-container .seasonTable .itemHeading .print:hover {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .seasonTable .itemHeading .print i {
+	margin-right: 5px;
+}
+#joomsport-container .seasonTable .itemDetails {
+	margin-bottom: 20px;
+	padding: 0;
+}
+#joomsport-container .seasonTable .itemDetails .img-thumbnail {
+	float: left;
+	background: #eee;
+	padding: 10px;
+	margin: 0 20px 10px 0;
+}
+#joomsport-container .seasonTable .itemDetails .txt-cnt, .seasonTable .itemTable .txt-cnt {
+	font-size: 12px;
+	color: #696767;
+	line-height: 18px;
+}
+#joomsport-container .seasonTable .nav-tabs>li>a>i.tableS {
+	background: url(../img/table_ico.png) top left no-repeat;
+}
+#joomsport-container .seasonTable .nav-tabs>li.active>a>i.tableS, .seasonTable .nav-tabs>li:hover>a>i.tableS {
+	background: url(../img/table_ico_active.png) top left no-repeat;
+}
+#joomsport-container .seasonTable .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .seasonTable .nav-tabs>li.active>a>i.flag, .seasonTable .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .seasonTable .itemTable {
+	font-size: 12px;
+	padding: 0;
+}
+#joomsport-container .seasonTable .itemTable .table th a {
+	color: #369;
+}
+#joomsport-container .seasonTable .itemTable .table th a:hover {
+	color: #3a3f48;
+	text-decoration: none;
+}
+#joomsport-container .seasonTable .itemTable .table>tbody>tr>th, .seasonTable .itemTable .table>thead>tr>td, .seasonTable .itemTable .table>tbody>tr>td, .seasonTable .itemTable .table>thead:first-child>tr:first-child>th {
+	text-align: center;
+	vertical-align: text-top;
+}
+#joomsport-container .seasonTable .itemTable .table>tbody>tr>td.left, .seasonTable .itemTable .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+#joomsport-container .seasonTable .itemTable .table>tbody>tr.active {
+	background: #efefef;
+}
+#joomsport-container .seasonTable .itemTable .table .img-thumbnail {
+	margin-right: 5px;
+	padding: 0;
+}
+#joomsport-container .seasonTable .itemTable #sTable h2 {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	padding: 0 0 17px 12px;
+	color: #757a83;
+	border-bottom: 1px dotted #ccc;
+}
+/*teamLayout*/
+#joomsport-container .teamLayout {
+	font-size: 12px;
+}
+#joomsport-container .teamLayout .form-control {
+	font-size: 12px;
+}
+#joomsport-container .teamLayout .nav-tabs>li>a>i {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 10px;
+}
+#joomsport-container .teamLayout .nav-tabs>li>a>i.star {
+	background: url(../img/star_ico.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li.active>a>i.star, .teamLayout .nav-tabs>li:hover>a>i.star {
+	background: url(../img/star_ico_active.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li.active>a>i.flag, .teamLayout .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li>a>i.users {
+	background: url(../img/users_ico.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li.active>a>i.users, .teamLayout .nav-tabs>li:hover>a>i.users {
+	background: url(../img/users_ico_active.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li>a>i.photos {
+	background: url(../img/photos_ico.png) top left no-repeat;
+}
+#joomsport-container .teamLayout .nav-tabs>li.active>a>i.photos, .teamLayout .nav-tabs>li:hover>a>i.photos {
+	background: url(../img/photos_ico_active.png) top left no-repeat;
+}
+#joomsport-container .teamLayout #players .img-thumbnail {
+	background: #fff;
+	padding: 5px;
+}
+#joomsport-container .teamLayout #team .img-thumbnail {
+	float: left;
+	background: #fff;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#joomsport-container .teamLayout .txt-cnt {
+	font-size: 12px;
+	color: #696767;
+	line-height: 18px;
+}
+#joomsport-container .teamLayout .table th a {
+	display: inline-block;
+	color: #369;
+	line-height: 24px;
+}
+#joomsport-container .teamLayout .table th a:hover {
+	color: #3a3f48;
+	text-decoration: none;
+}
+#joomsport-container .teamLayout #players .table>tbody>tr>th, .teamLayout #players .table>thead>tr>td, .teamLayout #players .table>tbody>tr>td, .teamLayout #players .table>thead:first-child>tr:first-child>th {
+	text-align: center;
+	vertical-align: middle;
+}
+#joomsport-container .teamLayout #players .table>tbody>tr>th.left, .teamLayout #players .table>thead>tr>td.left, .teamLayout #players .table>tbody>tr>td.left, .teamLayout #players .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+	vertical-align: middle;
+}
+#joomsport-container .teamLayout .table>tbody>tr>th, .teamLayout .table>thead>tr>td, .teamLayout .table>tbody>tr>td, .teamLayout .table>thead:first-child>tr:first-child>th {
+	vertical-align: middle;
+}
+#joomsport-container .teamLayout .table .img-thumbnail {
+	margin-right: 5px;
+	padding: 0;
+}
+#joomsport-container .teamLayout #matches .table>tbody>tr>td>a {
+	vertical-align: middle;
+	line-height: 30px;
+}
+#joomsport-container .teamLayout #matches .img-thumbnail {
+	margin-right: 0;
+}
+#joomsport-container .teamLayout .tooltip-inner {
+	max-width: 200px;
+	padding: 10px 8px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	border: 1px solid #adadad;
+	border-radius: 4px;
+}
+#joomsport-container .teamLayout .tooltip .bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-color: #adadad;
+}
+#joomsport-container .teamLayout .table th a.ball {
+	width: 32px;
+	height: 24px;
+	background: url(../img/ball.png) top left no-repeat;
+	padding-left: 35px;
+}
+#joomsport-container .teamLayout .table th a.boot {
+	width: 32px;
+	height: 24px;
+	background: url(../img/boot.png) top left no-repeat;
+	padding-left: 35px;
+}
+#joomsport-container .teamLayout .table th a.goal {
+	width: 32px;
+	height: 24px;
+	background: url(../img/goal.png) top left no-repeat;
+	padding-left: 35px;
+}
+#joomsport-container .teamLayout .table td .btn i {
+	margin-right: 5px;
+}
+#joomsport-container .teamLayout .place {
+	line-height: 30px;
+}
+#joomsport-container .teamLayout .place, .teamLayout .photoTeam {
+	width: 100%;
+	float: left;
+}
+#joomsport-container .teamLayout .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .teamLayout .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .teamLayout .btn i {
+	width: 16px;
+	margin-right: 5px;
+	display: inline-block;
+}
+#joomsport-container .teamLayout #gallery {
+	padding: 0;
+}
+#joomsport-container .teamLayout #gallery ul {
+	padding: 0;
+}
+#joomsport-container .teamLayout #gallery li {
+	display: inline-block;
+	margin: 15px 0;
+}
+#joomsport-container .teamLayout #gallery li a {
+}
+/*teamList*/
+#joomsport-container .teamList {
+	font-size: 12px;
+}
+#joomsport-container .teamList .table th h3 {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 0;
+}
+#joomsport-container .teamList .table>tbody>tr>th, .teamList .table>thead>tr>td, .teamList .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: text-top;
+}
+#joomsport-container .teamList .table>tbody>tr>td.left, .teamList .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+#joomsport-container .teamList .table .img-thumbnail {
+	margin-right: 8px;
+	padding: 0;
+}
+/*clubList*/
+#joomsport-container .clubList {
+	font-size: 12px;
+}
+#joomsport-container .clubList .table th h3 {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 0;
+}
+#joomsport-container .clubList .table>tbody>tr>th, .clubList .table>thead>tr>td, .clubList .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: text-top;
+}
+#joomsport-container .clubList .table>tbody>tr>td.left, .clubList .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+#joomsport-container .clubList .table .img-thumbnail {
+	margin-right: 8px;
+	padding: 0;
+}
+/*tourList*/
+#joomsport-container .tourList {
+	font-size: 12px;
+}
+#joomsport-container .tourList .table th h3 {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	margin-top: 0;
+}
+#joomsport-container .tourList .table>tbody>tr>th, .tourList .table>thead>tr>td, .clubList .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: text-top;
+}
+#joomsport-container .tourList .table>tbody>tr>td.left, .tourList .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+/*matchLayout*/
+#joomsport-container .matchLayout {
+	font-size: 12px;
+}
+#joomsport-container .matchLayout .form-control {
+	font-size: 12px;
+}
+#joomsport-container .matchLayout .breadcrumb {
+	background: none;
+	border: none;
+	margin: 0;
+}
+#joomsport-container .matchLayout .nav-tabs>li>a>i.tableS {
+	background: url(../img/table_ico.png) top left no-repeat;
+}
+#joomsport-container .matchLayout .nav-tabs>li.active>a>i.tableS, .matchLayout .nav-tabs>li:hover>a>i.tableS {
+	background: url(../img/table_ico_active.png) top left no-repeat;
+}
+#joomsport-container .matchLayout .table th a {
+	display: inline-block;
+	color: #369;
+	line-height: 24px;
+}
+#joomsport-container .matchLayout .table th a:hover {
+	color: #3a3f48;
+	text-decoration: none;
+}
+#joomsport-container .matchLayout .table>tbody>tr>th, .matchLayout .table>thead>tr>td, .matchLayout .table>tbody>tr>td, .matchLayout .table>thead:first-child>tr:first-child>th {
+	vertical-align: middle;
+}
+#joomsport-container .matchLayout .table .img-thumbnail {
+	padding: 0;
+}
+#joomsport-container .matchLayout #matches .table>tbody>tr>td>a {
+	vertical-align: middle;
+	line-height: 30px;
+}
+#joomsport-container .matchLayout .tooltip-inner {
+	max-width: 200px;
+	padding: 10px 8px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	border: 1px solid #adadad;
+	border-radius: 4px;
+}
+#joomsport-container .matchLayout .tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #adadad
+}
+#joomsport-container .matchLayout .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .matchLayout .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .matchLayout .btn i {
+	width: 16px;
+	margin-right: 5px;
+	display: inline-block;
+}
+/*regPlayer*/
+#joomsport-container .regPlayer {
+	font-size: 12px;
+}
+#joomsport-container .regPlayer .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .regPlayer .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 45%;
+	margin: 8px 0;
+	display: inline-block;
+}
+/*regTeam*/
+#joomsport-container .regTeam {
+	font-size: 12px;
+}
+#joomsport-container .regTeam .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .regTeam .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 45%;
+	margin: 8px 0;
+	display: inline-block;
+}
+/*adminMatchday*/
+#joomsport-container .adminMatchday {
+	font-size: 12px;
+}
+#joomsport-container .adminMatchday .heading {
+	border: none;
+	padding: 0 10px;
+}
+#joomsport-container .adminMatchday h4 {
+	font-size: 12px;
+	color: #999ca3;
+	font-weight: 600;
+}
+#joomsport-container .adminMatchday .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0 10px;
+}
+#joomsport-container .adminMatchday .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#joomsport-container .adminMatchday .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .adminMatchday .navbar-link>ul>li:hover>a, .adminMatchday .navbar-link>ul>li.active>a {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .adminMatchday .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+#joomsport-container .adminMatchday .tools a {
+	border-left: 1px solid #e7e7e7;
+	padding: 3px 20px;
+}
+#joomsport-container .adminMatchday .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .adminMatchday .tools i.add {
+	background: url(../img/add_ico.png) top left no-repeat;
+}
+#joomsport-container .adminMatchday .tools a:hover i.add {
+	background: url(../img/add_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminMatchday .tools i.edit {
+	background: url(../img/edit_ico.png) top left no-repeat;
+}
+#joomsport-container .adminMatchday .tools a:hover i.edit {
+	background: url(../img/edit_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminMatchday .tools i.delete {
+	background: url(../img/delete_ico.png) top left no-repeat;
+}
+#joomsport-container .adminMatchday .tools a:hover i.delete {
+	background: url(../img/delete_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminMatchday .data {
+	width: 15%;
+}
+#joomsport-container .adminMatchday .table>thead>tr>th, .adminMatchday .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: middle;
+}
+#joomsport-container .adminMatchday .table>thead>tr>th:last-child, .adminMatchday .table>tbody>tr>td:last-child {
+	text-align: left;
+}
+#joomsport-container .adminMatchday .table .w30 {
+	width: 30px;
+}
+#joomsport-container .adminMatchday .table .w50 {
+	width: 50px;
+}
+#joomsport-container .adminMatchday .table .w100 {
+	width: 100px;
+}
+/*adminTeam*/
+#joomsport-container .adminTeam {
+	font-size: 12px;
+}
+#joomsport-container .adminTeam .heading {
+	border: none;
+	padding: 0 10px;
+}
+#joomsport-container .adminTeam h4 {
+	font-size: 12px;
+	color: #999ca3;
+	font-weight: 600;
+}
+#joomsport-container .adminTeam .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0 10px;
+}
+#joomsport-container .adminTeam .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#joomsport-container .adminTeam .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .adminTeam .navbar-link>ul>li:hover>a, .adminTeam .navbar-link>ul>li.active>a {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .adminTeam .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+#joomsport-container .adminTeam .tools a {
+	border-left: 1px solid #e7e7e7;
+	padding: 3px 20px;
+}
+#joomsport-container .adminTeam .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .adminTeam .tools i.add {
+	background: url(../img/add_ico.png) top left no-repeat;
+}
+#joomsport-container .adminTeam .tools a:hover i.add {
+	background: url(../img/add_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminTeam .tools i.edit {
+	background: url(../img/edit_ico.png) top left no-repeat;
+}
+#joomsport-container .adminTeam .tools a:hover i.edit {
+	background: url(../img/edit_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminTeam .tools i.delete {
+	background: url(../img/delete_ico.png) top left no-repeat;
+}
+#joomsport-container .adminTeam .tools a:hover i.delete {
+	background: url(../img/delete_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminTeam .table>thead>tr>th, .adminTeam .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: middle;
+}
+#joomsport-container .adminTeam .table>thead>tr>th:last-child, .adminTeam .table>tbody>tr>td:last-child {
+	text-align: left;
+}
+#joomsport-container .adminTeam .table>thead>tr>th:nth-child(3), .adminTeam .table>tbody>tr>td:nth-child(3) {
+	text-align: left;
+}
+#joomsport-container .adminTeam .table .w30 {
+	width: 30px;
+}
+#joomsport-container .adminTeam .table .w50 {
+	width: 50px;
+}
+#joomsport-container .adminTeam .table .w100 {
+	width: 100px;
+}
+/*adminPlayer*/
+#joomsport-container .adminPlayer {
+	font-size: 12px;
+}
+#joomsport-container .adminPlayer .heading {
+	border: none;
+	padding: 0 10px;
+}
+#joomsport-container .adminPlayer h4 {
+	font-size: 12px;
+	color: #999ca3;
+	font-weight: 600;
+}
+#joomsport-container .adminPlayer .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0 10px;
+}
+#joomsport-container .adminPlayer .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#joomsport-container .adminPlayer .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .adminPlayer .navbar-link>ul>li:hover>a, .adminPlayer .navbar-link>ul>li.active>a {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .adminPlayer .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+#joomsport-container .adminPlayer .tools a {
+	border-left: 1px solid #e7e7e7;
+	padding: 3px 20px;
+}
+#joomsport-container .adminPlayer .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .adminPlayer .tools i.add {
+	background: url(../img/add_ico.png) top left no-repeat;
+}
+#joomsport-container .adminPlayer .tools a:hover i.add {
+	background: url(../img/add_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminPlayer .tools i.edit {
+	background: url(../img/edit_ico.png) top left no-repeat;
+}
+#joomsport-container .adminPlayer .tools a:hover i.edit {
+	background: url(../img/edit_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminPlayer .tools i.delete {
+	background: url(../img/delete_ico.png) top left no-repeat;
+}
+#joomsport-container .adminPlayer .tools a:hover i.delete {
+	background: url(../img/delete_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .adminPlayer .table>thead>tr>th, .adminPlayer .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: middle;
+}
+#joomsport-container .adminPlayer .table>thead>tr>th:last-child, .adminPlayer .table>tbody>tr>td:last-child {
+	text-align: left;
+}
+#joomsport-container .adminPlayer .table>thead>tr>th:nth-child(3), .adminPlayer .table>tbody>tr>td:nth-child(3) {
+	text-align: left;
+}
+#joomsport-container .adminPlayer .table .img-thumbnail {
+	margin-right: 8px;
+	padding: 1px;
+}
+#joomsport-container .adminPlayer .table .w30 {
+	width: 30px;
+}
+#joomsport-container .adminPlayer .table .w50 {
+	width: 50px;
+}
+#joomsport-container .adminPlayer .table .w100 {
+	width: 100px;
+}
+/*editTeam*/
+#joomsport-container .editTeam {
+	font-size: 12px;
+}
+#joomsport-container .editTeam .heading {
+	border: none;
+	padding: 0 10px;
+}
+#joomsport-container .editTeam h6 {
+	font-size: 12px;
+	color: #999ca3;
+	font-weight: 600;
+}
+#joomsport-container .editTeam .heading h1, .editTeam .heading h6, .editTeam .heading a {
+	padding: 0;
+}
+#joomsport-container .editTeam .form-control {
+	font-size: 12px;
+}
+#joomsport-container .editTeam .selection .data .form-control {
+	margin-bottom: 5px;
+}
+#joomsport-container .editTeam .selection .selected {
+	margin-top: 40px;
+}
+#joomsport-container .editTeam .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0 10px;
+}
+#joomsport-container .editTeam .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#joomsport-container .editTeam .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .editTeam .navbar-link>ul>li:hover>a, .editTeam .navbar-link>ul>li.active>a {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .editTeam .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+#joomsport-container .editTeam .tools a {
+	padding: 3px 20px;
+}
+#joomsport-container .editTeam .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .editTeam .tools i.save {
+	background: url(../img/save_ico.png) top left no-repeat;
+}
+#joomsport-container .editTeam .tools a:hover i.save {
+	background: url(../img/save_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editTeam .nav-tabs>li>a>i.star {
+	background: url(../img/star_ico.png) top left no-repeat;
+}
+#joomsport-container .editTeam .nav-tabs>li.active>a>i.star, .editTeam .nav-tabs>li:hover>a>i.star {
+	background: url(../img/star_ico_active.png) top left no-repeat;
+}
+#joomsport-container .editTeam .nav-tabs>li>a>i.users {
+	background: url(../img/users_ico.png) top left no-repeat;
+}
+#joomsport-container .editTeam .nav-tabs>li.active>a>i.users, .editTeam .nav-tabs>li:hover>a>i.users {
+	background: url(../img/users_ico_active.png) top left no-repeat;
+}
+#joomsport-container .editTeam .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .editTeam .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .editTeam .form-horizontal .control-label {
+	text-align: left;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 45%;
+	margin: 8px 0;
+	display: inline-block;
+}
+#joomsport-container .editTeam #team .form-group .close {
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+#joomsport-container .editTeam #team .table .close {
+	float: left;
+	text-align: center;
+}
+#joomsport-container .editTeam #team .table>tbody>tr>td {
+	text-align: center;
+	vertical-align: middle;
+}
+#joomsport-container .editTeam #team .table .img-thumbnail {
+	margin: 0px auto;
+}
+#joomsport-container .editTeam #team .table .w30 {
+	width: 30%;
+}
+#joomsport-container .editTeam #team .table .w50 {
+	width: 50%;
+}
+#joomsport-container .editTeam #team .table .w10 {
+	width: 10%;
+}
+#joomsport-container .editTeam .upload {
+	border: 1px solid #bbb;
+	padding: 10px 0;
+}
+#joomsport-container .editTeam .upload .table, .editTeam .upload .table-responsive {
+	padding: 0;
+}
+#joomsport-container .editTeam .upload .form-group {
+	margin: 5px 10px;
+}
+#joomsport-container .editTeam .upload .form-group .btn {
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam .upload input[type=file] {
+	width: auto;
+	margin: 8px 0;
+	display: inline-block;
+}
+#joomsport-container .editTeam #players .table .w97 {
+	width: 97%;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 20%;
+	display: inline-block;
+}
+/*editMatchDay*/
+#joomsport-container .editMatchDay {
+	font-size: 12px;
+}
+#joomsport-container .editMatchDay .heading {
+	border: none;
+	padding: 0 10px;
+	margin: 0;
+}
+#joomsport-container .editMatchDay .heading h1, .editMatchDay .heading a {
+	padding: 0;
+}
+#joomsport-container .editMatchDay .form-control {
+	font-size: 12px;
+}
+#joomsport-container .editMatchDay .selection .data .form-control {
+	margin-bottom: 5px;
+}
+#joomsport-container .editMatchDay .selection .selected {
+	margin-top: 40px;
+}
+#joomsport-container .editMatchDay .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0 10px;
+}
+#joomsport-container .editMatchDay .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#joomsport-container .editMatchDay .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .editMatchDay .navbar-link>ul>li:hover>a, .editMatchDay .navbar-link>ul>li.active>a {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .editMatchDay .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+#joomsport-container .editMatchDay .tools a {
+	padding: 3px 20px;
+}
+#joomsport-container .editMatchDay .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .editMatchDay .tools i.save {
+	background: url(../img/save_ico.png) top left no-repeat;
+}
+#joomsport-container .editMatchDay .tools a:hover i.save {
+	background: url(../img/save_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editMatchDay .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .editMatchDay .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .editMatchDay .table>tbody>tr>td {
+	line-height: 30px;
+}
+#joomsport-container .editMatchDay .table tr.noBB td {
+	border: none;
+	border-top: 0;
+	background: none;
+}
+#joomsport-container .editMatchDay .table tr.grey td {
+	border: none;
+	border-top: 0;
+	background: #f5f5f5;
+}
+#joomsport-container .editMatchDay .score {
+	width: 50px;
+	height: 28px;
+	display: inline-block;
+	text-align: center;
+}
+#joomsport-container .editMatchDay .time {
+	width: 60px;
+	height: 28px;
+	display: inline-block;
+	text-align: center;
+}
+#joomsport-container .editMatchDay .date {
+	width: 150px;
+	height: 28px;
+	display: inline-block;
+	text-align: left;
+}
+#joomsport-container .editMatchDay .stadium {
+	width: 145px;
+	height: 28px;
+	display: inline-block;
+	text-align: left;
+}
+/*editMatch*/
+#joomsport-container .editMatch {
+	font-size: 12px;
+}
+#joomsport-container .editMatch .heading {
+	border: none;
+	padding: 0 10px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+#joomsport-container .editMatch .heading h1 {
+	padding: 0;
+}
+#joomsport-container .editMatch .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+#joomsport-container .editMatch .tools a {
+	padding: 3px 20px;
+}
+#joomsport-container .editMatch .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .editMatch .tools i.save {
+	background: url(../img/save_ico.png) top left no-repeat;
+}
+#joomsport-container .editMatch .tools a:hover i.save {
+	background: url(../img/save_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editMatch .tools i.delete {
+	background: url(../img/delete_ico.png) top left no-repeat;
+}
+#joomsport-container .editMatch .tools a:hover i.delete {
+	background: url(../img/delete_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editMatch .tools i.apply {
+	background: url(../img/apply_ico.png) top left no-repeat;
+}
+#joomsport-container .editMatch .tools a:hover i.apply {
+	background: url(../img/apply_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editMatch .form-horizontal .control-label {
+	text-align: left;
+}
+#joomsport-container .editMatch .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .editMatch .nav-tabs>li.active>a>i.flag, .editMatch .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .editMatch .nav-tabs>li>a>i.star {
+	background: url(../img/star_ico.png) top left no-repeat;
+}
+#joomsport-container .editMatch .nav-tabs>li.active>a>i.star, .editMatch .nav-tabs>li:hover>a>i.star {
+	background: url(../img/star_ico_active.png) top left no-repeat;
+}
+#joomsport-container .editMatch #main .score {
+	width: 50px;
+	height: 28px;
+	display: inline-block;
+	text-align: center;
+}
+#joomsport-container .editMatch #main .table .close {
+	float: left;
+	text-align: center;
+}
+#joomsport-container .editMatch #main .table tr td.scroll {
+	text-align: center;
+}
+#joomsport-container .editMatch #main .table .fa-caret-up, .editMatch #main .table .fa-caret-down {
+	font-size: 20px;
+	cursor: pointer;
+}
+#joomsport-container .editMatch #main .add {
+	margin-left: 5px;
+}
+#joomsport-container .editMatch .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .editMatch .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .editMatch .upload {
+	border: 1px solid #bbb;
+	padding: 10px 0;
+}
+#joomsport-container .editMatch .upload .table, .editMatch .upload .table-responsive {
+	padding: 0;
+}
+#joomsport-container .editMatch .upload .form-group {
+	margin: 5px 10px;
+}
+#joomsport-container .editMatch .upload .form-group .btn {
+	margin-bottom: 10px;
+}
+#joomsport-container .editMatch .upload input[type=file] {
+	width: auto;
+	margin: 8px 0;
+	display: inline-block;
+}
+#joomsport-container .editMatch #squad .row {
+	margin: 0;
+}
+#joomsport-container .editMatch #squad .score {
+	width: 50px;
+	height: 28px;
+	display: inline-block;
+	text-align: center;
+}
+#joomsport-container .editMatch .tableLeft {
+	padding-left: 0;
+}
+#joomsport-container .editMatch .tableRight {
+	padding-right: 0;
+}
+/*viewMatch*/
+#joomsport-container .viewMatch {
+	font-size: 12px;
+}
+#joomsport-container .viewMatch .heading {
+	border: none;
+	padding: 0 10px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+#joomsport-container .viewMatch .heading h1 {
+	padding: 0;
+}
+#joomsport-container .viewMatch .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .viewMatch .nav-tabs>li.active>a>i.flag, .viewMatch .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .viewMatch .nav-tabs>li>a>i.photos {
+	background: url(../img/photos_ico.png) top left no-repeat;
+}
+#joomsport-container .viewMatch .nav-tabs>li.active>a>i.photos, .viewMatch .nav-tabs>li:hover>a>i.photos {
+	background: url(../img/photos_ico_active.png) top left no-repeat;
+}
+#joomsport-container .viewMatch .nav-tabs {
+	margin: 0;
+}
+#joomsport-container .viewMatch .nav-tabs>li {
+}
+#joomsport-container .viewMatch .nav-tabs>li>a {
+	margin-top: -1px;
+}
+#joomsport-container .viewMatch #match .results {
+	padding: 0;
+}
+#joomsport-container .viewMatch #match .results {
+	border: 1px solid #ddd;
+	border-top-color: #fff;/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(238,238,238,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(238,238,238,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(238,238,238,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#eeeeee', GradientType=0 );
+}
+#joomsport-container .viewMatch #match .results .table tr {
+}
+#joomsport-container .viewMatch #match .results .table tr td {
+	border: 0px;
+	padding: 10px 0px;
+	vertical-align: middle;
+}
+#joomsport-container .viewMatch #match .results .table h3 {
+	font-size: 18px;
+	color: #3a3f48;
+	margin: 0;
+	display: inline-block;
+}
+#joomsport-container .viewMatch #match .results .table .right {
+	width: 525px;
+	text-align: right;
+}
+#joomsport-container .viewMatch #match .results .table .left {
+	width: 525px;
+	text-align: left;
+}
+#joomsport-container .viewMatch #match .results .table img {
+	background: #fff;
+	padding: 1px;
+	border: 1px solid #ccc;
+}
+#joomsport-container .viewMatch #match .results .table .score {
+	text-align: center;
+}
+#joomsport-container .viewMatch #match .results .table .score .label {
+	width: 70px;
+	font-size: 12px;
+	font-weight: 400;
+	margin: 0px auto;
+	color: #336699;
+	background: #fff;
+	border: 1px solid #ccc;
+	margin: 0;
+}
+#joomsport-container .viewMatch #match .results .table .scoreBig {
+}
+#joomsport-container .viewMatch #match .results .table .scoreBig .label {
+	font-size: 18px;
+	font-weight: 600;
+	color: #3a3f48;
+	width: 88px;
+	background: #fff;
+	border: 1px solid #ccc;
+	margin: 0 39px 0 41px;
+}
+#joomsport-container .viewMatch #match .stats .table-striped>tbody>tr:nth-child(odd)>td, .viewMatch #match .stats.table-striped>tbody>tr:nth-child(odd)>th {
+	background: #fffce3;
+	border: none;
+}
+#joomsport-container .viewMatch #match .stats .table>tbody>tr>td {
+	background: #efefef;
+	border: none;
+}
+#joomsport-container .viewMatch #gallery {
+	padding: 0;
+}
+#joomsport-container .viewMatch #gallery ul {
+	padding: 0;
+}
+#joomsport-container .viewMatch #gallery li {
+	display: inline-block;
+	margin: 15px 0;
+}
+/*editDraw*/
+#joomsport-container .editDraw .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+#joomsport-container .editDraw .tools a {
+	padding: 3px 20px;
+}
+#joomsport-container .editDraw .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .editDraw .tools i.save {
+	background: url(../img/save_ico.png) top left no-repeat;
+}
+#joomsport-container .editDraw .tools a:hover i.save {
+	background: url(../img/save_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editDraw .tools i.delete {
+	background: url(../img/delete_ico.png) top left no-repeat;
+}
+#joomsport-container .editDraw .tools a:hover i.delete {
+	background: url(../img/delete_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editDraw .tools i.apply {
+	background: url(../img/apply_ico.png) top left no-repeat;
+}
+#joomsport-container .editDraw .tools a:hover i.apply {
+	background: url(../img/apply_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .editDraw .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+/*newTeam*/
+#joomsport-container .newTeam .form-horizontal .control-label {
+	text-align: left;
+}
+#joomsport-container .newTeam .btn {
+	margin: 0px auto;
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+venueLayout .venueLayout {
+	font-size: 12px;
+}
+#joomsport-container .venueLayout .breadcrumb {
+	border-bottom: none;
+}
+#joomsport-container .venueLayout .socialMedia {
+	padding: 10px;
+	border-bottom: 1px solid #e7e7e7;
+}
+#joomsport-container .venueLayout .socialMediaCont {
+	text-align: right;
+}
+#joomsport-container .venueLayout .socialMedia .breadcrumb {
+	background: none;
+	margin-bottom: 0;
+}
+#joomsport-container .venueLayout .heading {
+	border-bottom: none;
+}
+#joomsport-container .venueLayout .nav-tabs>li>a>i {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 10px;
+}
+#joomsport-container .venueLayout .nav-tabs>li>a>i.flag {
+	background: url(../img/flag_ico.png) top left no-repeat;
+}
+#joomsport-container .venueLayout .nav-tabs>li.active>a>i.flag, .venueLayout .nav-tabs>li:hover>a>i.flag {
+	background: url(../img/flag_ico_active.png) top left no-repeat;
+}
+#joomsport-container .venueLayout .nav-tabs>li>a>i.photos {
+	background: url(../img/photos_ico.png) top left no-repeat;
+}
+#joomsport-container .venueLayout .nav-tabs>li.active>a>i.photos, .venueLayout .nav-tabs>li:hover>a>i.photos {
+	background: url(../img/photos_ico_active.png) top left no-repeat;
+}
+#joomsport-container .venueLayout .txt-cnt {
+	font-size: 12px;
+	color: #696767;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+#joomsport-container .venueLayout #gallery {
+	padding: 0;
+}
+#joomsport-container .venueLayout #gallery ul {
+	padding: 0;
+}
+#joomsport-container .venueLayout #gallery li {
+	display: inline-block;
+	margin: 15px 0;
+}
+
+/*matchDay*/
+#joomsport-container .matchDay {
+	font-size: 12px;
+}
+#joomsport-container .matchDay .heading {
+	border: none;
+	padding: 0 10px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+#joomsport-container .matchDay .heading h1 {
+	padding: 0;
+}
+#joomsport-container .matchDay h4 a {text-decoration:underline; font-size:16px; font-weight:300;}
+#joomsport-container .matchDay .nav-tabs>li>a>i.squad {
+	background: url(../img/squad_ico.png) top left no-repeat;
+}
+#joomsport-container .matchDay .nav-tabs>li.active>a>i.squad, .matchDay .nav-tabs>li:hover>a>i.squad {
+	background: url(../img/squad_ico_active.png) top left no-repeat;
+}
+#joomsport-container .matchDay .nav-tabs {
+	margin: 0;
+}
+#joomsport-container .matchDay .nav-tabs>li {
+}
+#joomsport-container .matchDay .nav-tabs>li>a {
+	margin-top: -1px;
+}
+#joomsport-container .matchDay .teams {border:none; margin-bottom:0;}
+#joomsport-container .matchDay .table>thead>tr>th {border:none;}
+#joomsport-container .matchDay .table>thead>tr>th>h4 {margin-bottom:0;}
+#joomsport-container .matchDay .table .img-thumbnail {
+	margin-right: 8px;
+	padding: 1px;
+}
+#joomsport-container .matchDay .table i.redo { width:38px; height:30px; display:inline-block; background:url(../img/redo.png) top left no-repeat;}
+#joomsport-container .matchDay .table i.undo { width:38px; height:30px; display:inline-block; background:url(../img/undo.png) top left no-repeat;}
+
+/*joinSeason*/
+#joomsport-container .joinSeason {
+	font-size: 12px;
+}
+#joomsport-container .joinSeason .line {width: 100%; display:inline-block; margin:5px 0;}
+#joomsport-container .joinSeason .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	border-radius: 10px;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+
+@media (max-width: 1680px) {
+}
+@media (max-width: 1280px) {
+#joomsport-container .editTeam #players .form-control {
+	width: 20%;
+}
+}
+@media (max-width: 1024px) {
+#joomsport-container .searchBar .srcDate .form-control {
+	width: 40%;
+}
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 55%;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 55%;
+}
+#joomsport-container .adminMatchday .data {
+	width: 17%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 55%;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 20%;
+}
+}
+@media (max-width: 980px) {
+}
+@media (max-width: 800px) {
+#joomsport-container .pages .col-sm-12 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .seasonTable .itemHeading .print {
+	margin-top: 19px;
+}
+#joomsport-container .display label {
+	width: 90%;
+}
+#joomsport-container .teamLayout #team .img-thumbnail {
+	margin-right: 10px;
+}
+#joomsport-container .teamLayout #matches .table > tbody > tr > td {
+	padding: 4px;
+}
+#joomsport-container .teamLayout #matches .table .ml10 {
+	margin-left: 5px;
+}
+#joomsport-container .teamLayout #matches .table .mr10 {
+	margin-right: 5px;
+}
+#joomsport-container .seasonTable .itemTable .table .img-thumbnail, .playerList .table .img-thumbnail, .seasoncalendar .table .img-thumbnail, .teamLayout .table .img-thumbnail {
+	max-width: none;
+}
+#joomsport-container .playerLayout .place {
+	width: 100%;
+}
+#joomsport-container .playerLayout .photoPlayer {
+	width: 100%;
+}
+#joomsport-container .matchLayout .table > tbody > tr > td {
+	padding: 4px;
+}
+#joomsport-container .matchLayout .table .ml10 {
+	margin-left: 5px;
+}
+#joomsport-container .matchLayout .table .mr10 {
+	margin-right: 5px;
+}
+#joomsport-container .adminMatchday .data {
+	width: 22%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 59%;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 20%;
+}
+}
+@media (max-width: 768px) {
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .playerLayout strong, .teamLayout strong {
+	float: left;
+}
+#joomsport-container .playerLayout .time {
+	float: left;
+	margin-left: 5px;
+}
+#joomsport-container .seasoncalendar .date, .matchLayout .date, .teamLayout .date, .playerLayout .date {
+	float: left;
+	clear: both;
+}
+#joomsport-container .seasoncalendar .time, .matchLayout .time, .teamLayout .time {
+	float: left;
+	clear: both;
+}
+#joomsport-container .seasoncalendar .table-responsive, .playerLayout #matches .table-responsive, .matchLayout .table-responsive {
+	padding-bottom: 30px;
+}
+#joomsport-container .teamLayout #team .img-thumbnail {
+	margin-right: 10px;
+}
+#joomsport-container .teamLayout #matches .table .img-thumbnail {
+	max-width: none;
+}
+#joomsport-container .teamLayout #matches .table > tbody > tr > td, .playerLayout #matches .table > tbody > tr > td {
+	padding: 4px;
+}
+#joomsport-container .teamLayout #matches .table .ml10 {
+	margin-left: 5px;
+}
+#joomsport-container .teamLayout #matches .table .mr10 {
+	margin-right: 5px;
+}
+#joomsport-container .playerLayout .place {
+	width: 45%;
+}
+#joomsport-container .playerLayout .photoPlayer {
+	width: 45%;
+	margin-right: 10px;
+}
+#joomsport-container .matchLayout .table > tbody > tr > td {
+	padding: 4px;
+}
+#joomsport-container .matchLayout .table .ml10 {
+	margin-left: 5px;
+}
+#joomsport-container .matchLayout .table .mr10 {
+	margin-right: 5px;
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 59%;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 59%;
+}
+#joomsport-container .adminMatchday .data {
+	width: 22%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 59%;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 20%;
+}
+}
+@media (max-width: 600px) {
+#joomsport-container .pages .col-xs-12 {
+	text-align: center;
+}
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+	font-size: 16px;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .seasoncalendar .table-responsive, .playerLayout #matches .table-responsive, .matchLayout .table-responsive {
+	padding-bottom: 30px;
+}
+#joomsport-container .seasoncalendar .score {
+}
+#joomsport-container .seasonTable .itemHeading .print {
+	margin-top: 20px;
+}
+#joomsport-container .display label {
+	width: 85%;
+}
+#joomsport-container .clubLayout #photos .col-xs-12 {
+	width: 50%;
+}
+#joomsport-container .seasonTable .itemTable .table .img-thumbnail, .playerList .table .img-thumbnail, .seasoncalendar .table .img-thumbnail, .teamLayout .table .img-thumbnail, .matchLayout .table .img-thumbnail {
+	max-width: none;
+}
+#joomsport-container .teamLayout #team .img-thumbnail {
+	margin-right: 10px;
+}
+#joomsport-container .teamLayout #matches .table {
+	font-size: 12px;
+}
+#joomsport-container .teamLayout .place {
+	width: 45%;
+}
+#joomsport-container .teamLayout .photoTeam {
+	width: 50%;
+	margin-right: 10px;
+}
+#joomsport-container .playerLayout .place {
+	width: 50%;
+}
+#joomsport-container .playerLayout .photoPlayer {
+	width: 48%;
+	margin-right: 2%;
+}
+#joomsport-container .playerLayout #statistic .table>tbody>tr>td:first-child {
+	width: 50%;
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 36%;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 36%;
+}
+#joomsport-container .adminMatchday .data {
+	width: 28%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 36%;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 40%;
+}
+#joomsport-container .viewMatch .nav-tabs>li:first-child {
+	z-index: 100;
+	margin-bottom: -2px;
+	border-bottom: 1px solid #fff;
+}
+#joomsport-container .editDraw .btn {
+	margin-top: 5px;
+}
+}
+@media (max-width: 568px) {
+#joomsport-container .pages .col-xs-12 {
+	text-align: center;
+}
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+	font-size: 16px;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .seasoncalendar .table-responsive, .playerLayout #matches .table-responsive, .matchLayout .table-responsive {
+	padding-bottom: 30px;
+}
+#joomsport-container .seasoncalendar .score {
+}
+#joomsport-container .seasonTable .itemHeading .print {
+	margin-top: 15px;
+}
+#joomsport-container .display label {
+	width: 80%;
+}
+#joomsport-container .seasonTable .itemTable .table .img-thumbnail, .playerList .table .img-thumbnail, .seasoncalendar .table .img-thumbnail, .teamLayout .table .img-thumbnail, .matchLayout .table .img-thumbnail {
+	max-width: none;
+}
+#joomsport-container .searchBar .form-control {
+	margin-bottom: 1%;
+}
+#joomsport-container .searchBar .srcTeam .form-control {
+	width: 44%;
+	margin-bottom: 5px;
+}
+#joomsport-container .searchBar .srcDay .form-control {
+	width: 80%;
+	margin-bottom: 5px;
+}
+#joomsport-container .searchBar .srcDate .form-control {
+	width: 44%;
+	margin-bottom: 5px;
+}
+#joomsport-container .teamLayout #matches .table {
+	font-size: 12px;
+}
+#joomsport-container .teamLayout .place {
+	width: 50%;
+}
+#joomsport-container .teamLayout .photoTeam {
+	width: 48%;
+	margin-right: 2%;
+}
+#joomsport-container .playerLayout .place {
+	width: 50%;
+}
+#joomsport-container .playerLayout .photoPlayer {
+	width: 48%;
+	margin-right: 2%;
+}
+#joomsport-container .playerLayout #statistic .table>tbody>tr>td:first-child {
+	width: 50%;
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 38%;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 38%;
+}
+#joomsport-container .adminMatchday .data {
+	width: 30%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 38%;
+}
+#joomsport-container .editMatch #main select.form-control, .editMatch #squad select.form-control {
+	width: auto;
+}
+}
+@media (max-width: 480px) {
+#joomsport-container .heading h1 {
+}
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+	font-size: 16px;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .seasoncalendar .table-responsive, .playerLayout #matches .table-responsive, .matchLayout .table-responsive {
+	padding-bottom: 30px;
+}
+#joomsport-container .seasoncalendar .score {
+}
+#joomsport-container .seasonTable .itemHeading .print {
+	margin-top: 15px;
+}
+#joomsport-container .seasonTable .itemDetails .txt-cnt, .seasonTable .itemTable .txt-cnt {
+	clear: both;
+}
+#joomsport-container .selection .selected {
+	width: 50%;
+}
+#joomsport-container .data {
+	width: 49%;
+}
+#joomsport-container .pages .col-xs-12 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+#joomsport-container .display label {
+	width: 80%;
+}
+#joomsport-container .seasonTable .itemTable .table .img-thumbnail, .playerList .table .img-thumbnail, .seasoncalendar .table .img-thumbnail, .teamLayout .table .img-thumbnail, .matchLayout .table .img-thumbnail {
+	max-width: none;
+}
+#joomsport-container .searchBar .form-control {
+	margin-bottom: 1%;
+}
+#joomsport-container .searchBar .srcTeam .form-control {
+	width: 40%;
+	margin-bottom: 5px;
+}
+#joomsport-container .searchBar .srcDay .form-control {
+	width: 75%;
+	margin-bottom: 5px;
+}
+#joomsport-container .searchBar .srcDate .form-control {
+	width: 48%;
+	margin-bottom: 5px;
+}
+#joomsport-container .teamLayout #matches .table {
+	font-size: 12px;
+}
+#joomsport-container .teamLayout .place {
+	width: 50%;
+}
+#joomsport-container .teamLayout .photoTeam {
+	width: 48%;
+	margin-right: 2%;
+}
+#joomsport-container .playerLayout .place {
+	width: 50%;
+}
+#joomsport-container .playerLayout .photoPlayer {
+	width: 48%;
+	margin-right: 2%;
+}
+#joomsport-container .playerLayout #statistic .table>tbody>tr>td:first-child {
+	width: 50%;
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 45%;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 45%;
+}
+#joomsport-container .adminMatchday .data {
+	width: 36%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 45%;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 55%;
+}
+#joomsport-container .editMatch #main select.form-control, .editMatch #squad select.form-control {
+	width: auto;
+}
+}
+@media (max-width: 320px) {
+#joomsport-container .history {
+	padding: 5px;
+}
+#joomsport-container .breadcrumb {
+	margin-bottom: 10px;
+}
+#joomsport-container .addthis_button_tweet {
+	width: 28%;
+}
+#joomsport-container .addthis_button_google_plusone {
+	width: 22%;
+}
+#joomsport-container .navbar-nav .btn {
+	margin-bottom: 5px;
+}
+#joomsport-container .heading h1 {
+	text-align: center;
+	font-size: 16px;
+}
+#joomsport-container .seasoncalendar .heading h1 {
+	text-align: left;
+	font-size: 16px;
+}
+#joomsport-container .seasoncalendar .heading .print {
+}
+#joomsport-container .seasoncalendar .table-responsive, .playerLayout #matches .table-responsive, .matchLayout .table-responsive, .teamDetails #matches .table-responsive {
+	padding-bottom: 30px;
+}
+#joomsport-container .seasoncalendar .score {
+}
+#joomsport-container .seasonTable .itemHeading h1 {
+	text-align: left;
+	font-size: 16px;
+}
+#joomsport-container .seasonTable .itemHeading .print {
+	margin-top: 20px;
+}
+#joomsport-container .selection .selected {
+	width: 100%;
+	text-align: center;
+}
+#joomsport-container .data {
+	width: 100%;
+}
+#joomsport-container .pages .col-xs-12 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+#joomsport-container .seasonTable .itemTable .table .img-thumbnail, .playerList .table .img-thumbnail, .seasoncalendar .table .img-thumbnail, .teamLayout .table .img-thumbnail, .matchLayout .table .img-thumbnail {
+	max-width: none;
+}
+#joomsport-container .searchBar .form-control {
+	margin-bottom: 1%;
+}
+#joomsport-container .searchBar .srcTeam .form-control {
+	width: 100%;
+	margin-bottom: 5px;
+}
+#joomsport-container .searchBar .srcDay .form-control {
+	width: 100%;
+	margin-bottom: 5px;
+}
+#joomsport-container .searchBar .srcDate .form-control {
+	width: 100%;
+	margin-bottom: 5px;
+	float: left;
+}
+#joomsport-container .teamLayout .heading h1 {
+	text-align: left;
+}
+#joomsport-container .teamLayout #matches .table {
+	font-size: 12px;
+}
+#joomsport-container .teamLayout .place, .teamLayout .photoTeam {
+	width: 100%;
+}
+#joomsport-container .teamLayout .socialMedia {
+	padding: 0px;
+	padding-bottom: 10px;
+}
+#joomsport-container .playerLayout .place, .playerLayout .photoPlayer {
+	width: 100%;
+}
+#joomsport-container .playerLayout #statistic .table>tbody>tr>td:first-child {
+	width: 50%;
+}
+#joomsport-container .display label {
+	width: 65%;
+}
+#joomsport-container .regPlayer input[type=file] {
+	width: 70%;
+}
+#joomsport-container .regTeam input[type=file] {
+	width: 70%;
+}
+#joomsport-container .adminMatchday .data {
+	width: 60%;
+	margin-bottom: 10px;
+}
+#joomsport-container .editTeam .selection .selected {
+	margin-top: 10px;
+}
+#joomsport-container .editTeam input[type=file] {
+	width: 70%;
+}
+#joomsport-container .editTeam #players .btn {
+	margin: 5px 0;
+}
+#joomsport-container .editTeam #players .form-control {
+	width: 75%;
+}
+#joomsport-container .editMatchDay .selection .selected {
+	margin-top: 0;
+}
+#joomsport-container .editMatchDay .navbar-link {
+	margin-top: 10px;
+}
+#joomsport-container .editMatch .tools {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#joomsport-container .editMatch #main .score {
+	width: 45px;
+	height: 25px;
+}
+#joomsport-container .editMatch #main label {
+	font-size: 11px;
+}
+#joomsport-container .editMatch #main select.form-control, .editMatch #squad select.form-control {
+	width: auto;
+}
+#joomsport-container .viewMatch .nav-tabs>li:first-child {
+	z-index: 100;
+	margin-bottom: -2px;
+	border-bottom: 1px solid #fff;
+}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>System - Yt Plugin(for Yt Framework)</name>
+	<author>YouTech Company</author>
+	<creationDate>01 July 2011</creationDate>
+	<copyright>Copyright (C) 2010 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0</version>
+	<description>YT_DESC</description>	
+	<files>
+		<folder   plugin="yt">includes</folder>
+		<filename plugin="yt">yt.php</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_yt.ini</language>
+		<language tag="en-GB">en-GB.plg_system_yt.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_sjhelp" type="radio" class="btn-group" default="0" filter="integer" label="SHOW_SJHELP_LABEL" description="SHOW_SJHELP_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNo</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

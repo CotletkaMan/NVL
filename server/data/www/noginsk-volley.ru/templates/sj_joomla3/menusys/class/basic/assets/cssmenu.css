@@ -1,0 +1,142 @@
+
+/*****************************
+ * CSS MENU 
+ *****************************/
+
+ul.navi ul{}
+ul.navi li:hover {position: relative;}
+
+/* show level2 */
+ul.navi li.level1:hover ul.level2 {
+	left: 10px;
+}
+
+/* show submenu level3 */
+ul.navi li.level2:hover ul.level3,
+ul.navi li.level3:hover ul.level4,
+ul.navi li.level4:hover ul.level5,
+ul.navi li.level5:hover ul.level6,
+ul.navi li.level6:hover ul.level7,
+ul.navi li.level7:hover ul.level8,
+ul.navi li.level8:hover ul.level9 {
+	left: 100%;
+}
+
+ul.navi li.level1:hover {}
+
+ul.navi li.level1:hover div.separator.level1,
+ul.navi li.level1:hover a.level1 {
+	background-color:#fff;
+	box-shadow: 0 0 2px #999;
+	color: #666;
+}
+ul.navi li.level1.active:hover div.separator.level1,
+ul.navi li.level1.active:hover a.level1 {
+	box-shadow: 0 0 2px #999;
+	color: #fff;
+	background:#174577;
+}
+ul.navi li.level2:hover {}
+
+ul.navi li.level2:hover div.separator.level2,
+ul.navi li.level2:hover a.level2 {color:#0095fe;}
+
+ul.navi li.level3:hover,
+ul.navi li.level4:hover,
+ul.navi li.level5:hover,
+ul.navi li.level6:hover,
+ul.navi li.level7:hover,
+ul.navi li.level8:hover,
+ul.navi li.level9:hover {}
+
+ul.navi li.level3:hover div.separator.level3,
+ul.navi li.level4:hover div.separator.level4,
+ul.navi li.level5:hover div.separator.level5,
+ul.navi li.level6:hover div.separator.level6,
+ul.navi li.level7:hover div.separator.level7,
+ul.navi li.level8:hover div.separator.level8,
+ul.navi li.level9:hover div.separator.level9,
+ul.navi li.level3:hover a.level3,
+ul.navi li.level4:hover a.level4,
+ul.navi li.level5:hover a.level5,
+ul.navi li.level6:hover a.level6,
+ul.navi li.level7:hover a.level7,
+ul.navi li.level8:hover a.level8,
+ul.navi li.level9:hover a.level9 {
+	color: #0095fe;
+}
+
+/* RTL 
+   show level2 */
+   
+ul.navirtl ul{
+	box-shadow:-4px 4px 4px #777;
+	-moz-box-shadow:-4px 4px 4px #777;
+	-webkit-box-shadow:-4px 4px 4px #777;
+}
+ul.navirtl li:hover {
+	position: relative;
+}
+
+/* show level2 */
+ul.navirtl li.level1:hover ul.level2 {
+	right: 0;
+	top: 100%;
+}
+
+/* show submenu level3 */
+ul.navirtl li.level2:hover ul.level3,
+ul.navirtl li.level3:hover ul.level4,
+ul.navirtl li.level4:hover ul.level5,
+ul.navirtl li.level5:hover ul.level6,
+ul.navirtl li.level6:hover ul.level7,
+ul.navirtl li.level7:hover ul.level8,
+ul.navirtl li.level8:hover ul.level9 {
+	right: 95%;
+	top: 20%;
+}
+
+ul.navirtl li.level1:hover {
+	background: #F2F2F2;
+}
+
+ul.navirtl li.level1:hover div.separator.level1,
+ul.navirtl li.level1:hover a.level1 {
+	color: #000;
+}
+
+ul.navirtl li.level2:hover {
+	background: #444;
+}
+
+ul.navirtl li.level2:hover div.separator.level2,
+ul.navirtl li.level2:hover a.level2 {
+	color: #FFF;
+}
+
+ul.navirtl li.level3:hover,
+ul.navirtl li.level4:hover,
+ul.navirtl li.level5:hover,
+ul.navirtl li.level6:hover,
+ul.navirtl li.level7:hover,
+ul.navirtl li.level8:hover,
+ul.navirtl li.level9:hover {
+	background: #444;
+}
+
+ul.navirtl li.level3:hover div.separator.level3,
+ul.navirtl li.level4:hover div.separator.level4,
+ul.navirtl li.level5:hover div.separator.level5,
+ul.navirtl li.level6:hover div.separator.level6,
+ul.navirtl li.level7:hover div.separator.level7,
+ul.navirtl li.level8:hover div.separator.level8,
+ul.navirtl li.level9:hover div.separator.level9,
+ul.navirtl li.level3:hover a.level3,
+ul.navirtl li.level4:hover a.level4,
+ul.navirtl li.level5:hover a.level5,
+ul.navirtl li.level6:hover a.level6,
+ul.navirtl li.level7:hover a.level7,
+ul.navirtl li.level8:hover a.level8,
+ul.navirtl li.level9:hover a.level9 {
+	color: #FFF;
+}

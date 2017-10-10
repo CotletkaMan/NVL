@@ -1,0 +1,265 @@
+@import url(../../common/css/menustyle.css);
+
+@import url(../../common/css/jshover.css);
+
+/*****************************
+ * JS DROPLINE MENU
+ *****************************/
+/* style for drop */
+ul#droplinenav.navi{
+	/*height: 72px; */
+}
+
+ul#droplinenavigator.navi ul.level2{
+	margin: 0;
+	width: 1023px;
+	height: 33px;
+	padding:0 0;
+}
+
+ul#droplinenavigator.navi li.level2{
+	float: left;
+	margin:2px 2px 2px 0;
+	border:none
+}
+ul#droplinenavigator.navi li.level2.first{
+	margin:2px 2px 2px 2px;
+}
+ul#droplinenav.navi div.separator.level2.havechild,
+ul#droplinenav.navi a.level2.havechild
+{	
+	padding: 0 20px 0 20px;
+	background-image: url(../../common/images/arrow.png);
+	background-position: 95% -106px;
+	background-repeat: no-repeat;
+}
+
+ul#droplinenav.navi li.level1.active ul.level2{
+	left: 0px;	
+}
+ul#droplinenav.navi li.hover{
+	position: static;
+}
+
+ul#droplinenavigator.navirtl ul.level2{
+	margin: 0;
+	width: 1023px;
+	height: 33px;
+	padding:0 0;
+}
+
+ul#droplinenavigator.navirtl li.level2{
+	float: right;
+	margin:2px 0 2px 2px;
+	border:none
+}
+ul#droplinenavigator.navirtl li.level2.first{
+	margin:2px 2px 2px 2px;
+}
+ul#droplinenav.navirtl div.separator.level2.havechild,
+ul#droplinenav.navirtl a.level2.havechild
+{	
+	padding: 0 20px 0 20px;
+	background-image: url(../../common/images/arrow.png);
+	background-position: 5% -106px;
+	background-repeat: no-repeat;
+}
+
+ul#droplinenav.navirtl li.level1.active ul.level2{
+	right: 0px;
+}
+ul#droplinenav.navirtl li.hover{
+	position: static;
+}
+ul#droplinenav.navirtl ul.level2 li.hover{
+	/*position: relative;*/
+}
+
+
+ul.navi div.fxcontent {
+	position: absolute;
+	display: block;
+	left: 0;
+}
+ul.navi .level2 div.fxcontent{
+	box-shadow:4px 4px 4px #777;
+}
+ul.navi div.fxcontent>ul.subnavi.insidefx {
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+
+/* LTR SLIDE */
+ul.navi div.fxcontent.slide.drop>ul.subnavi.insidefx {
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent.slide.toleft>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.slide.toright>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+/* LTR SCROLL */
+ul.navi div.fxcontent.scroll.drop>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.toleft>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent.scroll.toright>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent>div.fxcontent-bar { /* as ul background */
+	background: #666;
+	display: block;
+	position: absolute;
+}
+
+ul.navi div.fxcontent.slide.drop>div.fxcontent-bar {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.slide.toleft>div.fxcontent-bar {
+	top: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent.slide.toright>div.fxcontent-bar {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.drop>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.toleft>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.toright>div.fxcontent-bar {
+	bottom: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}
+
+/** for RTL **/
+ul.navirtl div.fxcontent {
+	position: absolute;
+	display: block;
+	right: 0;
+}
+ul.navirtl .level2 div.fxcontent{
+	box-shadow:-4px 4px 4px #777;
+	-moz-box-shadow:-4px 4px 4px #777;
+	-webkit-box-shadow:-4px 4px 4px #777;
+}
+ul.navirtl div.fxcontent>ul.subnavi.insidefx {
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+
+ul.navirtl div.fxcontent.slide.drop>ul.subnavi.insidefx {
+	bottom: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.slide.toleft>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.slide.toright>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.drop>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toleft>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toright>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent>div.fxcontent-bar { /* as ul background */
+	background: #666;
+	display: block;
+	position: absolute;
+}
+
+ul.navirtl div.fxcontent.slide.drop>div.fxcontent-bar {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.slide.toleft>div.fxcontent-bar {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.slide.toright>div.fxcontent-bar {
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.drop>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toleft>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toright>div.fxcontent-bar {
+	bottom: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}

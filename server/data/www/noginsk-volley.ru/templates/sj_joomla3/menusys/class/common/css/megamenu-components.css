@@ -1,0 +1,307 @@
+#meganavigator ul.subnavi {
+	position: static;
+	left: auto;
+	right: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#meganavigator ul.subnavi>li {
+	margin-left: 0;
+}
+
+#meganavigator ul.subnavi>li.first {
+	margin-top: 0;
+}
+
+/* left to right */
+ul.navi div.mega-content {
+	position: absolute;
+	left: -999em;
+	padding: 0;
+	margin: 0;
+	background: #F2F2F2;
+	display: block;
+	float: left;
+	padding: 0 5px 5px 0;
+}
+
+/* mega inner */
+ul.navi div.mega-content-inner {
+	float: left;
+	display: block;
+	padding: 0;
+	background: #222;
+	margin: 5px 0 0 5px;
+}
+
+/* cols */
+ul.navi div.mega-col {
+	margin: 0;
+	float: left;
+	display: block;
+}
+
+ul.navi div.mega-col.first {
+}
+
+ul.navi div.mega-col.last {	
+}
+ul.navi div.mega-col.more{
+	padding:0 5px 10px 5px;
+}
+ul.navi div.mega-col.first.more {
+	padding:0 5px 10px 10px;
+}
+ul.navi div.mega-col.last.more {
+	padding:0 10px 10px 5px;	
+}
+/* ul on col */
+ul.navi div.mega-content.level2 ul.megachild.level2 {
+	float: left;
+}
+
+/* FOR MEGA-ITEM */
+ul.navi div.mega-group {
+	padding: 0;
+	margin: 0;
+	/*overflow:hidden;*/
+}
+
+ul.navi div.mega-group div.mega-group-title{
+	border: 0px solid #666;
+	border-bottom-width: 1px;
+	margin: 0 0 5px 0;
+}
+ul.navi div.mega-group div.mega-group-title div.separator,
+ul.navi div.mega-group div.mega-group-title a{
+	padding: 0;
+	color: #fff;
+}
+
+ul.navi div.mega-group div.mega-group-title span.menu-icon{
+}
+ul.navi div.mega-group div.mega-group-title span.menu-title{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding:10px 0 5px 0;
+}
+
+ul.navi div.mega-group div.mega-group-title .showdesc span.menu-title{
+}
+ul.navi div.mega-group div.mega-group-title span.menu-desc{
+}
+
+ul.navi div.mega-group div.mega-group-content{
+	
+}
+ul.navi div.mega-group div.mega-group-content>ul.subnavi{
+	background: transparent;
+}
+ul.navi div.mega-group div.mega-group-content>ul.subnavi>li{
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+ul.navi div.mega-group div.mega-group-content>ul.subnavi>li.hover{
+	background: #444;
+}
+ul.navi div.mega-group div.mega-group-content>ul.subnavi>li>div.separator.havechild,
+ul.navi div.mega-group div.mega-group-content>ul.subnavi>li>a.havechild{
+	background-image: url(../images/arrow.png);
+	background-position: 95% -25px;
+	background-repeat: no-repeat;
+}
+
+/*FOR MEGA-MODULE*/
+ul.navi div.mega-module {
+	color: #FFF;
+}
+
+ul.navi div.mega-module h3 {
+	margin: 5px 0 10px 0;
+	color: #FFF;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+/* MEGA RTL */
+ul.navirtl div.mega-content {
+	position: absolute;
+	top: -999em;
+	padding: 0;
+	margin: 0;
+	background: #F2F2F2;
+	display: block;
+	float: right;
+	padding: 0 5px 5px 0;
+}
+
+/* mega inner */
+ul.navirtl div.mega-content-inner {
+	float: right;
+	display: block;
+	padding: 0;
+	background: #222;
+	margin: 5px 0 0 5px;
+}
+
+/* cols */
+ul.navirtl div.mega-col {
+	margin: 0;
+	float: right;
+	display: block;
+}
+
+ul.navirtl div.mega-col.first {
+}
+ul.navirtl div.mega-col.last {
+}
+ul.navirtl div.mega-col.more{
+	padding:0 5px 10px 5px;
+}
+ul.navirtl div.mega-col.first.more {
+	padding:0 10px 10px 5px;
+}
+ul.navirtl div.mega-col.last.more {
+	padding:0 5px 10px 10px;	
+}
+/* ul on col */
+ul.navirtl div.mega-content.level2 ul.megachild.level2 {
+	float: right;
+}
+
+/* FOR MEGA-ITEM */
+ul.navirtl div.mega-group {
+	padding: 0;
+	margin: 0;
+	/*overflow:hidden;*/
+}
+
+ul.navirtl div.mega-group div.mega-group-title{
+	border: 0px solid #666;
+	border-bottom-width: 1px;
+	margin: 0 0 5px 0
+}
+ul.navirtl div.mega-group div.mega-group-title div.separator,
+ul.navirtl div.mega-group div.mega-group-title a{
+	padding: 0;
+	color: #fff;
+}
+ul.navirtl div.mega-group div.mega-group-title span.menu-icon{
+}
+ul.navirtl div.mega-group div.mega-group-title span.menu-title{
+	text-transform: uppercase;
+	font-weight: bold;	
+	padding:10px 0 5px 0;
+}
+ul.navirtl div.mega-group div.mega-group-title .showdesc span.menu-title{
+}
+ul.navirtl div.mega-group div.mega-group-title span.menu-desc{
+}
+
+ul.navirtl div.mega-group div.mega-group-content{
+	
+}
+ul.navirtl div.mega-group div.mega-group-content>ul.subnavi{
+	background: transparent;
+}
+ul.navirtl div.mega-group div.mega-group-content>ul.subnavi>li{
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+ul.navirtl div.mega-group div.mega-group-content>ul.subnavi>li.hover{
+	background: #555;
+}
+ul.navirtl div.mega-group div.mega-group-content>ul.subnavi>li>div.separator.havechild,
+ul.navirtl div.mega-group div.mega-group-content>ul.subnavi>li>a.havechild{
+	background-image: url(../images/arrow.png);
+	background-position: 5% -187px;
+	background-repeat: no-repeat;
+}
+
+/*FOR MEGA-MODULE*/
+ul.navirtl div.mega-module {
+	color: #FFF;
+}
+
+ul.navirtlrtl div.mega-module h3 {
+	margin: 5px 0 10px 0;
+	color: #FFF;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+
+/* id: #mega-content-login */
+ul.navi #mega-content-login #form-login p {
+	display: block;
+	line-height: normal;
+}
+
+ul.navi .mega-module ul {
+	position: static;
+}
+
+ul.navi .mega-module ul.menu {
+	margin: 0 0;
+	width: auto;
+	border: none;
+}
+
+ul.navi .mega-module ul.menu li {
+	border-top: 1px solid #000000;
+}
+
+ul.navi .mega-module ul.menu li:first-child {
+	border: none;
+}
+
+ul.navi .mega-module ul.menu li a {
+	height: 25px;
+	line-height: 25px;
+	color: #CCCCCC;
+	padding: 0 10px;
+}
+
+ul.navi .mega-module ul.menu li:hover {
+	background: #000000;
+	color: #FFFFFF;
+}
+
+ul.navi .mega-module ul.menu li a:hover {
+	color: #FFFFFF;
+}
+
+ul.navi .mega-module #form-login input#modlgn_username,ul.navi .mega-module #form-login input#modlgn_passwd
+	{
+	width: 170px;
+}
+
+ul.navi .mega-module #form-login ul {
+	position: static;
+	margin: 10px 0 0;
+	width: auto;
+	border: none;
+}
+
+ul.navi .mega-module #form-login ul li {
+	height: 20px;
+	line-height: 20px;
+	margin: 0 0;
+}
+
+ul.navi .mega-module #form-login ul li a {
+	padding: 0 0;
+}
+
+ul.navi .mega-module #form-login ul li a:hover {
+	text-decoration: underline;
+}
+
+ul.navi #mega-content-login #form-login p label {
+	color: #FFF;
+}

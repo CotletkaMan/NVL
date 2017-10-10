@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2.3" type="plugin" group="search">
+<name>JoomSport Search Plugin</name>
+<creationDate>May 2014</creationDate>
+<author>Christopher Valmas</author>
+<authorEmail>cvalmas@freemail.gr</authorEmail>
+<authorUrl>www.joomsport.com</authorUrl>
+<copyright>Open Source</copyright>
+<license>GNU/GPL</license>
+<version>3.2.3</version>
+<description>Search in JoomSport's Teams, Players, Matches and Extra Fields</description>
+<files>
+   <filename plugin="joomsport">joomsport.php</filename>
+</files>
+<languages>
+   <language tag="de-DE">language/de-DE/de-DE.plg_search_joomsport.ini</language>
+   <language tag="en-GB">language/en-GB/en-GB.plg_search_joomsport.ini</language>
+   <language tag="el-GR">language/el-GR/el-GR.plg_search_joomsport.ini</language>
+   <language tag="es-ES">language/es-ES/es-ES.plg_search_joomsport.ini</language>
+   <language tag="fr-FR">language/fr-FR/fr-FR.plg_search_joomsport.ini</language>
+   <language tag="hu-HU">language/hu-HU/hu-HU.plg_search_joomsport.ini</language>
+   <language tag="it-IT">language/it-IT/it-IT.plg_search_joomsport.ini</language>
+   <language tag="nl-NL">language/nl-NL/nl-NL.plg_search_joomsport.ini</language>
+   <language tag="pl-PL">language/pl-PL/pl-PL.plg_search_joomsport.ini</language>
+   <language tag="pt-PT">language/pt-PT/pt-PT.plg_search_joomsport.ini</language>
+   <language tag="ru-RU">language/ru-RU/ru-RU.plg_search_joomsport.ini</language>
+   <language tag="sv-SE">language/sv-SE/sv-SE.plg_search_joomsport.ini</language>
+</languages>
+<params>
+	<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+	<param name="players" type="radio" default="1" label="Players" description="Search in Players Table">
+	<option value="0">No</option>
+        <option value="1">Yes</option>
+       </param>
+       <param name="teams" type="radio" default="1" label="Teams" description="Search in Teams Table">
+	<option value="0">No</option>
+        <option value="1">Yes</option>
+       </param>
+       <param name="matches" type="radio" default="1" label="Match" description="Search in Season Matches">
+	<option value="0">No</option>
+        <option value="1">Yes</option>
+       </param>
+</params>
+<config>
+	<fields name="params">
+
+		<fieldset name="basic">
+			<field name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+			<field name="players" type="radio" default="1" label="Players" description="Search in Players Table" class="btn-group">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		       </field>
+		       <field name="teams" type="radio" default="1" label="Teams" description="Search in Teams Table" class="btn-group">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		       </field>
+		       <field name="matches" type="radio" default="1" label="Match" description="Search in Season Matches" class="btn-group">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		       </field>
+		</fieldset>
+	</fields>
+</config>
+<administration>
+<languages folder="administrator/language">
+   <language tag="en-GB">en-GB/en-GB.plg_search_joomsport.ini</language>
+   <language tag="el-GR">el-GR/el-GR.plg_search_joomsport.ini</language>
+</languages>
+</administration>
+</extension>

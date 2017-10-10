@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.2.3"
+	client="site"
+	method="upgrade">
+	<name>JoomSport next matches</name>
+	<author>BearDev</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>Copyright (C)2009-2014 BearDev. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>beardev@beardev.com</authorEmail>
+	<authorUrl>www.beardev.com</authorUrl>
+	<version>3.2.3</version>
+	<description>Next matches</description>
+	<files>
+		<filename module="mod_js_next_matches">mod_js_next_matches.php</filename>
+		<filename module="mod_js_next_matches">helper.php</filename>
+		<filename module="mod_js_next_matches">tmpl/default.php</filename>
+		<filename module="mod_js_next_matches">css/mod_js_next_matches.css</filename>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_js_next_matches.ini</language>
+		 <language tag="en-GB">en-GB/en-GB.mod_js_next_matches.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_js_next_matches.ini</language>
+		 <language tag="fr-FR">fr-FR/fr-FR.mod_js_next_matches.sys.ini</language>
+		<language tag="sv-SE">sv-SE/sv-SE.mod_js_next_matches.ini</language>
+		<language tag="sv-SE">sv-SE/sv-SE.mod_js_next_matches.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_js_next_matches.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_js_next_matches.sys.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.mod_js_next_matches.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.mod_js_next_matches.sys.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.mod_js_next_matches.ini</language>
+		<language tag="pl-PL">pl-PL/pl-PL.mod_js_next_matches.sys.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_js_next_matches.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_js_next_matches.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_js_next_matches.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_js_next_matches.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_js_next_matches.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_js_next_matches.sys.ini</language>
+		<language tag="hu-HU">hu-HU/hu-HU.mod_js_next_matches.ini</language>
+		<language tag="hu-HU">hu-HU/hu-HU.mod_js_next_matches.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_js_next_matches.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_js_next_matches.sys.ini</language>
+		<language tag="el-GR">el-GR/el-GR.mod_js_next_matches.ini</language>
+		<language tag="el-GR">el-GR/el-GR.mod_js_next_matches.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+		<fieldset name="basic" addfieldpath="/administrator/components/com_joomsport/fields">
+			<field name="sidgid" type="modseas" default="0" label="MOD_JS_SELSEASON" description="MOD_JS_SELSEASON" required="true" />
+				<field name="team_id" type="modteam" default="0" label="MOD_JS_SELPARC" description="MOD_JS_TT_SELPARC" />
+			<field name="match_count" type="text" default="5" label="MOD_JS_DISPLCOUNT" description="MOD_JS_DISPLCOUNT" />
+			
+			<field name="embl_is" type="radio" default="0" class="btn-group" label="MOD_JS_TT_DISPHOTO" description="MOD_JS_TT_DISPHOTO">
+				<option value="0">MOD_JS_NO</option>
+				<option value="1">MOD_JS_YES</option>
+			</field>
+            <field name="match_v" type="radio" default="0" class="btn-group" label="MOD_JS_TT_VMATCH" description="MOD_JS_TT_VMATCH">
+                <option value="0">MOD_JS_NO</option>
+                <option value="1">MOD_JS_YES</option>
+            </field>
+			<field name="customitemid" type="text" default="0" label="MOD_JS_SETITEMID" description="MOD_JS_TT_SETITEMID" />
+			<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+		
+		<fieldset name="advanced">
+			<field name="result_layout_next" type="list"	default="0" label="MOD_JS_LAYOUT"	description="MOD_JS_TT_LAYOUT" >
+				<option value="0">MOD_JS_JOOMSPORT</option>
+				<option value="1">MOD_JS_JOOMSPORT_OPT1</option>
+				<option value="2">MOD_JS_JOOMSPORT_OPT2</option>           
+				<option value="3">MOD_JS_WIDE1-1</option>
+				<option value="4">MOD_JS_WIDE1-2</option>
+				<option value="5">MOD_JS_WIDE2-1</option>
+				<option value="6">MOD_JS_WIDE2-2</option>
+		    </field>
+			
+			<field name="emblem_width_next"  type="text" default="30" label="MOD_JS_EMBLEM_WIDTH"  description="MOD_JS_TT_EMBLEM_WIDTH" />
+			<field name="emblem_height_next" type="text" default="30" label="MOD_JS_EMBLEM_HEIGHT" description="MOD_JS_TT_EMBLEM_HEIGHT" />			
+			
+			<field name="matchday_reference_next" type="list"	default="0" label="MOD_JS_MATCHDAY_REF"	description="MOD_JS_TT_MATCHDAY_REF" >
+				<option value="0">MOD_JS_MD_DATE</option>
+				<option value="1">MOD_JS_MD_MACHDAY_NAME</option>
+				<option value="2">MOD_JS_MD_DATE_MACHDAY_NAME</option>
+				<option value="3">MOD_JS_MD_MACHDAY_NAME_DATE</option>        
+			</field>
+			<field name="align_matchday_ref_next" type="radio" class="btn-group" default="center" label="MOD_JS_ALIGN_MATCHDAY_REF" description="MOD_JS_TT_ALIGN_MATCHDAY_REF">
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</field>
+			
+			<field name="align_home_emblem_next" type="radio" class="btn-group" default="right" label="MOD_JS_ALIGN_HOME_EMBLEM" description="MOD_JS_TT_ALIGN_HOME_EMBLEM">
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</field>
+			<field name="align_away_emblem_next" type="radio" class="btn-group" default="left" label="MOD_JS_ALIGN_AWAY_EMBLEM" description="MOD_JS_TT_ALIGN_AWAY_EMBLEM">
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</field>
+			
+			<field name="align_home_team_next" type="radio" class="btn-group" default="right" label="MOD_JS_ALIGN_HOME_TEAM" description="MOD_JS_TT_ALIGN_HOME_TEAM">
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</field>
+			<field name="align_away_team_next" type="radio" class="btn-group" default="left" label="MOD_JS_ALIGN_AWAY_TEAM" description="MOD_JS_TT_ALIGN_AWAY_TEAM">
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</field>			
+			<field name="link_emblem_next" type="radio" class="btn-group" default="0" label="MOD_JS_LINKEMBLEM" description="MOD_JS_TT_LINKEMBLEM">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</field>
+			<field name="tooltip_emblem_next" type="radio" class="btn-group" default="0" label="MOD_JS_TOOLTIPEMBLEM" description="MOD_JS_TT_TOOLTIPEMBLEM">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</field>
+			<field name="link_team_next" type="radio" class="btn-group" default="1" label="MOD_JS_LINKTEAM" description="MOD_JS_TT_LINKTEAM">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</field>
+			<field name="link_score_next" type="radio" class="btn-group" default="1" label="MOD_JS_LINKSCORE" description="MOD_JS_TT_LINKSCORE">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</field>							
+			<field name="border_score_next" type="radio" class="btn-group" default="alone" label="MOD_JS_BORDERSCORE" description="MOD_JS_TT_BORDERSCORE">
+				<option value="border">MOD_JS_YES</option>
+				<option value="alone">MOD_JS_NO</option>
+			</field>
+		</fieldset>
+		
+		
+		<fieldset name="margin">
+			<field name="left_margin_matchday_next"   type="text" default="0" label="MOD_JS_LEFT_MARGIN_MATCHDAY"   description="MOD_JS_TT_LEFT_MARGIN_MATCHDAY" />
+			<field name="right_margin_matchday_next"  type="text" default="0" label="MOD_JS_RIGHT_MARGIN_MATCHDAY"  description="MOD_JS_TT_RIGHT_MARGIN_MATCHDAY" />		
+			<field name="left_margin_home_team_next"  type="text" default="0" label="MOD_JS_LEFT_MARGIN_HOME_TEAM"  description="MOD_JS_TT_LEFT_MARGIN_HOME_TEAM" />
+			<field name="right_margin_home_team_next" type="text" default="0" label="MOD_JS_RIGHT_MARGIN_HOME_TEAM" description="MOD_JS_TT_RIGHT_MARGIN_HOME_TEAM" />
+			<field name="left_margin_away_team_next"  type="text" default="0" label="MOD_JS_LEFT_MARGIN_AWAY_TEAM"  description="MOD_JS_TT_LEFT_MARGIN_AWAY_TEAM" />
+			<field name="right_margin_away_team_next" type="text" default="0" label="MOD_JS_RIGHT_MARGIN_AWAY_TEAM" description="MOD_JS_TT_RIGHT_MARGIN_AWAY_TEAM" />
+			<field name="left_margin_emblem_next"     type="text" default="0" label="MOD_JS_LEFT_MARGIN_EMBLEM"     description="MOD_JS_TT_LEFT_MARGIN_EMBLEM" />
+			<field name="right_margin_emblem_next"    type="text" default="0" label="MOD_JS_RIGHT_MARGIN_EMBLEM"    description="MOD_JS_TT_RIGHT_MARGIN_EMBLEM" />
+			<field name="left_margin_score_next"      type="text" default="0" label="MOD_JS_LEFT_MARGIN_SCORE"      description="MOD_JS_TT_LEFT_MARGIN_SCORE" />
+			<field name="right_margin_score_next"     type="text" default="0" label="MOD_JS_RIGHT_MARGIN_SCORE"     description="MOD_JS_TT_RIGHT_MARGIN_SCORE" />
+			<field name="team_name_max_length_next"   type="text" default="0" label="MOD_JS_TEAM_NAME_MAX_LENGTH"   description="MOD_JS_TT_TEAM_NAME_MAX_LENGTH" />
+		</fieldset>
+		
+		</fields>
+	</config>
+	<params addpath="/administrator/components/com_joomsport/elements">
+		<param name="sidgid" type="modseas" default="0" label="MOD_JS_SELSEASON" description="MOD_JS_SELSEASON" />
+			<param name="team_id" type="modteam" default="0" label="MOD_JS_SELPARC" description="MOD_JS_TT_SELPARC" />
+	
+		<param name="match_count" type="text" default="5" label="MOD_JS_DISPLCOUNT" description="MOD_JS_DISPLCOUNT" />
+		
+		<param name="embl_is" type="radio" default="0" class="btn-group" label="MOD_JS_TT_DISPHOTO" description="MOD_JS_TT_DISPHOTO">
+			<option value="0">MOD_JS_NO</option>
+			<option value="1">MOD_JS_YES</option>
+		</param>
+        <param name="match_v" type="radio" default="0" label="MOD_JS_TT_VMATCH" description="MOD_JS_TT_VMATCH">
+            <option value="0">MOD_JS_NO</option>
+            <option value="1">MOD_JS_YES</option>
+        </param>
+		<param name="customitemid" type="text" default="0" label="MOD_JS_SETITEMID" description="MOD_JS_TT_SETITEMID" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	
+	
+	<params group="advanced">
+		  <param name="result_layout_next" type="list"	default="0" label="MOD_JS_LAYOUT"	description="MOD_JS_TT_LAYOUT" >
+        <option value="0">MOD_JS_JOOMSPORT</option>
+        <option value="1">MOD_JS_JOOMSPORT_OPT1</option>
+        <option value="2">MOD_JS_JOOMSPORT_OPT2</option>           
+        <option value="3">MOD_JS_WIDE1-1</option>
+        <option value="4">MOD_JS_WIDE1-2</option>
+        <option value="5">MOD_JS_WIDE2-1</option>
+        <option value="6">MOD_JS_WIDE2-2</option>
+      </param>		
+
+			<param name="emblem_width_next"  type="text" default="30" label="MOD_JS_EMBLEM_WIDTH"  description="MOD_JS_TT_EMBLEM_WIDTH" />
+			<param name="emblem_height_next" type="text" default="30" label="MOD_JS_EMBLEM_HEIGHT" description="MOD_JS_TT_EMBLEM_HEIGHT" />
+
+		  <param name="matchday_reference_next" type="list"	default="0" label="MOD_JS_MATCHDAY_REF"	description="MOD_JS_TT_MATCHDAY_REF" >
+        <option value="0">MOD_JS_MD_DATE</option>
+        <option value="1">MOD_JS_MD_MACHDAY_NAME</option>
+        <option value="2">MOD_JS_MD_DATE_MACHDAY_NAME</option>
+        <option value="3">MOD_JS_MD_MACHDAY_NAME_DATE</option>        
+      </param>	
+      
+			<param name="align_matchday_ref_next" type="radio"  default="center" label="MOD_JS_ALIGN_MATCHDAY_REF" description="MOD_JS_TT_ALIGN_MATCHDAY_REF">
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</param>
+			
+			<param name="align_home_emblem_next" type="radio" default="right" label="MOD_JS_ALIGN_HOME_EMBLEM" description="MOD_JS_TT_ALIGN_HOME_EMBLEM">		
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</param>
+			<param name="align_away_emblem_next" type="radio" default="left" label="MOD_JS_ALIGN_AWAY_EMBLEM" description="MOD_JS_TT_ALIGN_AWAY_EMBLEM">		
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</param>
+			
+			<param name="align_home_team_next" type="radio" default="right" label="MOD_JS_ALIGN_HOME_TEAM" description="MOD_JS_TT_ALIGN_HOME_TEAM">		
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</param>
+			<param name="align_away_team_next" type="radio" default="left" label="MOD_JS_ALIGN_AWAY_TEAM" description="MOD_JS_TT_ALIGN_AWAY_TEAM">		
+				<option value="left">MOD_JS_LEFT</option>
+				<option value="center">MOD_JS_CENTER</option>
+				<option value="right">MOD_JS_RIGHT</option>
+			</param>			
+			<param name="link_emblem_next" type="radio" default="0" label="MOD_JS_LINKEMBLEM" description="MOD_JS_TT_LINKEMBLEM">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</param>
+			<param name="tooltip_emblem_next" type="radio" default="0" label="MOD_JS_TOOLTIPEMBLEM" description="MOD_JS_TT_TOOLTIPEMBLEM">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</param>			
+			<param name="link_team_next" type="radio" default="1" label="MOD_JS_LINKTEAM" description="MOD_JS_TT_LINKTEAM">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</param>
+			<param name="link_score_next" type="radio" default="1" label="MOD_JS_LINKSCORE" description="MOD_JS_TT_LINKSCORE">
+				<option value="1">MOD_JS_YES</option>
+				<option value="0">MOD_JS_NO</option>
+			</param>							
+			<param name="border_score_next" type="radio" default="alone" label="MOD_JS_BORDERSCORE" description="MOD_JS_TT_BORDERSCORE">
+				<option value="border">MOD_JS_YES</option>
+				<option value="alone">MOD_JS_NO</option>
+			</param>							
+
+		  <param type="spacer" default="_____________________________________________________________"/>
+		  
+			<param name="left_margin_matchday_next"   type="text" default="0" label="MOD_JS_LEFT_MARGIN_MATCHDAY"   description="MOD_JS_TT_LEFT_MARGIN_MATCHDAY" />
+			<param name="right_margin_matchday_next"  type="text" default="0" label="MOD_JS_RIGHT_MARGIN_MATCHDAY"  description="MOD_JS_TT_RIGHT_MARGIN_MATCHDAY" />		
+			<param name="left_margin_home_team_next"  type="text" default="0" label="MOD_JS_LEFT_MARGIN_HOME_TEAM"  description="MOD_JS_TT_LEFT_MARGIN_HOME_TEAM" />
+			<param name="right_margin_home_team_next" type="text" default="0" label="MOD_JS_RIGHT_MARGIN_HOME_TEAM" description="MOD_JS_TT_RIGHT_MARGIN_HOME_TEAM" />
+			<param name="left_margin_away_team_next"  type="text" default="0" label="MOD_JS_LEFT_MARGIN_AWAY_TEAM"  description="MOD_JS_TT_LEFT_MARGIN_AWAY_TEAM" />
+			<param name="right_margin_away_team_next" type="text" default="0" label="MOD_JS_RIGHT_MARGIN_AWAY_TEAM" description="MOD_JS_TT_RIGHT_MARGIN_AWAY_TEAM" />
+			<param name="left_margin_emblem_next"     type="text" default="0" label="MOD_JS_LEFT_MARGIN_EMBLEM"     description="MOD_JS_TT_LEFT_MARGIN_EMBLEM" />
+			<param name="right_margin_emblem_next"    type="text" default="0" label="MOD_JS_RIGHT_MARGIN_EMBLEM"    description="MOD_JS_TT_RIGHT_MARGIN_EMBLEM" />
+			<param name="left_margin_score_next"      type="text" default="0" label="MOD_JS_LEFT_MARGIN_SCORE"      description="MOD_JS_TT_LEFT_MARGIN_SCORE" />
+			<param name="right_margin_score_next"     type="text" default="0" label="MOD_JS_RIGHT_MARGIN_SCORE"     description="MOD_JS_TT_RIGHT_MARGIN_SCORE" />
+			<param name="team_name_max_length_next"   type="text" default="0" label="MOD_JS_TEAM_NAME_MAX_LENGTH"   description="MOD_JS_TT_TEAM_NAME_MAX_LENGTH" />
+	</params> 
+
+	
+</extension>

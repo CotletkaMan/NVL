@@ -1,0 +1,73 @@
+td.match_date{text-align:center; font-weight:bold}
+td.match_date_right{text-align:right; font-weight:bold}
+td.match_date_center{text-align:center; font-weight:bold}
+td.match_date_left{text-align:left; font-weight:bold}
+
+td.emblem_thome{text-align:right;}
+td.emblem_thome_right{text-align:right}
+td.emblem_thome_center{text-align:center}
+td.emblem_thome_left{text-align:left}
+
+td.emblem_taway{text-align:left}
+td.emblem_taway_right{text-align:right}
+td.emblem_taway_center{text-align:center}
+td.emblem_taway_left{text-align:left}
+
+td.team_thome{text-align:right;}
+td.team_thome_right{text-align:right;}
+td.team_thome_left{text-align:left;}
+td.team_thome_center{text-align:center;}
+
+td.team_taway{text-align:left;}
+td.team_taway_right{text-align:right;}
+td.team_taway_left{text-align:left;}
+td.team_taway_center{text-align:center;}
+
+.jsm_nextable td{
+	border:0px;
+	padding:3px;
+}
+table.jsm_nextable{
+	width:100%;
+}
+.jsm_nextable tr{
+	border:0px;
+}
+
+td.score_alone{text-align:center}
+span.score_alone {
+}
+
+td.score_border {
+    text-align:center;
+    width: 10px;
+    padding: 4px 6px; 
+}
+span.score_border {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px 15px 15px 15px;
+    color: #336699;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 27px;
+    margin: 2px 0 0;
+    position: relative;
+    width: 60px;
+}
+span.score_border b {
+    float: left;
+    padding:5px 0 0 0;
+}
+.score_border b {
+    font-weight: normal;
+}
+span.score_border .score-h {
+    padding: 5px 5px 0 0;
+    text-align: right;
+    width: 23px;
+}
+span.score_border .score-a {
+    padding: 5px 0 0 5px;
+}

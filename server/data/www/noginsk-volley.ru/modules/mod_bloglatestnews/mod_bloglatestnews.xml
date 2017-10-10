@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.5.0" method="upgrade">
+	<name>Новости с картинками blogprogram.ru</name>
+	<author>Andrey N</author>
+	<creationDate>2015</creationDate>
+	<copyright>Copyright (C) 2015 Все права защищены.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>admin@myemail.ru</authorEmail>
+	<authorUrl>blogprogram.ru</authorUrl>
+	<version>2.5.0</version>
+	<description><![CDATA[
+<div style="margin-bottom:5px;">Автор: <a href='http://blogprogram.ru' target='_blank'>blogprogram.ru</a></div>
+<div>Модуль позволяет выводить материалы с картинками, которые необходимо добавлять в превью к материалу. Подробнее о модуле: <a target="_blank" href="http://blogprogram.ru/modules-posledniye-dobavlenniye-materiali-joomla25-3" >здесь</a>.</div>
+	]]></description>
+	<files>
+		<filename module="mod_bloglatestnews">mod_bloglatestnews.php</filename>
+        <filename>index.html</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+        <language tag="ru-RU">language/ru-RU.mod_bloglatestnews.ini</language>
+        <language tag="ru-RU">language/ru-RU.mod_bloglatestnews.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					label="JCATEGORY"
+					description="MOD_BLOGLATESTNEWS_FIELD_CATEGORY_DESC"
+				>
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="ordering"
+					type="list"
+					default="published"
+					label="MOD_BLOGLATESTNEWS_FIELD_ORDERING_LABEL"
+					description="MOD_BLOGLATESTNEWS_FIELD_ORDERING_DESC"
+				>
+					<option value="c_dsc">MOD_BLOGLATESTNEWS_VALUE_RECENT_ADDED</option>
+					<option value="m_dsc">MOD_BLOGLATESTNEWS_VALUE_RECENT_MODIFIED</option>
+					<option value="p_dsc">MOD_BLOGLATESTNEWS_VALUE_RECENT_PUBLISHED</option>
+					<option value="mc_dsc">MOD_BLOGLATESTNEWS_VALUE_RECENT_TOUCHED</option>
+					<option	value="random">MOD_BLOGLATESTNEWS_VALUE_RECENT_RAND</option>
+				</field>
+
+				<field
+					name="count"
+					type="text"
+					default="8"
+					label="Кол-во материалов"
+					description="Кол-во материалов отображаемых в модуле" />
+
+                <field name="blogcount" type="list" default="4" label="Кол-во мат-в в одном ряду" description="Здесь необходимо количество материалов в одном ряду">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</field>
+
+
+<field name="blogimgon" type="list" default="1" label="Отображать картинки" description="Включить или оключить отображение картинок">
+<option value="1">Да</option>
+<option value="0">Нет</option>
+</field>
+				<field
+					name="imgas"
+					type="text"
+					default="/modules/mod_bloglatestnews/tmpl/noimg.png"
+					label="Картинка по умолчанию"
+					description="Будет показана данная картинка, если в превью материала нет ни одной" />
+
+				<field
+					name="imgasheight"
+					type="text"
+					default="140"
+					label="Высота картинок"
+					description="Укажите примерную высоту всех картинок, которые вы будете загружать в превью материала. В зависимости от нее будет строиться высота всех блоков модуля" />
+
+
+<field name="blogzagon" type="list" default="1" label="Отображать заголовки" description="Включить или оключить отображение заголовков материалов">
+<option value="1">Да</option>
+<option value="0">Нет</option>
+</field>
+
+				<field
+					name="blogzagdlina"
+					type="text"
+					default="25"
+					label="Длина заголовков"
+					description="Длина зоголовков в символах" />
+
+<field name="blogopion" type="list" default="1" label="Отображать текст материала" description="Включить или оключить отображение текста материалов">
+<option value="1">Да</option>
+<option value="0">Нет</option>
+</field>
+
+				<field
+					name="blogopidlina"
+					type="text"
+					default="140"
+					label="Длина текста"
+					description="Длина текста материалов в символах" />
+
+
+<field name="blogdataon" type="list" default="0" label="Отображать дату создания" description="Включить или оключить отображение даты создания материала">
+<option value="1">Да</option>
+<option value="0">Нет</option>
+</field>
+
+				<field
+					name="show_featured"
+					type="list"
+					default=""
+					label="MOD_BLOGLATESTNEWS_FIELD_FEATURED_LABEL"
+					description="MOD_BLOGLATESTNEWS_FIELD_FEATURED_DESC"
+				>
+					<option value="">JSHOW</option>
+					<option value="0">JHIDE</option>
+					<option value="1">MOD_BLOGLATESTNEWS_VALUE_ONLY_SHOW_FEATURED</option>
+				</field>
+
+				<field
+					name="user_id"
+					type="list"
+					default="0"
+					label="MOD_BLOGLATESTNEWS_FIELD_USER_LABEL"
+					description="MOD_BLOGLATESTNEWS_FIELD_USER_DESC"
+				>
+					<option value="0">MOD_BLOGLATESTNEWS_VALUE_ANYONE</option>
+					<option value="by_me">MOD_BLOGLATESTNEWS_VALUE_ADDED_BY_ME</option>
+					<option value="not_me">MOD_BLOGLATESTNEWS_VALUE_NOTADDED_BY_ME</option>
+				</field>
+
+<field name="blogextrimon" type="list" default="0" label="Экстрим режим" description="Включить или оключить экстрим режим отображения материалов - предназначен для разработчиков (убирает плашки между рядами, и блоки работают на принципе float left)">
+<option value="1">Да</option>
+<option value="0">Нет</option>
+</field>
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+
+<fieldset name="dopol" label="О модуле" addfieldpath="/modules/mod_bloglatestnews">
+<field type="about" name="about_us" />
+</fieldset>
+
+		</fields>
+	</config>
+</extension>

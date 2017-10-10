@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="3.2.2"
+    client="site"
+    method="upgrade">
+    <name>JoomSport Player Statistic</name>
+    <author>BearDev</author>
+    <creationDate>February 2015</creationDate>
+    <copyright>Copyright (C)2009-2015 BearDev. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>admin@beardev.com</authorEmail>
+    <authorUrl>www.beardev.com</authorUrl>
+    <version>3.2.2</version>
+    <description>MOD_JS_PLAYERSTATDESCR</description>
+    <files>
+        <filename module="mod_js_player_stat">mod_js_player_stat.php</filename>
+        <filename module="mod_js_player_stat">helper.php</filename>
+        <filename module="mod_js_player_stat">tmpl/default.php</filename>
+        <filename module="mod_js_player_stat">css/mod_js_player_stat.css</filename>
+        <folder>language</folder>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_js_player_stat.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_js_player_stat.sys.ini</language>
+    </languages>
+    <!-- 1.6 -->
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_joomsport/fields">
+
+                <field name="sidgid" type="modseas" default="0" required="true" label="MOD_JS_SELSEASON" description="MOD_JS_SELSEASON" />
+                <field name="player_id" type="player" default="0" required="true" label="BLBE_SELPLAYER" description="BLBE_SELPLAYER" />
+                <field name="customitemid" type="text" default="0" label="MOD_JS_SETITEMID" description="MOD_JS_TT_SETITEMID" />
+				
+                <field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+    <params addpath="/administrator/components/com_joomsport/elements">
+        <param name="sidgid" type="modseas" default="0" label="MOD_JS_SELSEASON" description="MOD_JS_SELSEASON" />        
+        <param name="player_id" type="player" default="0" label="BLBE_SELPLAYER" description="BLBE_SELPLAYER" />	
+        <param name="customitemid" type="text" default="0" label="MOD_JS_SETITEMID" description="MOD_JS_TT_SETITEMID" />
+		
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+	
+</extension>

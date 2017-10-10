@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>Sj Basic News</name>
+	<creationDate>Dec 2011</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2012 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>3.0</version>
+	<description>SJ_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_basic_news">mod_sj_basic_news.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>core</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages />
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_sj_basic_news/core/fields">
+			<fieldset name="basic" >
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="source" type="category" extension="com_content" multiple="true" size="10" default="" label="JCATEGORY"
+					description="Select category" />
+				<field name="subcategories" type="radio" default="1" label="Include Subcategories" description="Including products belonging to sub-categories.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="source_order_by" type="list" default="created" label="Sort Order By" description="Sort order type">
+					<option value="created">Recently Added</option>
+					<option value="hits">Most Views</option>
+					<option value="modified">Recently Modified</option>
+					<option value="ordering">Ordering</option>
+					<option value="title">Title</option>
+					<option value="random">Random</option>
+				</field>
+				<field name="source_filter" type="list" default="0" label="Source Filter" description="Frontpage filter type">
+					<option value="0">All Articles</option>
+					<option value="1">None Frontpage</option>
+					<option value="2">Only Frontpage</option>
+				</field>
+				<field name="source_limit" type="text" default="20" label="Item Count" description="The amount of Items which you want to show in the module" />
+			</fieldset>
+			<fieldset name="other_options" label="Other Options">
+				<field type="sjheading" label="Categories Options" />
+				<field name="cat_title_display" type="list" default="1" label="Display Title" description="Display title of category">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="sjheading" label="Items Options" />
+				<field name="item_date_display" type="list" default="1" label="Date display" description="Date display of item">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="item_desc_display" type="list" default="1" label="Description display" description="Display description of item">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="item_title_max_characs" type="text" default="25" label="Title Maxlength" description="Max length of title by characters. Enter value 0 if you want to show all. Please enter integer number >= 0." />
+				<field name="item_desc_max_characs" type="text" default="200" label="Description Maxlength" description="Max length of description by characters. Enter value 0 if you want to show all. Please enter integer number >= 0." />
+				<field name="item_desc_keephtml" type="radio" default="1" label="Keep HTML" description="Strip html tag in description or keep them.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="item_link_target" type="list" default="_self" label="Open Link" description="The Type shows when you click on the link">
+					<option value="_blank">New Window</option>
+					<option value="_self">Same Window</option>
+				</field>
+				<field name="showline" type="list" default="0" label="Show Line Bottom" description="Show line bottom">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			<field type="sjheading" label="Images Options" />
+				<field name="item_image_display" type="list" default="1" label="Show Image" description="">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="item_image_width" type="text" default="150" label="Image width" description="Image width" />
+				<field name="item_image_height" type="text" default="150" label="Image height" description="Image height" />
+				<field name="item_image_background" type="text" default="#FFFFFF" label="Image background" description="Image background color" />
+				<field name="item_image_function" type="sjthumbnailmode" label="Image Resize Mode">
+					<option value="stretch">Stretch</option>
+					<option value="none">None</option>
+					<option value="center">Center</option>
+					<option value="fill">Fill</option>
+					<option value="fit">Fit</option>
+					
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="include_jquery" type="radio" default="1" label="Include jQuery" description="Do you want include jQuery library?">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="custom" type="custom" fields="id,url" default="" label="Custom" description="Override url of specific item. Enter ID of item and url will be open. Be careful with this function." />
+				<field name="pretext" type="textarea" default="" label="Pre-text" description="Intro text of module" cols="40" rows="4" filter="raw" />
+				<field name="posttext" type="textarea" default="" label="Post-text" description="Footer text of module" cols="40" rows="4" filter="raw" />
+								<field name="owncache" type="list" default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+					</option>
+				</field>
+
+				<field name="cache_time" type="text" default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

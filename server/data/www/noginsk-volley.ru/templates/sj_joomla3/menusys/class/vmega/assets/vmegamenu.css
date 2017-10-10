@@ -1,0 +1,169 @@
+@import url(../../common/css/vmenustyle.css);
+@import url(../../common/css/vjshover.css);
+@import url(../../common/css/vmegamenu-components.css);
+
+/*****************************
+ * MEGA MENU 
+ *****************************/
+ 
+ul.vmenu div.fxcontent{
+	position: absolute;	
+	display: block;
+}
+
+ul.vmenu div.fxcontent>div.mega-content.insidefx{
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+/* LTR SLIDE */
+ul.vmenu div.fxcontent.slide.drop>div.mega-content.insidefx{
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+ul.vmenu div.fxcontent.slide.toleft>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+ul.vmenu div.fxcontent.slide.toright>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+/* LTR SCROLL */
+ul.vmenu div.fxcontent.scroll.drop>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+ul.vmenu div.fxcontent.scroll.toleft>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+ul.vmenu div.fxcontent.scroll.toright>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+
+ul.vmenu div.fxcontent>div.fxcontent-bar{
+	/* as div.mega-content background */
+	background-color: #909090;
+	display: block;
+	position: absolute;	
+}
+ul.vmenu div.fxcontent.slide.drop>div.fxcontent-bar{
+	top: 0;
+	left: 0;
+}
+ul.vmenu div.fxcontent.slide.toleft>div.fxcontent-bar{
+	top: 0;
+	right: 0;
+}
+ul.vmenu div.fxcontent.slide.toright>div.fxcontent-bar{
+	top: 0;
+	left: 0;
+}
+
+ul.vmenu div.fxcontent.scroll.drop>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.vmenu div.fxcontent.scroll.toleft>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.vmenu div.fxcontent.scroll.toright>div.fxcontent-bar{
+	bottom: 0;
+	right: 0;
+}
+
+ul.vmenu div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}
+
+/** for RTL **/
+ul.vmenurtl div.fxcontent{
+	position: absolute;	
+	display: block;
+}
+
+ul.vmenurtl div.fxcontent>div.mega-content.insidefx{
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+
+ul.vmenurtl div.fxcontent.slide.drop>div.mega-content.insidefx{
+	bottom: 0;
+	right: 0;
+}
+ul.vmenurtl div.fxcontent.slide.toleft>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+ul.vmenurtl div.fxcontent.slide.toright>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+
+ul.vmenurtl div.fxcontent.scroll.drop>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+ul.vmenurtl div.fxcontent.scroll.toleft>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+ul.vmenurtl div.fxcontent.scroll.toright>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+
+ul.vmenurtl div.fxcontent>div.fxcontent-bar{
+	/* as div.mega-content background */
+	background-color: #909090;
+	display: block;
+	position: absolute;	
+}
+ul.vmenurtl div.fxcontent.slide.drop>div.fxcontent-bar{
+	top: 0;
+	right: 0;
+}
+ul.vmenurtl div.fxcontent.slide.toleft>div.fxcontent-bar{
+	top: 0;
+	right: 0;
+}
+ul.vmenurtl div.fxcontent.slide.toright>div.fxcontent-bar{
+	top: 0;
+	left: 0;
+}
+
+ul.vmenurtl div.fxcontent.scroll.drop>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.vmenurtl div.fxcontent.scroll.toleft>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.vmenurtl div.fxcontent.scroll.toright>div.fxcontent-bar{
+	bottom: 0;
+	right: 0;
+}
+
+ul.vmenurtl div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}

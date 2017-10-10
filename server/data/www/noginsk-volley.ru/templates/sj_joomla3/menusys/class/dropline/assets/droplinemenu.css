@@ -1,0 +1,211 @@
+@import url(../../common/css/menustyle.css);
+
+/*****************************
+ * DROPLINE MENU 
+ *****************************/
+ul.navi li:hover {
+	/*position: relative;*/
+}
+
+/* show level2 */
+ul.navi li.level1:hover ul.level2 {
+	left: 0;
+}
+
+/* show submenu level3 */
+ul.navi ul.level2 li.level2:hover ul.level3,
+ul.navi ul.level2 li.level3:hover ul.level4,
+ul.navi ul.level2 li.level4:hover ul.level5,
+ul.navi ul.level2 li.level5:hover ul.level6,
+ul.navi ul.level2 li.level6:hover ul.level7,
+ul.navi ul.level2 li.level7:hover ul.level8,
+ul.navi ul.level2 li.level8:hover ul.level9{
+	left: 95%;
+}
+
+ul.navi li.level1:hover {
+	background: #F2F2F2;
+}
+
+ul.navi li.level1:hover div.separator.level1,ul.navi li.level1:hover a.level1{
+	color:#222;
+}
+ul.navi ul.level2{
+	padding:0 0;
+}
+ul.navi li.level2{
+	margin:2px 2px 2px 0px;
+	border:none;
+}
+ul.navi li.level2.first{
+	margin:2px;
+}
+ul.navi li.level2:hover {
+	background: #444;
+}
+
+ul.navi li.level2:hover div.separator.level2,ul.navi li.level2:hover a.level2{
+	color: #FFF;
+}
+ul.navi ul.level2 ul{
+	box-shadow:4px 4px 4px #777;
+	-moz-box-shadow:4px 4px 4px #777;
+	-webkit-box-shadow:4px 4px 4px #777;
+}
+ul.navi ul.level3 li:hover {
+	background: #444;
+}
+
+ul.navi ul.level3 li:hover>div.separator,ul.navi ul.level3 li:hover>a {
+	color: #FFF;
+}
+
+/* RTL 
+   show level2 */
+ul.navirtl li:hover {
+	/*position: relative;*/
+}
+
+/* show level2 */
+ul.navirtl li.level1:hover ul.level2 {
+	top:auto;
+	right: 0;
+}
+
+/* show submenu level3 */
+ul.navirtl ul.level2 li.level2:hover ul.level3,
+ul.navirtl ul.level2 li.level3:hover ul.level4,
+ul.navirtl ul.level2 li.level4:hover ul.level5,
+ul.navirtl ul.level2 li.level5:hover ul.level6,
+ul.navirtl ul.level2 li.level6:hover ul.level7,
+ul.navirtl ul.level2 li.level7:hover ul.level8,
+ul.navirtl ul.level2 li.level8:hover ul.level9{
+	right: 95%;
+}
+
+ul.navirtl li.level1:hover {
+	background: #F2F2F2;
+}
+
+ul.navirtl li.level1:hover div.separator.level1,ul.navirtl li.level1:hover a.level1{
+	color: #222;
+}
+ul.navirtl ul.level2{
+	padding:0 0;
+}
+ul.navirtl li.level2{
+	margin:2px 0px 2px 2px;
+	border:none;
+}
+ul.navirtl li.level2.first{
+	margin:2px;
+}
+ul.navirtl li.level2:hover {
+	background: #444;
+}
+
+ul.navirtl li.level2:hover div.separator.level2,ul.navirtl li.level2:hover a.level2{
+	color: #FFF;
+}
+ul.navirtl ul.level2 ul{
+	box-shadow:-4px 4px 4px #777;
+	-moz-box-shadow:-4px 4px 4px #777;
+	-webkit-box-shadow:-4px 4px 4px #777;
+}
+ul.navirtl ul.level3 li:hover {
+	background: #444;
+}
+
+ul.navirtl ul.level3 li:hover>div.separator,ul.navirtl ul.level3 li:hover>a{
+	color: #FFF;
+}
+
+/* style for drop */
+#droplinenavigator.navi{
+	height: 72px;
+}
+
+#droplinenavigator.navi li.level1{
+	position: static;
+}
+
+#droplinenavigator.navi ul.level2{
+	margin: 0;
+	width: 1023px;
+	height: 33px;
+}
+
+#droplinenavigator.navi li.level2{
+	float: left;
+}
+
+#droplinenavigator.navi div.separator.level2.havechild,
+#droplinenavigator.navi a.level2.havechild
+{	
+	padding: 0 20px 0 20px;
+	background-image: url(../../common/images/arrow.png);
+	background-position: 95% -106px;
+	background-repeat: no-repeat;
+}
+
+#droplinenavigator.navi li.level1.active ul.level2{
+	left: 0px;	
+}
+
+#droplinenavigator.navi ul.level2 li:hover{
+	position: relative;
+}
+
+#droplinenavigator.navi ul.level2 li:hover ul.level3{
+	left: -1px;
+	top: 100%;
+}
+
+/* right to left */
+#droplinenavigator.navirtl{
+	height: 72px;
+}
+
+#droplinenavigator.navirtl li.level1{
+	position: static;
+}
+
+#droplinenavigator.navirtl ul.level2{
+	margin: 0;
+	width: 1023px;
+	height: 33px;	
+}
+
+#droplinenavigator.navirtl li.level2{
+	float: right;
+}
+
+#droplinenavigator.navirtl div.separator.level2.havechild,
+#droplinenavigator.navirtl a.level2.havechild
+{	
+	padding: 0 20px 0 20px;
+	background-image: url(../../common/images/arrow.png);
+	background-position: 5% -106px;
+	background-repeat: no-repeat;
+}
+
+#droplinenavigator.navirtl li.level1.active ul.level2{
+	right: 0px;
+}
+
+#droplinenavigator.navirtl ul.level2 li:hover{
+	position: relative;
+}
+#droplinenavigator.navirtl ul.level2 li:hover ul.level3{
+	right: -1px;
+	top: 99%;
+}
+
+/* zIndex */
+
+#droplinenavigator li.level1.active ul.level2{
+	z-index: 1;
+}
+#droplinenavigator li.level1:hover ul.level2{
+	z-index: 2;
+}

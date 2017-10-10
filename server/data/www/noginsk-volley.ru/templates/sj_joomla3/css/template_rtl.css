@@ -1,0 +1,986 @@
+/******************************************
+***          YT Framework: CSS          ***
+*******************************************/
+/* -----------------------*/
+/*     General style      */
+/* -----------------------*/
+html{direction: rtl;}
+
+/* Begin: Update css for basic.css */
+ul li {
+	background-position:right 6px;
+	padding:0 15px 0 0;
+}
+ol li{
+	margin:0 35px 0 0;
+}
+
+textarea{
+	margin:0 0 0 5px;
+}
+input{
+	padding:3px 5px 3px 2px;
+	margin:0 0 0 5px;
+}
+select{
+	padding:2px 5px 2px 2px;
+	margin:0 0 0 5px;
+}
+select.inputbox {
+    padding: 1px 5px 1px 1px;
+}
+.formelm input,
+.inputbox{
+    padding: 3px 5px 3px 2px;
+}
+/* End: Update css for basic.css   */
+
+body.contentpane .mailto-close {
+	right:auto;
+    left: 10px;
+    text-align: left;
+}
+.pos-html{
+	float:right;
+}
+/* -----------------------------*/
+/*     Yt tolls                 */
+/* -----------------------------*/
+
+/* Switch modes view */
+.yt-switch_modes {
+	margin:0 10px 0 0;
+}
+.yt-switch_modes span.title-swm{
+	float:right;
+}
+.yt-switch_modes ul.nav-swm{
+	float:right
+}
+.yt-switch_modes ul.nav-swm li{
+	float:right;
+}
+
+/* Link validate and language support  */
+.yt-linkfooter ul{
+	margin:0 0;	
+}
+.yt-linkfooter ul li{
+}
+.yt-linkfooter ul li.first{
+	background:none;
+	padding:0 0 0 8px;
+}
+/* Croll to top */
+#yt_scroll_top{
+	float:right;
+}
+#yt_scroll_top .pos-html .top {
+    left: -80px;
+	right:auto;
+}
+
+/* -----------------------------*/
+/*     Module variations        */
+/* -----------------------------*/
+.moduletable,
+.moduletable_menu,
+.moduletable_text{
+	direction:ltr;
+}
+.moduletable .mod-inner,
+.moduletable_menu .mod-inner,
+.moduletable_text .mod-inner{
+	direction:rtl;
+}
+.moduletable .custom p img{
+	float:right;
+	margin:0 0 10px 12px;
+}
+/* Default module */
+
+/* Suffix class: clear */
+
+/* Suffix class: title1, title2, title3, title4, title5 */
+
+/* Suffix class: border1, border2 */
+.moduletable.border1{
+	border-right:3px solid #CECECE;
+	border-left:1px solid #E5E5E5;
+}
+
+/* Suffix class: bgcolor1, bgcolor2 */
+
+/* Suffix class: _menu */
+
+/* level1 */
+/* level2 */
+.moduletable_menu ul li ul{
+	margin: 8px 10px 0 0;
+}
+.moduletable_menu ul li li{
+	padding:8px 10px 8px 0;
+	background-position: 100% 12px;
+}
+/* level 3*/
+.moduletable_menu ul li li li{
+	background-position: 100% 12px;
+}
+
+/* Suffix class: _text */
+
+/* Suffix class: bage */
+
+.badge {
+    background: url(../images/badges_rtl.png) no-repeat 0 0;
+    right:auto;
+	left:-1px;
+    top: 0px;
+}
+.badge-new .badge {
+    background-position: 100% -46px;
+}
+.badge-pick .badge {
+    background-position: 100% -92px;
+}
+.badge-top .badge {
+    background-position: 100% -138px;
+}
+
+/* ----------------------------*/
+/*     Block: yt_top           */
+/* ----------------------------*/
+
+#top1 ul,
+#top1 #form-login ul{
+	float:right;
+	width:100%;
+}
+#top1 ul li{
+	border-right:1px solid #333;
+	border-left:none;
+	float:right;
+}
+#top1 ul li:first-child{
+	border:none;
+	padding:0 0 0 10px;
+}
+#top2 a.flag-first{
+	margin:5px 0 0 5px;
+	float:right;
+}
+#top2 a.flag-last{
+	margin:5px 5px 0 0;
+	float:left;
+}
+/* ----------------------------*/
+/*     Block: yt_header        */
+/* ----------------------------*/
+.site-slogan{
+	float:right;
+}
+#yt_header h1.logo {
+	float:right;
+	margin:18px 2px 0 0;
+}
+
+h1.logo-text{
+	margin:20px 0 0 0;
+}
+ul.yt-login-regis{
+	float:left;
+}
+ul.yt-login-regis li{
+	margin:0 5px 0 0;
+	float:right;
+}
+ul.yt-login-regis .show-box{
+	right:auto;
+	left:0px;
+}
+p#form_login_remember input{
+	float:right;
+}
+/* ----------------------------*/
+/*     Block: yt_menuwrap      */
+/* ----------------------------*/
+#yt_menuwrap #nav2 .finder .button,
+#yt_menuwrap #nav2 .search input.button{
+	right:auto;
+	left:8px;
+}
+/* ----------------------------*/
+/*     Block: yt_spotlight1    */
+/* ----------------------------*/
+#yt_spotlight1 .position-first .yt-position-inner{
+	padding:0 0 0 5px;
+}
+#yt_spotlight1 .position-last .yt-position-inner{
+	padding:0 5px 0 0;
+}
+/* ----------------------------*/
+/*     Block: yt_spotlight2    */
+/* ----------------------------*/
+#yt_spotlight2 .position-first .yt-position-inner{
+	margin:0 0 0 6px;
+}
+#yt_spotlight2 .position-last .yt-position-inner{
+	margin:0 6px 0 0;
+}
+/* ----------------------------*/
+/*     Block: yt_spotlight3    */
+/* ----------------------------*/
+#yt_spotlight3 ul li{
+	background:url(../images/arrow_rtl.png) no-repeat right center;
+	padding:0 12px 0 0;
+	line-height:170%;
+}
+#yt_spotlight3 .position-first .yt-position-inner{
+	border-right:none;
+}
+#yt_spotlight3 .position-last .yt-position-inner{
+	border-right:1px solid #333;
+}
+.yt-social a{
+	background-position:right top;
+	float:right;
+	padding:0 25px 0 0;
+}
+
+/* ----------------------------*/
+/*     Block: yt_footer        */
+/* ----------------------------*/
+#yt_footer #footnav ul{
+	float:right;
+}
+#yt_footer #footnav li{
+}
+#yt_footer #footnav li:first-child a {
+    padding: 0 0 0 8px;
+}
+.body-percentage #yt_footer .yt-copyright{
+	float:left !important;
+}
+#yt_footer .group-footnav .group-inner{
+	float:right;
+}
+/* ----------------------------*/
+/*     Block: content          */
+/* ----------------------------*/
+/* breadcrumb */
+#breadcrumb .breadcrumbs{	
+	padding:0 7px 0 0;
+}
+.showHere{
+	margin:0 0 0 5px;
+	float:right;
+}
+#breadcrumb .breadcrumbs span.separator,
+#breadcrumb .breadcrumbs a{
+	float:right;
+}
+
+.arrow-bre{
+	float:right;
+}
+/* System-messag */
+
+/* Inner content */
+
+/* module in content */
+.rtl .widget-wrap .alignleft {
+    float: right;
+    margin: 0 0 0 12px;
+	display:block;
+}
+.stats-module dt{
+	float:right;
+	padding:0 0 0 8px;
+}
+/* module main content */
+
+#main1_50 .yt-position-inner{
+	margin:0 0 0 5px;
+}
+#main2_50 .yt-position-inner{
+	margin:0 5px 0 0;
+}
+
+/* module left, right content */
+
+/* ---------------------------------------*/
+/*    Components (content, k2, vm, ...)   */
+/* ---------------------------------------*/
+
+/* -----------------
+Component content */
+
+.formelm .fltlft{
+	float:right;
+}
+.formelm-area label,
+.formelm label{
+	float:right;
+}
+
+ul.pagination{
+	text-align:right;
+	float:right;
+	width:70%;
+}
+ul.pagination li{
+	float:right;
+}
+p.counter{
+	float:left;
+}
+ul.actions{
+	float:left;
+}
+dl.article-info{
+	float:right;
+}
+.createdby, .hits{
+	float:right;
+}
+.hits {
+    background-position: right center;
+    margin: 0 5px 0 0;
+    padding: 0 6px 0 0;
+}
+.buttonheading,
+.article-tools .buttonheading {
+    float: left;
+}
+.articleinfo,
+.article-tools .article-meta {
+    float: right;
+}
+.categories-list ul li dl dt{
+	float:right;
+	margin:0 0 0 5px;
+}
+.leading-content img{
+	float:right;
+	margin:0 0 10px 15px;
+}
+.leading-content .buttonheading img{
+	padding:0 0;
+	border:none;
+	margin:0 0 0 5px;
+}
+.article_default img{
+	margin:0 10px 10px 15px;
+	float:right;
+}
+
+.article-content{
+	margin:0 0 0 10px;
+}
+#image-content img.image-intro{
+	float:right;
+	margin:0 0 0 10px;
+}
+.com_content .categories-list ul li dl dt {
+    float: right;
+    margin: 0 0 0 5px;
+}
+/* -------------
+Component k2 */
+div.k2Pagination ul{
+	text-align:right;
+}
+a.subCategoryMore{
+	background-position:right center;
+	padding:0 20px 0 0;
+}
+.module-inner .k2Avatar img{
+	float:right;
+	margin:0 0 0 10px;
+}
+.itemHeader, .catItemHeader {
+    padding: 0 85px 0 0;
+	/**right:-285px;*/
+}
+.itemDateCreated, 
+.catItemDateCreated {
+    left:auto;
+	right:0px;
+}
+div.catItemHeader span.catItemAuthor {
+	background-position:left center;
+    float: right;
+    margin: 0 0 0 8px;
+    padding: 0 0 0 8px;
+}
+div.catItemTagsBlock span {
+	background-position:right center;
+    padding: 0 20px 0 8px;
+}
+#itemListPrimary div.catItemImageBlock {
+    float: right;
+    padding: 8px 0 0 15px;
+}
+.ico-feature {
+    left:auto;
+	right:1px;
+}
+div.catItemCommentsLink a {
+	background-position:right center;
+    padding: 0 20px 0 0;
+}
+div.catItemReadMore a {
+	background-position:center right;
+    padding: 0 20px 0 0;
+}
+#itemListLinks .itemContainer span.catItemImage{
+	text-align:right;
+}
+.k2Pagination span.result {
+    float: left;
+}
+div.itemHeader span.k2item-print, 
+div.itemHeader span.k2item-fontsize, 
+div.itemHeader span.itemAuthor{
+	background-position:left center;
+    float: right;
+    margin: 0 0 0 8px;
+    padding: 0 0 0 8px;
+}
+.k2item-fontsize{
+	display:block;
+	min-width:80px;
+}
+#fontIncrease{
+	text-decoration:none;
+	/*float:right;*/
+}
+.itemTextResizerTitle{
+	padding:0 0 0 3px;
+}
+div.itemToolbar ul{
+	text-align:left;
+}
+span.itemHits{
+	float:right;
+}
+div.itemContentFooter {
+    text-align: left;
+}
+div.itemRatingBlock {
+    text-align: right;
+	overflow:hidden;
+}
+div.itemRatingBlock span {
+    float: right;
+    padding: 0 0 0 4px;
+}
+.itemRatingForm{
+	float:none;
+}
+.itemRatingList {
+    float: right;
+}
+.itemRatingLog {
+    float: right;
+    padding: 0 4px 0 0;
+}
+div.itemCategory{
+	text-align:right;
+}
+div.itemTagsBlock span{
+	background-position:right center;
+	padding:0 20px 0 0;
+}
+div.itemTwitterButton {
+    float: right;
+    margin: 2px 0 0 15px;
+}
+div.itemGooglePlusOneButton {
+    float: right;
+}
+div.itemFacebookButton {
+    float: right;
+}
+
+div.itemAuthorBlock img.itemAuthorAvatar {
+    float: right;
+    margin: 0 0 0 8px;
+}
+
+div.itemNavigation span.itemNavigationTitle{
+	float:right;
+}
+div.itemNavigation a.itemPrevious{
+	float:right;
+}
+div.itemComments ul.itemCommentsList li span.commentLink {
+    float: left;
+    margin: 0 8px 0 0;
+}
+div.itemComments ul.itemCommentsList li img {
+	margin:0 0 10px 10px;
+    float: right;
+}
+div.itemComments ul.itemCommentsList li span.commentDate {
+	border:none;
+    border-left: 1px solid #CCCCCC;
+    margin: 0 0 0 8px;
+    padding: 0 0 0 4px;
+	float:right;
+}
+
+div.tagItemImageBlock {
+    float: right;
+}
+span.tagItemImage {
+    margin: 0 0 8px 8px;
+}
+div.userItemImageBlock {
+    float: right;
+}
+div.k2FeedIcon a, 
+div.k2FeedIcon a:hover{
+	float:left;
+}
+div.userItemImageBlock span.userItemImage, 
+div.tagItemImageBlock span.tagItemImage {
+    margin: 0 0 8px 10px;
+}
+div.userItemTagsBlock span {
+	background-position:right center;
+    padding: 0 20px 0 8px;
+}
+div.userItemCommentsLink a {
+	background-position:right center;
+    padding: 0 20px 0 0;
+}
+span.userItemImage {
+    margin: 0 0 0 8px;
+}
+div.userItemReadMore a, div.tagItemReadMore a {
+	background-position:right center;
+    padding: 0 20px 0 0;
+}
+div.userBlock img {
+    float: right;
+    margin: 0 0 0 8px;
+}
+.tagItemHeader, 
+.userItemHeader {
+    padding: 0 85px 0 0;
+}
+.tagItemDateCreated, 
+.userItemDateCreated {
+    left:auto;
+	right:0px;
+}
+
+
+div.k2CategoriesListBlock ul li a span.catTitle {
+	float:right;
+    padding: 0 0 0 4px;
+}
+/* -----------------
+Component kunena */
+#Kunena table {
+    margin: 0 0 0 3px;
+}
+#Kunena div.kblock span.ktoggler{
+	float:left;
+}
+.rtl #Kunena .kheader h2{
+	float:right;
+	margin:0 0 0 5px;
+}
+#Kunena div.ktitle-desc {
+	background-position:right center;
+    padding: 0 10px 0 0;
+	display:inline-block;
+}
+#Kunena td.kcol-first {
+	border-left:none;
+	border-right:none;
+}
+#Kunena td.kcol-mid {
+	border-left:none;
+    border-right: 1px solid #DDDDDD;
+}
+#Kunena td.kcol-kcatlastpost,
+#Kunena .kblocktable td.kcol-kcattitle{
+	text-align:right;
+}
+
+#Kunena #ktop span.ktoggler {
+	right:auto;
+    left: 10px;
+	float:left;
+}
+#Kunena #ktab ul {
+	direction:rtl;
+	float:right;
+	* float:none;
+}
+#Kunena #ktab li.active, #Kunena #ktab div.moduletable ul.menu li{
+	float:right;
+	border-right:none;
+	border-left:1px solid #DDD;
+}
+#Kunena #ktab li.active, #Kunena #ktab div.moduletable ul.menu li{
+	float:right;
+	border-right:none;
+	border-left:1px solid #DDD;
+}
+#Kunena tr td.kprofileboxcnt {
+    text-align: right;
+}
+#Kunena tr td.kprofileboxcnt{
+	text-align:right;
+}
+#Kunena .kprofilebox form .input span{
+	float:right;
+	* float:none;
+	padding: 0 0 0 10px;
+}
+#Kunena .kprofilebox form .input{
+	overflow:hidden;
+	display:block;
+}
+#Kunena .klink-block span{
+	float:right;
+	padding:0 0 0 10px;
+	display:inline-block;
+}
+#Kunena table.kprofilebox .kprofileboxcnt .klink-block a {
+	background-position:right bottom;
+    padding: 0 15px 0 0;
+	display:inline-block;
+	line-height:normal;
+}
+#Kunena table.kprofilebox .kprofileboxcnt .klink-block a:hover,
+#Kunena table.kprofilebox .kprofileboxcnt .klink-block a:focus,
+#Kunena table.kprofilebox .kprofileboxcnt .klink-block a:active {
+	background-position: right top;
+}
+#Kunena .path-element-first {
+	background-position:right center;
+    padding: 1px 22px 1px 3px;
+	float:right;
+}
+#Kunena .kforum-pathway .path-element-last, #Kunena .kforum-pathway-bottom .path-element-last {
+	background:url(../images/pathway_finallink_rtl.gif) no-repeat right center;
+    float: right;
+    padding: 0 40px 0 5px;
+}
+#Kunena .fltrt {
+    float: left;
+}
+#Kunena table.kblocktable{
+	text-align:right;
+}
+#Kunena ul#kstatslistleft {
+	float:right;
+}
+#Kunena div.krss-block{
+	float:left;
+}
+#Kunena .kright{
+	text-align:left;
+}
+#Kunena span.krss {
+    margin: 5px 0 0 5px;
+}
+#Kunena .kcredits {
+    float: right;
+}
+#Kunena .kfooter {
+    clear: right;
+    float: right;
+}
+
+#Kunena .klist-actions-info-all {
+    float: right;
+    margin: 0 0 0 10px;
+}
+#Kunena .klist-times-all {
+    float: right;
+    margin:0 0 0 2px;
+}
+#Kunena .klist-jump-all {
+    float: right;
+    margin:0 0 0 10px;
+}
+#Kunena .klist-actions form#jumpto .kbutton {
+    margin:0 10px 0 0;
+}
+#Kunena .khelprulescontent li{
+	background-position:right 7px;
+	padding:0 10px 0 0;
+}
+#Kunena label.searchlabel {
+    margin-right: 0px;
+	margin-left: 100px;
+}
+#Kunena input#keywords, 
+#Kunena input#username, 
+#Kunena input#kusername {
+    margin: 0 0 0 10px;
+}
+#Kunena select#searchlist {
+    float: right;
+}
+#Kunena label#childforums-lbl {
+    clear: right;
+    float: right;
+}
+#Kunena .klist-actions .klist-pages-all {
+    float: left;
+}
+#Kunena ul.kpagination {
+    float: left;
+    padding: 7px 0 0 5px;
+}
+#Kunena .kpagination li {
+    float: right;
+}
+#Kunena .klist-actions-goto {
+    float: right;
+    margin: 5px 0 0 10px;
+}
+#Kunena div.kmessage-buttons-row {
+    text-align: right;
+}
+#Kunena .kicon-button:link, #Kunena .kicon-button {
+    float: right;
+    margin: 2px 0 2px 10px;
+}
+#Kunena td.kprofile-left {
+	border-right:none;
+    border-left: 1px solid #DDD;
+}
+#Kunena h1, 
+#Kunena h2{
+	text-align:right;
+}
+#Kunena #kpost-message td.kcol-first{
+	text-align:left;
+}
+#Kunena td.kcol-first {
+    border-left: 1px solid #DDD;
+    border-right: none;
+}
+#Kunena textarea#kbbcode-message {
+    float: right;
+}
+#Kunena div#khistory tr.ksth a {
+    float: left;
+    padding:0 0 0 10px;
+}
+#Kunena div#khistory span.khistory-msgdate {
+    float: right;
+    padding: 0 10px 0 0;
+}
+#Kunena .kprofilebox-left {
+	border-right:none;
+    border-left: 1px solid #DDDDDD;
+}
+#Kunena td.krowmoderation {
+    text-align: left;
+}
+#Kunena div.current dd .kblock .kheader .kcheckbox,
+#Kunena .k-profile span.kheadbtn.kright {
+	right:auto;
+    left: 10px;
+}
+#Kunena dl.tabs {
+    float: right;
+}
+#Kunena dl.tabs dt {
+    float: right;
+    margin: 0 0 0 3px;
+}
+#Kunena span.ktopic-category {
+    clear: right;
+    float: right;
+}
+#Kunena span.ktopic-by {
+    float: right;
+}
+#Kunena div.ktopic-title-cover {
+    text-align: right;
+}
+
+/* --------------------
+Component Virtuemart */
+
+.output-billto span.values, 
+.output-shipto span.values, 
+.floatleft, span.floatleft {
+    float: right;
+}
+.orderlistcontainer {
+    float: right;
+	margin:0 0 0 15px;
+}
+.orderlistcontainer div.orderlist{
+	left:auto;
+	right:0px;
+}
+.display-number, .control-buttons, .right {
+    text-align: left !important;
+}
+.floatright, 
+span.floatright {
+    float: left;
+}
+.product .spacer {
+	border-left:none;
+    border-right: 1px solid #DDD;
+}
+.browse-view .result{
+	float:left;
+}
+.productdetails-view .icons {
+    float: left;
+    margin: 0 30px 10px 0;
+    text-align: left;
+}
+.productdetails-view .spacer-buy-area {
+    padding: 0 20px 0 0;
+}
+.prod-part1 {
+    float: right;
+    margin: 0 0 0 15px;
+}
+.additional-images a.modal {
+    margin: 0 0 3px 5px;
+}
+div.availability{
+	text-align:right;
+}
+.product-field-display input {
+    float: right;
+}
+span.quantity-box {
+    float: right;
+}
+span.quantity-controls {
+    float: right;
+    margin: 0 10px 0 0;
+}
+span.addtocart-button {
+    float: right;
+    margin: 0 10px 0 0;
+}
+.list-reviews span.date {
+    border-left:none;
+    border-right: 1px solid #CAC9C9;
+    float: left;
+    position: relative;
+	left:-12px;
+    right:auto ;
+}
+#facebox{
+	text-align:right;
+}
+#facebox .continue{
+	text-align:left;
+}
+.write-reviews ul.rating, 
+.write-reviews {
+    text-align: right;
+}
+.write-reviews h4 {
+    text-align: right;
+}
+.write-reviews h4 span {
+    margin:0 8px 0 0;
+	display:inline-block;
+}
+#vmCartModule .total,
+#vmCartModule .prices,
+#vmCartModule .show_cart a{
+    float: left !important;
+}
+#vmCartModule .total strong{
+	display:inline-block;
+}
+#vmCartModule .total_products{
+	float:right;
+}
+#vmCartModule .show_cart{
+	clear:both;
+}
+#vmCartModule .quantity{
+	float:right;
+}
+#vmCartModule .x{
+	float:right;
+}
+.vmgroup div{
+	float:right !important;
+}
+.vm2-termsofservice-icon {
+    margin: 0 0 0 6px;
+}
+.vm2-modallink {
+    margin: 0 3px 0 0;
+}
+span.tos {
+    margin: 0 0 0 15px;
+}
+.vm2-shipto-icon,
+.vm2-billto-icon {
+    margin: 0 0 0 6px;
+}
+.checkout-button-top{
+	text-align:left;
+}
+.rtl .product-neighbours a.previous-page {
+	background:url(../images/next_16x16.png) no-repeat right center;
+	padding:0 30px 0 0;  
+    float: right;
+}
+.rtl .product-neighbours a.next-page {
+	background:url(../images/previous_16x16.png) no-repeat left center;
+	padding:0 0 0 30px;
+    float: left;
+}
+#facebox .close{
+	right:auto;
+	left:10px;
+}
+#facebox a.continue{
+	float:right;
+}
+span.quantity-controls input.quantity-plus {
+	right:0px;
+}
+span.quantity-controls input.quantity-minus {
+	right:0px;
+}
+/* -----------------------
+Component smart search */
+#advanced-search{
+	text-align:right;
+}
+#advanced-search ul li.filter-branch{
+	background-position:right center;
+}
+#advanced-search ul li.filter-branch label{
+	padding:0 0 0 5px;
+}
+/* --------------------
+Component News Feed, Contact, Weblink... */
+.contact .panel .contact-image {
+    float: left;
+}
+.contact .panel dl dt label {
+    float: right;
+    margin: 0 10px 0 0;
+}
+table.category th {
+	text-align:right;
+}
+
+

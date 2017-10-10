@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+	<name>sj_joomla3</name>
+	<version>1.0</version>
+	<creationDate>09/11/10</creationDate>
+	<author>YouTech Team</author>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+	<files>	
+		<filename>component.php</filename>	
+		<filename>favicon.ico</filename>		
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>asset</folder>
+		<folder>css</folder>		
+		<folder>elements</folder>
+		<folder>html</folder>		
+		<folder>images</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<folder>layouts</folder>
+		<folder>menusys</folder>
+		
+	</files>	
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.tpl_sj_joomla3.ini</language>
+		<language tag="en-GB">en-GB.tpl_sj_joomla3.sys.ini</language>
+	</languages>
+	<positions>
+		
+		<position>slide_show</position>
+		<position>breadcrumb</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-a</position>
+		<position>position-b</position>
+		<position>position-c</position>
+		<position>position-d</position>
+		<position>position-e</position>
+		<position>position-14</position>
+		<position>syndicate</position>
+		<position>debug</position>
+	</positions>
+
+<config>
+	<fields name="params">
+		<fieldset name="Global" label="GLOBAL_SETTINGS_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">
+			<field name="setGeneratorTag" size="50" type="text" default="SmartAddons.Com - the high quality products!" label="GENERATOR_TAG_LABEL" description="GENERATOR_TAG_DESC" />
+			<field name="hideMainContent" type="radio" class="btn-group" label="HIDE_MAIN_CONTET_LABEL" description="HIDE_MAIN_CONTET_DESC" default="0" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<!--<field name="direction" type="list" default="ltr" label="DIRECTION_LABEL" description="DIRECTION_DESC">
+				<option value="ltr">LTR</option>
+				<option value="rtl">RTL</option>
+			</field>-->
+			<field name="logoType" type="list" default="image" label="LOGO_TYPE_LABEL" description="LOGO_TYPE_DESC">
+				<option value="image">Image</option>
+				<option value="text">Text</option>
+			</field>
+			<field name="overrideLogoImage" type="media" label="OVERRIDE_LOGO_IMAGE_LABEL" description="OVERRIDE_LOGO_IMAGE_DESC" />
+			<field name="logoText" type="text" default="SmartAddons.Com" size="50" label="LOGO_TEXT_LABEL" description="LOGO_TEXT_DESC" />
+			<field name="sloganText" type="text" default="The high quality products" size="50" label="SLOGAN_LABEL" description="SLOGAN_DESC" />
+		</fieldset>
+		<fieldset name="Stitestyle" label="STITESTYLE_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">
+			<field name="sitestyle" type="list" default="blue" label="SITE_STYLE_LABEL" description="SITE_STYLE_LABEL">
+				<option value="blue">Blue</option>
+				<option value="red">Red</option>
+				<option value="green">Green</option>
+				<option value="gray">Gray</option>
+			</field>
+			<field name="bgcolor" type="color" default="#ffffff" label="Body backgroud color" description="Body backgroud color" />
+			<field name="linkcolor" type="color" default="#0095fe" label="Link color" description="Link color" />
+			<field name="textcolor" type="color" default="#666666" label="Text color" description="Text color" />
+			<field name="header-bgcolor" type="color" default="#e3e3e3" label="Header backgroud color" description="Header backgroud color" />
+			<field name="header-bgimage" type="text" default="pattern_1" label="Class header backgroud image" description="Class header backgroud image" />
+			<field name="footer-bgcolor"  type="color" default="#382d2d" label="Footer backgroud color" description="Footer backgroud color" />
+			<field name="footer-bgimage" type="text" default="pattern_2" label="Class footer backgroud image" description="Class footer backgroud image" />
+		</fieldset>
+		<fieldset name="Typography" label="TYPOGRAPHY_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">
+			<field name="fontsize" type="list" default="12px" label="FONT_SIZE_LABEL" description="FONT_SIZE_DESC">
+				<option value="10px">10px</option>
+				<option value="11px">11px</option>			
+				<option value="12px">12px</option>
+				<option value="13px">13px</option>			
+				<option value="14px">Default</option>	
+				<option value="15px">15px</option>								
+				<option value="16px">16px</option>
+				<option value="17px">17px</option>			
+				<option value="18px">18px</option>
+			</field>
+			<field name="font_name" type="list" default="arial" label="FONT_NAME_LABEL" description="FONT_NAME_DESC" >
+				<option value="arial">Arial</option>
+				<option value="arial-black">Arial Black</option>
+				<option value="courier">Courier New</option>			
+				<option value="georgia">Georgia</option>
+				<option value="impact">Impact</option>			
+				<option value="lucida-console">Lucida Console</option>	
+				<option value="lucida-grande">Lucida Grande</option>								
+				<option value="lucida-sans">Lucida Sans</option>
+				<option value="palatino">Palatino</option>			
+				<option value="tahoma">Tahoma</option>
+				<option value="times">Times New Roman</option>
+				<option value="trebuchet">Trebuchet</option>
+				<option value="verdana">Verdana</option>
+			</field>
+			<field name="googleWebFont" type="text" default="Open+Sans" label="GOOGLE_WEBFONT_LABEL" description="GOOGLE_WEBFONT_DESC" />
+			
+			<field name="googleWebFontTargets" type="textarea" default="h1,h2,h3,h4,h5,h6" label="GOOGLE_WEBFONT_TARGET_LABEL" description="GOOGLE_WEBFONT_TARGET_DESC" rows="5" cols="35" />
+		</fieldset>
+		<fieldset name="Layouts" label="LAYOUT_SETTINGS_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">		
+			<field name="default_main_layout" default="main-left-right.xml" type="filelist" directory="templates/sj_joomla3/layouts/" hide_default="1" label="WINDOW_LAYOUT_LABEL" description="WINDOW_LAYOUT_DESC" />
+			<field name="override_layouts" default="494:variations" type="textarea" cols="35" rows="6" label="OVERRIDE_LAYOUT_LABEL" description="OVERRIDE_LAYOUT_DESC" />
+		</fieldset>
+		<fieldset name="Menu" label="MENU_SETTINGS_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">			
+			<field name="menutype" type="menu" default="mainmenu" label="MENUTYPE_LABEL" description="MENUTYPE_DESC" />
+			<field name="menustyle" type="list" default="basic" label="MENU_STYLE_LABEL" description="MENU_STYLE_DESC">
+				<option value="basic">CSS Menu</option>
+			  	<!--<option value="moo">Moo Menu</option>
+			  	<option value="mega">Mega Menu</option>
+			  	<option value="dropline">Dropline Menu</option>	-->	  
+			</field>
+			<!--<field name="jsdropline" type="radio" class="btn-group" label="JS_DROPLINE_LABEL" description="JS_DROPLINE_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="moofx" type="list" default="Fx.Transitions.Circ.easeOut" label="JS_EFFECT_LABEL" description="JS_EFFECT_DESC">
+				<option value="all">Select an Effect</option>
+				<option value="Fx.Transitions.Circ.easeOut">Fx.Transitions.Circ.easeOut</option>
+				<option value="Fx.Transitions.Circ.easeIn">Fx.Transitions.Circ.easeIn</option>
+				<option value="Fx.Transitions.Circ.easeInOut">Fx.Transitions.Circ.easeInOut</option>
+				<option value="Fx.Transitions.linear">Fx.Transitions.linear</option>
+				<option value="Fx.Transitions.Quad.easeInOut">Fx.Transitions.Quad.easeInOut</option>
+				<option value="Fx.Transitions.Quad.easeOut">Fx.Transitions.Quad.easeOut</option>
+				<option value="Fx.Transitions.Quad.easeIn">Fx.Transitions.Quad.easeIn</option>
+				
+				<option value="Fx.Transitions.Cubic.easeIn">Fx.Transitions.Cubic.easeIn</option>
+				<option value="Fx.Transitions.Cubic.easeOut">Fx.Transitions.Cubic.easeOut</option>
+				<option value="Fx.Transitions.Cubic.easeInOut">Fx.Transitions.Cubic.easeInOut</option>
+				<option value="Fx.Transitions.Quart.easeIn">Fx.Transitions.Quart.easeIn</option>
+				<option value="Fx.Transitions.Quart.easeOut">Fx.Transitions.Quart.easeOut</option>
+				<option value="Fx.Transitions.Quart.easeInOut">Fx.Transitions.Quart.easeInOut</option>
+				
+				<option value="Fx.Transitions.Quint.easeIn">Fx.Transitions.Quint.easeIn</option>
+				<option value="Fx.Transitions.Quint.easeOut">Fx.Transitions.Quint.easeOut</option>
+				<option value="Fx.Transitions.Quint.easeInOut">Fx.Transitions.Quint.easeInOut</option>
+				<option value="Fx.Transitions.Sine.easeIn">Fx.Transitions.Sine.easeIn</option>
+				<option value="Fx.Transitions.Sine.easeOut">Fx.Transitions.Sine.easeOut</option>
+				<option value="Fx.Transitions.Sine.easeInOut">Fx.Transitions.Sine.easeInOut</option>
+				
+				<option value="Fx.Transitions.Expo.easeIn">Fx.Transitions.Expo.easeIn</option>
+				<option value="Fx.Transitions.Expo.easeOut">Fx.Transitions.Expo.easeOut</option>
+				<option value="Fx.Transitions.Expo.easeInOut">Fx.Transitions.Expo.easeInOut</option>
+				<option value="Fx.Transitions.Bounce.easeIn">Fx.Transitions.Bounce.easeIn</option>
+				<option value="Fx.Transitions.Bounce.easeOut">Fx.Transitions.Bounce.easeOut</option>
+				<option value="Fx.Transitions.Bounce.easeInOut">Fx.Transitions.Bounce.easeInOut</option>
+				
+				<option value="Fx.Transitions.Back.easeIn">Fx.Transitions.Back.easeIn</option>
+				<option value="Fx.Transitions.Back.easeOut">Fx.Transitions.Back.easeOut</option>
+				<option value="Fx.Transitions.Back.easeInOut">Fx.Transitions.Back.easeInOut</option>
+				<option value="Fx.Transitions.Elastic.easeIn">Fx.Transitions.Elastic.easeIn</option>
+				<option value="Fx.Transitions.Elastic.easeOut">Fx.Transitions.Elastic.easeOut</option>
+				<option value="Fx.Transitions.Elastic.easeInOut">Fx.Transitions.Elastic.easeInOut</option>		  	
+			</field>
+			<field name="moofxduration" type="text" default="500" label="DURATION_EFFECT_LABEL" description="DURATION_EFFECT_DESC" />-->
+			<field name="startlevel" type="text" default="0" label="START_LEVEL_LABEL" description="START_LEVEL_DESC" />
+			<field name="endlevel" type="text" default="9" label="END_LEVEL_LABEL" description="END_LEVEL_DESC" />			
+		</fieldset>
+		<fieldset name="ContentComponent" label="CONTENT_COMPONENT_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">	
+			<field name="thumbnail" type="radio" class="btn-group" label="APPLY_BLOG_VIEW_LABEL" description="APPLY_BLOG_VIEW_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="thumbnail_front_page" type="radio" class="btn-group" label="APPLY_FRONTPAGE_LABEL" description="APPLY_FRONTPAGE_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="leading_width" type="text" default="300" label="LEADING_IMAGE_WIDTH_LABEL" description="LEADING_IMAGE_WIDTH_DESC" />
+			<field name="leading_height" type="text" default="150" label="LEADING_IMAGE_HEIGHT_LABEL" description="LEADING_IMAGE_HEIGHT_DESC" />
+			<field name="intro_width" type="text" default="180" label="INTRO_IMAGE_WIDTH_LABEL" description="INTRO_IMAGE_WIDTH_DESC" />
+			<field name="intro_height" type="text" default="120" label="INTRO_IMAGE_HEIGHT_LABEL" description="INTRO_IMAGE_HEIGHT_DESC" />
+			
+			<field name="thumbnail_background" type="color" default="#ffffff" label="THUMBNAIL_BGCL_LABEL" description="THUMBNAIL_BGCL_DESC" />
+			<field name="thumbnail_mode" type="listthumbnailmode" default="fit" label="THUMBNAIL_MODE_LABEL" description="THUMBNAIL_MODE_DESC" />						
+		</fieldset>
+		<fieldset name="Optimize"  label="OPTIMIZE_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">
+			<field name="optimizeMergeFile" type="radio" class="btn-group" label="OPTIMIZE_MERGE_LABEL" description="OPTIMIZE_MERGE_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="optimizeCSS" type="radio" class="btn-group" label="OPTIMIZE_CSS_LABEL" description="OPTIMIZE_CSS_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="optimizeCSSExclude" default="" type="textarea" cols="35" rows="5" label="OPTIMIZE_CSS_EXCLUDE_LABEL" description="OPTIMIZE_CSS_EXCLUDE_DESC" />
+			<field name="optimizeJS" type="radio" class="btn-group" label="OPTIMIZE_JS_LABEL" description="OPTIMIZE_JS_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="optimizeJSExclude" default="mootools-more.js" type="textarea" cols="35" rows="5" label="OPTIMIZE_JS_EXCLUDE_LABEL" description="OPTIMIZE_JS_EXCLUDE_DESC" />
+			<field name="optimizeFolder" type="text" default="yt-assets" label="OPTIMIZE_FOLDER_LABEL" description="OPTIMIZE_FOLDER_DESC" />			
+		</fieldset>
+		<fieldset name="advanced"  label="ADVANCED_OPTIONS_TAB_LB" addfieldpath="/templates/sj_joomla3/elements">
+			<field name="showBacktotop" type="radio" class="btn-group" label="SHOW_BACKTOTOP_LABEL" description="SHOW_BACKTOTOP_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="showCpanel" type="radio" class="btn-group" label="SHOW_CPANEL_LABEL" description="SHOW_CPANEL_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="includeLazyload" type="radio" class="btn-group" label="INCLUDE_LAZYLOAD_LABEL" description="INCLUDE_LAZYLOAD_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="enableJquery" type="radio" class="btn-group" label="ENABLE_JQUERY_LABEL" description="ENABLE_JQUERY_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="enableGoogleAnalytics" type="radio" class="btn-group" label="ENABLE_GOOGLE_ANALYTICS_LABEL" description="ENABLE_GOOGLE_ANALYTICS_DESC" default="1" filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="googleAnalyticsTrackingID" type="text" default="" size="50" label="GOGLE_ANALYTICS_TRACKING_ID_LABEL" description="GOGLE_ANALYTICS_TRACKING_ID_DESC" />
+			
+		</fieldset>	
+	</fields>
+</config>	
+</extension>

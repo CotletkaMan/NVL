@@ -1,0 +1,99 @@
+
+/*****************************
+ * JS CLASS FOR MENU
+ *****************************/
+
+/* show level2 */
+
+ul.vmenu li.level1.hover {
+	background: #555;
+}
+
+ul.vmenu li.level1.hover div.separator.level1,
+ul.vmenu li.level1.hover a.level1 {
+	color: #0D9FC4;
+}
+
+ul.vmenu li.level2.hover {
+	background: #555;
+}
+
+ul.vmenu li.level2.hover div.separator.level2,
+ul.vmenu li.level2.hover a.level2 {
+	color: #0D9FC4;
+}
+
+ul.vmenu li.level3.hover,
+ul.vmenu li.level4.hover,
+ul.vmenu li.level5.hover,
+ul.vmenu li.level6.hover,
+ul.vmenu li.level7.hover,
+ul.vmenu li.level8.hover,
+ul.vmenu li.level9.hover {
+	background: #555;
+}
+
+ul.vmenu li.level3.hover div.separator.level3,
+ul.vmenu li.level4.hover div.separator.level4,
+ul.vmenu li.level5.hover div.separator.level5,
+ul.vmenu li.level6.hover div.separator.level6,
+ul.vmenu li.level7.hover div.separator.level7,
+ul.vmenu li.level8.hover div.separator.level8,
+ul.vmenu li.level9.hover div.separator.level9,
+ul.vmenu li.level3.hover a.level3,
+ul.vmenu li.level4.hover a.level4,
+ul.vmenu li.level5.hover a.level5,
+ul.vmenu li.level6.hover a.level6,
+ul.vmenu li.level7.hover a.level7,
+ul.vmenu li.level8.hover a.level8,
+ul.vmenu li.level9.hover a.level9 {
+	color: #0D9FC4;
+}
+
+/* RTL 
+ * show level2 */
+
+ul.vmenurtl li.level1.hover {
+	background: #555;
+}
+
+ul.vmenurtl li.level1.hover div.separator.level1,
+ul.vmenurtl li.level1.hover a.level1 {
+	color: #0D9FC4;
+}
+
+ul.vmenurtl li.level2.hover {
+	background: #555;
+}
+
+ul.vmenurtl li.level2.hover div.separator.level2,
+ul.vmenurtl li.level2.hover a.level2 {
+	color: #0D9FC4;
+}
+
+ul.vmenurtl li.level3.hover,
+ul.vmenurtl li.level4.hover,
+ul.vmenurtl li.level5.hover,
+ul.vmenurtl li.level6.hover,
+ul.vmenurtl li.level7.hover,
+ul.vmenurtl li.level8.hover,
+ul.vmenurtl li.level9.hover {
+	background: #555;
+}
+
+ul.vmenurtl li.level3.hover div.separator.level3,
+ul.vmenurtl li.level4.hover div.separator.level4,
+ul.vmenurtl li.level5.hover div.separator.level5,
+ul.vmenurtl li.level6.hover div.separator.level6,
+ul.vmenurtl li.level7.hover div.separator.level7,
+ul.vmenurtl li.level8.hover div.separator.level8,
+ul.vmenurtl li.level9.hover div.separator.level9,
+ul.vmenurtl li.level3.hover a.level3,
+ul.vmenurtl li.level4.hover a.level4,
+ul.vmenurtl li.level5.hover a.level5,
+ul.vmenurtl li.level6.hover a.level6,
+ul.vmenurtl li.level7.hover a.level7,
+ul.vmenurtl li.level8.hover a.level8,
+ul.vmenurtl li.level9.hover a.level9 {
+	color: #0D9FC4;
+}

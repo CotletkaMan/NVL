@@ -1,0 +1,87 @@
+.bsn-wrap {
+	margin-top:20px;
+	margin-bottom:20px;
+	width:100%;
+	overflow: hidden;
+}
+
+.bsn-wrap .bsn-image{
+	display: inline-block;
+	float:left;
+	padding:0 10px 5px 0;
+}
+
+.bsn-wrap .bsn-image img{
+	width:100%;
+	max-width:100%;
+	border:0 none;
+}
+
+.bsn-wrap h4 {
+	background: #0088B3;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: Arial, Tahoma, Verdana;
+	font-weight: bold;
+	text-shadow: #333333 1px 1px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 2px 5px 1px 8px;
+}
+
+.bsn-wrap .post {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.bsn-wrap .showlinebottom{
+	border-bottom: 1px dotted #cfcfcf;
+	padding:5px 0;
+}
+.bsn-wrap .last-item{
+	border-bottom:none !important;
+}
+.bsn-wrap .first-item{
+	padding-top:5px;
+}
+.bsn-wrap .showlinebottom .post-inner{
+	padding:0 0;
+}	
+.bsn-wrap .alignleft {
+	display: inline-block;
+}
+.basic-date{
+	color:#c8c7c7; font-weight:bold;
+}
+
+
+
+.bsn-wrap .alignright {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+
+
+.bsn-wrap .wp-caption {
+	background: #F7F7F7;
+	text-align: center;
+	padding: 5px 0 0 1px;
+	border: 1px solid #dedede;
+}
+	
+	
+.bsn-wrap h2 a, .bsn-wrap h2 {
+	color: #386073;
+	font-size: 100%;
+	font-weight:normal;
+	margin: 0 0 3px 0;
+}
+
+
+.bsn-wrap .post p {
+	margin: 0;
+	padding: 0 0;
+}
+
+

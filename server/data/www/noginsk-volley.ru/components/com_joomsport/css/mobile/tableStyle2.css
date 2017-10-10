@@ -1,0 +1,48 @@
+#joomsport-container .clubLayout .nav-tabs > li > a > i.users {
+    background: url("../img/users_ico.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+
+#joomsport-container .clubLayout .nav-tabs > li.active > a > i.users, .clubLayout .nav-tabs > li:hover > a > i.users {
+    background: url("../img/users_ico_active.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+
+#joomsport-container .clubLayout .place {
+    line-height: 30px;
+}
+#joomsport-container .clubLayout .place, .clubLayout .photoPlayer {
+    float: left;
+    width: 100%;
+}
+#joomsport-container .clubLayout .place .pull-right {
+    text-align: right;
+}
+
+#joomsport-container .seasonTable .place {
+    line-height: 30px;
+}
+#joomsport-container .seasonTable .place, .seasonTable .photoPlayer {
+    float: left;
+    width: 100%;
+}
+#joomsport-container .seasonTable .place .pull-right {
+    text-align: right;
+}
+
+#joomsport-container .teamLayout #matches .table > tbody > tr > td > a.btn {
+    line-height: 1.42857;
+}
+
+#joomsport-container .viewMatch .nav-tabs>li>a>i.star {
+	background: url(../img/star_ico.png) top left no-repeat;
+}
+#joomsport-container .viewMatch .nav-tabs>li.active>a>i.star, .viewMatch .nav-tabs>li:hover>a>i.star {
+	background: url(../img/star_ico_active.png) top left no-repeat;
+}
+
+#joomsport-container .tools i.delete {
+    background: url("../img/delete_ico.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+
+#joomsport-container .tools a:hover i.delete {
+    background: url("../img/delete_ico_hover.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}

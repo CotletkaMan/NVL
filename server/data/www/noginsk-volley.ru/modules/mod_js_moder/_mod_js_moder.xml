@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2.3">
+	<name>JoomSport moderator</name>
+	<author>BearDev</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>Copyright (C)2009-2014 BearDev. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>beardev@beardev.com</authorEmail>
+	<authorUrl>www.beardev.com</authorUrl>
+	<version>3.2.3</version>
+	<description>JoomSport moderator</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_js_moder.ini</language>
+		
+	</languages>
+	<files>
+		<filename module="mod_js_moder">mod_js_moder.php</filename>
+		<filename module="mod_js_moder">mod_js_moder.xml</filename>
+		<filename module="mod_js_moder">helper.php</filename>
+		<filename module="mod_js_moder">tmpl/default.php</filename>
+		<filename module="mod_js_moder">css/mod_js_moder.css</filename>
+		<folder>language</folder>
+	</files>
+	
+</extension>

@@ -1,0 +1,16 @@
+/* CSS Document */
+div.blog-featured div.article-text div.article-info,
+div.blog div.article-text div.article-info{background: #F6F6F6;}
+div.blog-featured div.article-text div.article-info:after,
+div.blog div.article-text div.article-info:after{
+	border-color: transparent transparent #F6F6F6 #F6F6F6;
+}
+.cpanel-theme-color .theme-color.active {
+    box-shadow: 0 0 0 2px #333 inset;
+}
+div.bsn-wrap.default div.post:hover a.more-view{
+	text-indent:-999em;
+}
+div.bsn-wrap.default div.post:hover a.more-view:before{
+	text-indent:0;
+}

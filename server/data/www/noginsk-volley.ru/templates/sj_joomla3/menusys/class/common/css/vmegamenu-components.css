@@ -1,0 +1,291 @@
+#meganavigator ul.subnavi {
+	position: static;
+	left: auto;
+	right: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#meganavigator ul.subnavi>li {
+	margin-left: 0;
+}
+
+#meganavigator ul.subnavi>li.first {
+	margin-top: 0;
+}
+
+/* left to right */
+ul.vmenu div.mega-content {
+	position: absolute;
+	left: -999em;
+	padding: 0;
+	margin: 0;
+	background: #909090;
+	display: block;
+	float: left;
+	padding: 0 5px 5px 0;
+}
+
+/* mega inner */
+ul.vmenu div.mega-content-inner {
+	float: left;
+	display: block;
+	padding: 0;
+	background: #666;
+	margin: 5px 0 0 5px;
+}
+
+/* cols */
+ul.vmenu div.mega-col {
+	margin: 0;
+	float: left;
+	display: block;
+}
+
+ul.vmenu div.mega-col.first {
+	
+}
+
+ul.vmenu div.mega-col.last {
+	
+}
+
+/* ul on col */
+ul.vmenu div.mega-content.level2 ul.megachild.level2 {
+	float: left;
+}
+
+/* FOR MEGA-ITEM */
+ul.vmenu div.mega-group {
+	padding: 0;
+	margin: 0;
+	/*overflow:hidden;*/
+}
+
+ul.vmenu div.mega-group div.mega-group-title{
+	border: 0px solid #fff;
+	border-bottom-width: 1px;
+	margin: 0 0 10px 0;
+}
+ul.vmenu div.mega-group div.mega-group-title div.separator,
+ul.vmenu div.mega-group div.mega-group-title a{
+	padding: 0;
+	color: #fff;
+}
+
+ul.vmenu div.mega-group div.mega-group-title span.menu-icon{
+}
+ul.vmenu div.mega-group div.mega-group-title span.menu-title{
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+ul.vmenu div.mega-group div.mega-group-title .showdesc span.menu-title{
+}
+ul.vmenu div.mega-group div.mega-group-title span.menu-desc{
+}
+
+ul.vmenu div.mega-group div.mega-group-content{
+	
+}
+ul.vmenu div.mega-group div.mega-group-content>ul.subnavi{
+	background: transparent;
+}
+ul.vmenu div.mega-group div.mega-group-content>ul.subnavi>li{
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+ul.vmenu div.mega-group div.mega-group-content>ul.subnavi>li.hover{
+	background: #777;
+}
+ul.vmenu div.mega-group div.mega-group-content>ul.subnavi>li>div.separator.havechild,
+ul.vmenu div.mega-group div.mega-group-content>ul.subnavi>li>a.havechild{
+	background-image: url(../images/arrow.png);
+	background-position: 95% -25px;
+	background-repeat: no-repeat;
+}
+
+/*FOR MEGA-MODULE*/
+ul.vmenu div.mega-module {
+	color: #FFF;
+}
+
+ul.vmenu div.mega-module h3 {
+	margin: 5px 0 10px 0;
+	color: #FFF;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+/* MEGA RTL */
+ul.vmenurtl div.mega-content {
+	position: absolute;
+	top: -999em;
+	padding: 0;
+	margin: 0;
+	background: #909090;
+	display: block;
+	float: right;
+	padding: 0 5px 5px 0;
+}
+
+/* mega inner */
+ul.vmenurtl div.mega-content-inner {
+	float: right;
+	display: block;
+	padding: 0;
+	background: #666;
+	margin: 5px 0 0 5px;
+}
+
+/* cols */
+ul.vmenurtl div.mega-col {
+	margin: 0;
+	float: right;
+	display: block;
+}
+
+ul.vmenurtl div.mega-col.first {
+	
+}
+
+ul.vmenurtl div.mega-col.last {
+	
+}
+
+/* ul on col */
+ul.vmenurtl div.mega-content.level2 ul.megachild.level2 {
+	float: right;
+}
+
+/* FOR MEGA-ITEM */
+ul.vmenurtl div.mega-group {
+	padding: 0;
+	margin: 0;
+	/*overflow:hidden;*/
+}
+
+ul.vmenurtl div.mega-group div.mega-group-title{
+	border: 0px solid #fff;
+	border-bottom-width: 1px;
+	margin: 0 0 10px 0;
+}
+ul.vmenurtl div.mega-group div.mega-group-title div.separator,
+ul.vmenurtl div.mega-group div.mega-group-title a{
+	padding: 0;
+	color: #fff;
+}
+ul.vmenurtl div.mega-group div.mega-group-title span.menu-icon{
+}
+ul.vmenurtl div.mega-group div.mega-group-title span.menu-title{
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+ul.vmenurtl div.mega-group div.mega-group-title .showdesc span.menu-title{
+}
+ul.vmenurtl div.mega-group div.mega-group-title span.menu-desc{
+}
+
+ul.vmenurtl div.mega-group div.mega-group-content{
+	
+}
+ul.vmenurtl div.mega-group div.mega-group-content>ul.subnavi{
+	background: transparent;
+}
+ul.vmenurtl div.mega-group div.mega-group-content>ul.subnavi>li{
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+ul.vmenurtl div.mega-group div.mega-group-content>ul.subnavi>li.hover{
+	background: #777;
+}
+ul.vmenurtl div.mega-group div.mega-group-content>ul.subnavi>li>div.separator.havechild,
+ul.vmenurtl div.mega-group div.mega-group-content>ul.subnavi>li>a.havechild{
+	background-image: url(../images/arrow.png);
+	background-position: 5% -187px;
+	background-repeat: no-repeat;
+}
+
+/*FOR MEGA-MODULE*/
+ul.vmenurtl div.mega-module {
+	color: #FFF;
+}
+
+ul.vmenurtlrtl div.mega-module h3 {
+	margin: 5px 0 10px 0;
+	color: #FFF;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+
+/* id: #mega-content-login */
+ul.vmenu #mega-content-login #form-login p {
+	display: block;
+	line-height: normal;
+}
+
+ul.vmenu .mega-module ul {
+	position: static;
+}
+
+ul.vmenu .mega-module ul.menu {
+	margin: 0 0;
+	width: auto;
+	border: none;
+}
+
+ul.vmenu .mega-module ul.menu li {
+	border-top: 1px solid #000000;
+}
+
+ul.vmenu .mega-module ul.menu li:first-child {
+	border: none;
+}
+
+ul.vmenu .mega-module ul.menu li a {
+	height: 25px;
+	line-height: 25px;
+	color: #CCCCCC;
+	padding: 0 10px;
+}
+
+ul.vmenu .mega-module ul.menu li:hover {
+	background: #000000;
+	color: #FFFFFF;
+}
+
+ul.vmenu .mega-module ul.menu li a:hover {
+	color: #FFFFFF;
+}
+
+ul.vmenu .mega-module #form-login input#modlgn_username,ul.vmenu .mega-module #form-login input#modlgn_passwd
+	{
+	width: 170px;
+}
+
+ul.vmenu .mega-module #form-login ul {
+	position: static;
+	margin: 10px 0 0;
+	width: auto;
+	border: none;
+}
+
+ul.vmenu .mega-module #form-login ul li {
+	height: 20px;
+	line-height: 20px;
+	margin: 0 0;
+}
+
+ul.vmenu .mega-module #form-login ul li a {
+	padding: 0 0;
+}
+
+ul.vmenu .mega-module #form-login ul li a:hover {
+	text-decoration: underline;
+}
+
+ul.vmenu #mega-content-login #form-login p label {
+	color: #FFF;
+}

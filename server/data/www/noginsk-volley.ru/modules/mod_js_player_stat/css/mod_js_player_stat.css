@@ -1,0 +1,22 @@
+.jsm_playerstatistic .player-statistic tr td:first-child {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 15px;
+    width: 180px;
+}
+.jsm_playerstatistic .player-statistic tr td {
+    color: #3a3f48;
+    font-size: 12px;
+    padding: 13px 0 14px;
+    vertical-align: top;
+}
+.jsm_playerstatistic tr.dotted td {
+    border-bottom: 1px dotted #cccccc !important;
+}
+.jsm_playerstatistic table.player-statistic, .jsm_playerstatistic .player-statistic td {
+    border: 0 none !important;
+    border-collapse: separate !important;
+}
+.jsm_playerstatistic .dotted {
+    border-bottom: 1px dotted #cccccc !important;
+}

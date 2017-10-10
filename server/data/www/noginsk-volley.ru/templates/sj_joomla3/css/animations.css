@@ -1,0 +1,68 @@
+/******************************************
+***          YT Framework: CSS          ***
+*******************************************/
+
+/*   General style    */
+a{
+	-webkit-transition: color 0.15s ease-in-out 0s;
+	-moz-transition: color 0.15s ease-in-out 0s;
+	-o-transition: color 0.15s ease-in-out 0s;
+	-ms-transition: color 0.15s ease-in-out 0s;
+	transition: color 0.15s ease-in-out 0s;	
+}
+#yt_spotlight2 a{
+	-webkit-transition: text-shadow 0.25s ease-in-out 0s;
+	-moz-transition: text-shadow 0.25s ease-in-out 0s;
+	-o-transition: text-shadow 0.25s ease-in-out 0s;
+	-ms-transition: text-shadow 0.3s ease-in-out 0s;
+	transition: text-shadow 0.3s ease-in-out 0s;	
+}
+.cpanel-theme-color .theme-color{
+	-webkit-transition: text-shadow 0.25s ease-in-out 0s;
+	-moz-transition: text-shadow 0.25s ease-in-out 0s;
+	-o-transition: text-shadow 0.25s ease-in-out 0s;
+	-ms-transition: text-shadow 0.3s ease-in-out 0s;
+	transition: text-shadow 0.3s ease-in-out 0s;	
+}
+button,.button,
+ul.yt-login-regis li > a.show,
+div.image-content.intro,
+span.catItemImage img{
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;	
+}
+
+textarea,
+input[type="text"],
+input[type="password"]{
+	-webkit-transition: background-color 0.3s linear 0s;
+	-moz-transition: background-color 0.3s ease-in-out 0s;
+	-o-transition: background-color 0.3s ease-in-out 0s;
+	-ms-transition: background-color 0.3s ease-in-out 0s;
+	transition: background-color 0.3s ease-in-out 0s;	
+}
+div.bsn-wrap.theme1 div.item a.more,
+div.bsn-wrap.default div.post  a.more-view:before{
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;	
+}
+span.wraphover{
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;	
+}
+ul.list-imageitem li > a:after{
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;	
+}
